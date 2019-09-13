@@ -1,4 +1,4 @@
-<!DOCTYPE model>
+var{<!DOCTYPE model>
 <Option type="Map">
   <Option type="Map" name="children">
     <Option type="Map" name="native:centroids_1">
@@ -269,4 +269,4 @@
       <Option type="QString" name="name" value="inputfeautres"/>
     </Option>
   </Option>
-</Option>
+</Option>}
