@@ -1,4 +1,4 @@
-## [First QGIS Model](DistDegModel.model13)
+## [First QGIS Model](DistanceDegree.model3)
 In this week's lab, I created a model to calculate distance and direction of a city's census tracts from a single point. 
 
 [Return to Main Page](index.md)
