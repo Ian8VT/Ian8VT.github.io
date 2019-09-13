@@ -1,7 +1,7 @@
 ## First QGIS Model
 In this week's lab, I created a model to calculate distance and direction of a city's census tracts from a single point. 
 
-createDownloadLink('<!DOCTYPE model>
+create-download-file('<!DOCTYPE model>
 <Option type="Map">
   <Option type="Map" name="children">
     <Option type="Map" name="native:centroids_1">
