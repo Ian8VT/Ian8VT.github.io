@@ -1,7 +1,7 @@
 ## First QGIS Model
 In this week's lab, I created a model to calculate distance and direction of a city's census tracts from a single point. 
 
-<!DOCTYPE model>
+[<!DOCTYPE model>
 <Option type="Map">
   <Option type="Map" name="children">
     <Option type="Map" name="native:centroids_1">
@@ -272,6 +272,6 @@ In this week's lab, I created a model to calculate distance and direction of a c
       <Option type="QString" name="name" value="inputfeautres"/>
     </Option>
   </Option>
-</Option>('create-download-link')
+</Option>]('create-download-link')
 
 [Return to Main Page](index.md)
