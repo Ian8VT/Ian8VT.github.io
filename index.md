@@ -6,4 +6,3 @@ The results of this project are not yet known, as field-testing only began in Ju
 
 [Check out my first QGIS Model](qgisModel.md)
 
-[Here's this scatterplot of Burlington, VT rent prices](scatterplot script ready for publish.txt)
