@@ -5,3 +5,5 @@ Open source geospatial technologies provide an important avenue that is accessib
 The results of this project are not yet known, as field-testing only began in June and July in 2019, though the authors emphasize that value will be found in a system of platforms which is capable of continual exploration, refinement, and development of spatial information that is directly linked to the users’ need for this information. I must agree that the value in this set-up is self-evident, and such a project can only be properly developed through the use of open-source geospatial platforms. As such, the people who are impacted by changing conditions of a landscape due to increased climatic variability can first-hand upload and share information which will then assist neighboring users. 
 
 [Check out my first QGIS Model](qgisModel.md)
+
+[Here's this scatterplot of Burlington, VT rent prices](scatterplot script ready for publish.txt)
