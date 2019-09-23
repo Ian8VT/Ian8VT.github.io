@@ -3,7 +3,7 @@ In this week's lab, I created a model to calculate distance and direction of a c
 
 [Download the model here!](Distance_Degrees_CBD.model3)
 
-With this model, I made [this scatterplot graphic](scatterplot script ready for publish.txt) of Burlington, VT rent prices.
+With this model, I made [this scatterplot graphic](scatterplot_script.txt) of Burlington, VT rent prices.
 
 [Return to Main Page](index.md)
 
