@@ -13,7 +13,6 @@ For distance, I attempted to inset an SQL query to calculate distance which incl
 
 SELECT*, 
 st_distance(centroid(geometry), (SELECT geometry from input1)) as cbdDist
-
 FROM input2
 
 However, when I include transform, the function fails to execute. What is wrong with the layout? 
