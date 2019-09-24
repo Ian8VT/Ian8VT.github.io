@@ -12,7 +12,8 @@ Overall, I have had difficutly with the transform function. The goal is to make 
 For distance, I attempted to inset an SQL query to calculate distance which included the transform function. In these examples, input1 is a point (city center in these cases) and input 2 are polygons (census tracts). This expression, without a transform, works correctly: 
 
 SELECT*, 
-st_distance(centroid(geometry), (SELECT geometry from input1)) as cbdDist 
+st_distance(centroid(geometry), (SELECT geometry from input1)) as cbdDist
+
 FROM input2
 
 However, when I include transform, the function fails to execute. What is wrong with the layout? 
