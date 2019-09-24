@@ -25,4 +25,17 @@ I have tried with transform preceding centroid, without a 'st' precursor on tran
 astext prior to each transform. I do not understand how merely adding in a transform prior to the geometry creates
 an issue that is unexecutable. 
 
+Similarly, when I attempted to increase the robustness of the direction component of my model with a transform function, the directional results read as 'null'. Without a transform function, the model works correctly and produces the degree that the centroids of the polygons are from the city center, which then get simplied into cardinal directions in the following field calculator. 
+
+
+degrees(azimuth( make_point(  @Mean_coordinate_s__OUTPUT_maxx , @Mean_coordinate_s__OUTPUT_maxy ), centroid($geometry)))
+
+However, when I include a transform function into the calculator, all results become 'null'. What's the problem?
+
+degrees(
+azimuth(
+transform(make_point(@Mean_coordinate_s_OUTPUT_maxx, @Mean_coordinate_s__OUTPUT_maxy), layer_property(@citycenter, 'crs'), 'EPSG:54004'),
+transform(centroid($geometry),layer_property(@inputfeautres, 'crs'),'EPSG:54004'))
+)
+
 [Return to Main Page](index.md)
