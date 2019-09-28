@@ -28,4 +28,6 @@ Then, I performed the Sink Removal tool to adjust the MosaicAster to have the ca
 
 
 
-With sinks filled, I calculated flow accumulation. The output demonstrates how many cells flow into another cell. As such, the higher the value and darker the shade of blue in the figure, the higher amount of other cells there are that flow into that valued cell. Cells in which no other cells flow into it are valued as 1 and appear as white on the figure. - FIGURE 6 - 
+With sinks filled, I calculated flow accumulation. The output demonstrates how many cells flow into another cell. As such, the higher the value and darker the shade of blue in the figure, the higher amount of other cells there are that flow into that valued cell. Cells in which no other cells flow into it are valued as 1 and appear as white on the figure. 
+
+![flowaccumulation](https://github.com/Ian8VT/Ian8VT.github.io/blob/master/flowaccumulationmap.png)![flowaccumulationlegend](https://github.com/Ian8VT/Ian8VT.github.io/blob/master/flowaccumulationmap_legend.png)
