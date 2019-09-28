@@ -32,6 +32,6 @@ With sinks filled, I calculated flow accumulation. The output demonstrates how m
 
 ![flowaccumulation](https://github.com/Ian8VT/Ian8VT.github.io/blob/master/flowaccumulationmap.png)![flowaccumulationlegend](https://github.com/Ian8VT/Ian8VT.github.io/blob/master/flowaccumulationmap_legend.png)
 
-In the final tool I used, Channel Network, I created two output maps. The first displays the streams and rivers that flow from Mt Kilimanjaro with a value of how much flow they receive from surroundings cells, similar to flow accumulation. The second map displays the directs of these water networks. 
+In the final tool I used, Channel Network, I created an output that displays the streams and rivers that flow from Mt Kilimanjaro with a value of how much flow they receive from surroundings cells.
 
 ![channelnetwork](https://github.com/Ian8VT/Ian8VT.github.io/blob/master/channelnetworkmap.png)![channelnetworklegend](https://github.com/Ian8VT/Ian8VT.github.io/blob/master/channelnetworkmap_legend.png)
