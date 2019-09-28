@@ -6,7 +6,7 @@ The data I downloaded contained two separate zones as defined by Aster. Each zon
 
 To ammend this discrepancy, I performed the mosaic tool to standardize the two zonal maps as a single map. Now, the values of each gradient of color is consistent throughout the map. For this function, I also set the geographic parameters to a more contained area focused on the mountain, that way further procedures only focus on our area of concern and don't spend excess amounts of time computing data beyond Mountain Kilimanjaro. With this map, I reprojected the coordinate system to Transverse Mercator (UTM) which is a more accurate projection for linear measurements. I named this elevation data set MosaicAster. -FIGURE 2-
 
-I next performed the analytical hillshading tool on MosaicAster. ![Hillshading](https://github.com/Ian8VT/Ian8VT.github.io/blob/master/hillshademap.png)
+I next performed the analytical hillshading tool on MosaicAster. ![Hillshading](https://github.com/Ian8VT/Ian8VT.github.io/blob/master/hillshademap.png)(https://github.com/Ian8VT/Ian8VT.github.io/blob/master/hillshademap_legend.png)
 
 In order to determine the flow of water from Mount Kilimanjaro, sink locations must be removed. These are locations were water is captured and ceases to flow downstream. Though, before the sinks can be filled in MosaicAster, first they must be determined with the tool Sink Drainage Route Detection. This tool creates an output of which direction water should flow when it encounters a sink. - FIGURE 4 -
 
