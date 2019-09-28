@@ -22,6 +22,10 @@ In order to determine the flow of water from Mount Kilimanjaro, sink locations m
 
 
 
-Then, I performed the Sink Removal tool to adjust the MosaicAster to have the calculated sinks filled. - FIGURE 5 - 
+Then, I performed the Sink Removal tool to adjust the MosaicAster to have the calculated sinks filled. 
+
+![nosinks](https://github.com/Ian8VT/Ian8VT.github.io/blob/master/nosinksmap.png)![nosinkslegend](https://github.com/Ian8VT/Ian8VT.github.io/blob/master/nosinksmap_legend.png)
+
+
 
 With sinks filled, I calculated flow accumulation. The output demonstrates how many cells flow into another cell. As such, the higher the value and darker the shade of blue in the figure, the higher amount of other cells there are that flow into that valued cell. Cells in which no other cells flow into it are valued as 1 and appear as white on the figure. - FIGURE 6 - 
