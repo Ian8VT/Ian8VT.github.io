@@ -18,7 +18,7 @@ I next performed the analytical hillshading tool on MosaicAster. ![Hillshading](
 
 In order to determine the flow of water from Mount Kilimanjaro, sink locations must be removed. These are locations were water is captured and ceases to flow downstream. Though, before the sinks can be filled in MosaicAster, first they must be determined with the tool Sink Drainage Route Detection. This tool creates an output of which direction water should flow when it encounters a sink. 
 
-![sinkroute](https://github.com/Ian8VT/Ian8VT.github.io/blob/master/sinkroutemap.png)![sinkroutelegend](https://github.com/Ian8VT/Ian8VT.github.io/blob/master/sinkroutemap_legend.png]
+![sinkroute](https://github.com/Ian8VT/Ian8VT.github.io/blob/master/sinkroutemap.png)![sinkroutelegend](https://github.com/Ian8VT/Ian8VT.github.io/blob/master/sinkroutemap_legend.png)
 
 
 
