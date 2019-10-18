@@ -9,4 +9,5 @@ The results of this project are not yet known, as field-testing only began in Ju
 [Mapping water flow off of Kilimanjaro with SAGA](SAGA.md)
 
 [Comparing ASTER and SRTM data for a water flow analysis around Uludag Mountain](Aster and SRTM Comparison.md)
+If the internal link is glitching, here is a direct URL: https://github.com/Ian8VT/Ian8VT.github.io/blob/master/Aster%20and%20SRTM%20Comparison.md
 
