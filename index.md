@@ -10,4 +10,3 @@ The results of this project are not yet known, as field-testing only began in Ju
 
 [Comparing ASTER and SRTM data for a water flow analysis around Uludag Mountain](Aster and SRTM Comparison.md)
 
-[mapping](SAGA.md)
