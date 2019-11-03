@@ -1,0 +1,201 @@
+<!doctype html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="initial-scale=1,user-scalable=no,maximum-scale=1,width=device-width">
+        <meta name="mobile-web-app-capable" content="yes">
+        <meta name="apple-mobile-web-app-capable" content="yes">
+        <link rel="stylesheet" href="css/leaflet.css">
+        <link rel="stylesheet" href="css/qgis2web.css"><link rel="stylesheet" href="css/fontawesome-all.min.css">
+        <style>
+        html, body, #map {
+            width: 100%;
+            height: 100%;
+            padding: 0;
+            margin: 0;
+        }
+        </style>
+        <title></title>
+    </head>
+    <body>
+        <div id="map">
+        </div>
+        <script src="js/qgis2web_expressions.js"></script>
+        <script src="js/leaflet.js"></script>
+        <script src="js/multi-style-layer.js"></script>
+        <script src="js/leaflet.rotatedMarker.js"></script>
+        <script src="js/leaflet.pattern.js"></script>
+        <script src="js/leaflet-hash.js"></script>
+        <script src="js/Autolinker.min.js"></script>
+        <script src="js/rbush.min.js"></script>
+        <script src="js/labelgun.min.js"></script>
+        <script src="js/labels.js"></script>
+        <script src="data/final_condensed_1.js"></script>
+        <script src="data/wetlands_focused_2.js"></script>
+        <script>
+        var map = L.map('map', {
+            zoomControl:true, maxZoom:19, minZoom:6
+        }).fitBounds([[-7.154,38.787],[-6.508,39.851]]);
+        var hash = new L.Hash(map);
+        map.attributionControl.setPrefix('<a href="https://github.com/Ian8VT/Ian8VT.github.io/blob/master/index.md">Ian8VT</a> | <a href="https://github.com/tomchadwin/qgis2web" target="_blank">qgis2web</a> &middot; <a href="https://leafletjs.com" title="A JS library for interactive maps">Leaflet</a> &middot; <a href="https://qgis.org" title="_blank">QGIS</a>');
+        var bounds_group = new L.featureGroup([]);
+        function setBounds() {
+            map.setMaxBounds([[-7.154,38.787],[-6.508,39.851]]);
+        }
+        var layer_OpenStreetMap_0 = L.tileLayer('https://tile.openstreetmap.org/{z}/{x}/{y}.png', {
+            opacity: 1.0,
+            attribution: '',
+        });
+        layer_OpenStreetMap_0;
+        map.addLayer(layer_OpenStreetMap_0);
+        function pop_final_condensed_1(feature, layer) {
+            var popupContent = '<table>\
+                    <tr>\
+                        <td colspan="2"><strong>drain_density</strong><br />' + (feature.properties['drain_density'] !== null ? Autolinker.link(String(feature.properties['drain_density'])) : '') + '</td>\
+                    </tr>\
+                </table>';
+            layer.bindPopup(popupContent, {maxHeight: 400});
+        }
+
+        function style_final_condensed_1_0(feature) {
+            switch(String(feature.properties['rank'])) {
+                case '1':
+                    return {
+                pane: 'pane_final_condensed_1',
+                opacity: 1,
+                color: 'rgba(35,35,35,1.0)',
+                dashArray: '',
+                lineCap: 'butt',
+                lineJoin: 'miter',
+                weight: 1.0, 
+                fill: true,
+                fillOpacity: 1,
+                fillColor: 'rgba(189,0,38,1.0)',
+                interactive: true,
+            }
+                    break;
+                case '2':
+                    return {
+                pane: 'pane_final_condensed_1',
+                opacity: 1,
+                color: 'rgba(35,35,35,1.0)',
+                dashArray: '',
+                lineCap: 'butt',
+                lineJoin: 'miter',
+                weight: 1.0, 
+                fill: true,
+                fillOpacity: 1,
+                fillColor: 'rgba(252,78,42,1.0)',
+                interactive: true,
+            }
+                    break;
+                case '3':
+                    return {
+                pane: 'pane_final_condensed_1',
+                opacity: 1,
+                color: 'rgba(35,35,35,1.0)',
+                dashArray: '',
+                lineCap: 'butt',
+                lineJoin: 'miter',
+                weight: 1.0, 
+                fill: true,
+                fillOpacity: 1,
+                fillColor: 'rgba(253,141,60,1.0)',
+                interactive: true,
+            }
+                    break;
+                case '4':
+                    return {
+                pane: 'pane_final_condensed_1',
+                opacity: 1,
+                color: 'rgba(35,35,35,1.0)',
+                dashArray: '',
+                lineCap: 'butt',
+                lineJoin: 'miter',
+                weight: 1.0, 
+                fill: true,
+                fillOpacity: 1,
+                fillColor: 'rgba(254,217,118,1.0)',
+                interactive: true,
+            }
+                    break;
+            }
+        }
+        map.createPane('pane_final_condensed_1');
+        map.getPane('pane_final_condensed_1').style.zIndex = 401;
+        map.getPane('pane_final_condensed_1').style['mix-blend-mode'] = 'normal';
+        var layer_final_condensed_1 = new L.geoJson(json_final_condensed_1, {
+            attribution: '',
+            interactive: true,
+            dataVar: 'json_final_condensed_1',
+            layerName: 'layer_final_condensed_1',
+            pane: 'pane_final_condensed_1',
+            onEachFeature: pop_final_condensed_1,
+            style: style_final_condensed_1_0,
+        });
+        bounds_group.addLayer(layer_final_condensed_1);
+        map.addLayer(layer_final_condensed_1);
+        function pop_wetlands_focused_2(feature, layer) {
+            var popupContent = '<table>\
+                    <tr>\
+                        <td colspan="2">' + (feature.properties['id'] !== null ? Autolinker.link(String(feature.properties['id'])) : '') + '</td>\
+                    </tr>\
+                </table>';
+            layer.bindPopup(popupContent, {maxHeight: 400});
+        }
+
+        var pattern_wetlands_focused_2_0 = new L.StripePattern({
+            weight: 0.3,
+            spaceWeight: 2.0,
+            color: '#000000',
+            opacity: 1.0,
+            spaceOpacity: 0,
+            angle: 315
+        });
+        pattern_wetlands_focused_2_0.addTo(map);
+        function style_wetlands_focused_2_0() {
+            return {
+                pane: 'pane_wetlands_focused_2',
+                stroke: false,
+                fillOpacity: 1,
+                fillPattern: pattern_wetlands_focused_2_0
+                interactive: false,
+            }
+        }
+        function style_wetlands_focused_2_1() {
+            return {
+                pane: 'pane_wetlands_focused_2',
+                opacity: 1,
+                color: 'rgba(0,0,0,1.0)',
+                dashArray: '',
+                lineCap: 'square',
+                lineJoin: 'bevel',
+                weight: 2.0,
+                fillOpacity: 0,
+                interactive: false,
+            }
+        }
+        map.createPane('pane_wetlands_focused_2');
+        map.getPane('pane_wetlands_focused_2').style.zIndex = 402;
+        map.getPane('pane_wetlands_focused_2').style['mix-blend-mode'] = 'normal';
+        var layer_wetlands_focused_2 = new L.geoJson.multiStyle(json_wetlands_focused_2, {
+            attribution: '',
+            interactive: false,
+            dataVar: 'json_wetlands_focused_2',
+            layerName: 'layer_wetlands_focused_2',
+            pane: 'pane_wetlands_focused_2',
+            onEachFeature: pop_wetlands_focused_2,
+            styles: [style_wetlands_focused_2_0,style_wetlands_focused_2_1,]
+        });
+        bounds_group.addLayer(layer_wetlands_focused_2);
+        var baseMaps = {};
+        L.control.layers(baseMaps,{'<img src="legend/wetlands_focused_2.png" /> wetlands_focused': layer_wetlands_focused_2,'final_condensed<br /><table><tr><td style="text-align: center;"><img src="legend/final_condensed_1_10.png" /></td><td>1</td></tr><tr><td style="text-align: center;"><img src="legend/final_condensed_1_21.png" /></td><td>2</td></tr><tr><td style="text-align: center;"><img src="legend/final_condensed_1_32.png" /></td><td>3</td></tr><tr><td style="text-align: center;"><img src="legend/final_condensed_1_43.png" /></td><td>4</td></tr></table>': layer_final_condensed_1,"OpenStreetMap": layer_OpenStreetMap_0,},{collapsed:false}).addTo(map);
+        setBounds();
+        L.contol.scale({
+        imperical: false,
+        metric: true
+        }).addTo(map);
+        </script>
+    </body>
+</html>
