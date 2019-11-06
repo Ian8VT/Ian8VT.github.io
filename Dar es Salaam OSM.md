@@ -6,6 +6,9 @@ Dar es Salaam, Tanzania, is a highly mapped city on OpenStreetMap. This provides
 ### Lab Summary
 In this lab, I measured the total length of drains in these wetlands per square meter of building in the wetlands. I bounded my analysis by the subwards in the city, the most local political boundary in the city, so that my final product is a number for each subward which represents how much length in meters of drain there is per square meter of building in the wetlands of that subward. The final drain density result is a decimal number between 0 and 1. Theoretically, this number is a conceptualization of how well equipped the wetland settlements of that subward are to manage flood events. A number of 1 would mean that for every 1 square meter of building, there is 1 meter of drain in that subward's wetlands. Conversely, a number close to zero means there is very little drain for each square meter of building.
 
+### Data Sources
+For this lab, I relied upon three input layers. I used [OpenStreetMap](https://www.openstreetmap.org/#map=16/31.9715/35.8944&layers=D) to pull a polygon layer that I gleaned wetland and building information. I accessed the [Resilience Academy](https://resilienceacademy.ac.tz/) to pull a subward polygon layer and a drain line layer.
+
 ### Displaying Result
 To display the wetland drain density data, I developed a map using [Leaflet](https://leafletjs.com/) software. This map breaks the subwards into four quantile ranks ordered by the density of drain length to building area. 
 
