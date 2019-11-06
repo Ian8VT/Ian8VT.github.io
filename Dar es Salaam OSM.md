@@ -5,6 +5,7 @@ Dar es Salaam, Tanzania, is a highly mapped city on OpenStreetMap. This provides
 
 [Script for an interactive map via Leaflet](https://github.com/Ian8VT/Ian8VT.github.io/blob/master/dsmmap/dsmmap/index.html)
 
+### Annotated SQL Analysis Work Flow
 
 ```
 
