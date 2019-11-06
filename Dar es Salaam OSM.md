@@ -12,8 +12,6 @@ For this lab, I relied upon three input layers. I used [OpenStreetMap](https://w
 ### Displaying Results
 To display the wetland drain density data, I developed a map using [Leaflet](https://leafletjs.com/) software. This map breaks the subwards into four quantile ranks ordered by the density of drain length to building area. Here is the [HTML script](https://github.com/Ian8VT/Ian8VT.github.io/blob/master/dsmmap/dsmmap/index.html) for the interactive Leaflet map.
 
-[**map**](https://github.com/Ian8VT/Ian8VT.github.io/blob/master/dsmmap/dsmmap/index.html)
-
 ### Annotated SQL Analysis Work Flow
 
 ```
