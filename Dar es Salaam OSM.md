@@ -1,4 +1,4 @@
-## Wetland Drains in Dar es Salaam, Tanzania with OpenStreetMap
+## Wetland Drains in Dar es Salaam, Tanzania
 
 ### Project Outline
 Dar es Salaam, Tanzania, is a highly mapped city on OpenStreetMap. This provides a unique opportunity to conduct a number of different geospatial analyses related to the city. [Ramani Huria](http://ramanihuria.org/), a community-based mapping project in the city that accesses this vast array of geospatial data, draws attention to the presence of damaging seasonal floods in the city which are often compounded by a lack of necessary infrastructure and city planning. Further, there are a large number of structures and settlements in the city that are built on terrain designated as wetland - locations expected to be highly suscpetible to flood disturbances. 
@@ -7,7 +7,7 @@ Dar es Salaam, Tanzania, is a highly mapped city on OpenStreetMap. This provides
 In this lab, I measured the total length of drains in these wetlands per square meter of building in the wetlands. I bounded my analysis by the subwards in the city, the most local political boundary in the city, so that my final product is a number for each subward which represents how much length in meters of drain there is per square meter of building in the wetlands of that subward. The final drain density result is a decimal number between 0 and 1. Theoretically, this number is a conceptualization of how well equipped the wetland settlements of that subward are to manage flood events. A number of 1 would mean that for every 1 square meter of building, there is 1 meter of drain in that subward's wetlands. Conversely, a number close to zero means there is very little drain for each square meter of building.
 
 ### Data Sources
-For this lab, I relied upon three input layers. I used [OpenStreetMap](https://www.openstreetmap.org/#map=16/31.9715/35.8944&layers=D) to pull a polygon layer that I gleaned wetland and building information. I accessed the [Resilience Academy](https://resilienceacademy.ac.tz/) to pull a subward polygon layer and a drain line layer.
+For this lab, I relied upon three input layers. I used [OpenStreetMap](https://www.openstreetmap.org/#map=16/31.9715/35.8944&layers=D) to pull a polygon layer that I gleaned wetland and building information. I accessed the [Resilience Academy](https://resilienceacademy.ac.tz/) to pull a subward polygon layer and a drain line layer. I used [QGIS](https://qgis.org/en/site/) to perform SQL analysis of these data sources. 
 
 ### Displaying Results
 To display the wetland drain density data, I developed a map using [Leaflet](https://leafletjs.com/) software. This map breaks the subwards into four quantile ranks ordered by the density of drain length to building area. Here is the [HTML script](https://github.com/Ian8VT/Ian8VT.github.io/blob/master/dsmmap/dsmmap/index.html) for the interactive Leaflet map.
