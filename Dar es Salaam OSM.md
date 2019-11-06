@@ -9,10 +9,10 @@ In this lab, I measured the total length of drains in these wetlands per square 
 ### Data Sources
 For this lab, I relied upon three input layers. I used [OpenStreetMap](https://www.openstreetmap.org/#map=16/31.9715/35.8944&layers=D) to pull a polygon layer that I gleaned wetland and building information. I accessed the [Resilience Academy](https://resilienceacademy.ac.tz/) to pull a subward polygon layer and a drain line layer.
 
-### Displaying Result
+### Displaying Results
 To display the wetland drain density data, I developed a map using [Leaflet](https://leafletjs.com/) software. This map breaks the subwards into four quantile ranks ordered by the density of drain length to building area. 
 
-[Script for an interactive map via Leaflet](https://github.com/Ian8VT/Ian8VT.github.io/blob/master/dsmmap/dsmmap/index.html)
+[Script for interactive Leaflet map](https://github.com/Ian8VT/Ian8VT.github.io/blob/master/dsmmap/dsmmap/index.html)
 
 ### Annotated SQL Analysis Work Flow
 
