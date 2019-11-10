@@ -3,3 +3,5 @@ With this model, I made a distance plot and direction plot of Burlington, VT ren
 ![direction](https://github.com/Ian8VT/Ian8VT.github.io/blob/master/QGIS/Lab%202/burlington_cardinal.png)
 
 ![direction](https://github.com/Ian8VT/Ian8VT.github.io/blob/master/QGIS/Lab%202/burlington_dist.png)
+
+![polar](https://github.com/Ian8VT/Ian8VT.github.io/blob/master/QGIS/Lab%202/polarplot2.html)
