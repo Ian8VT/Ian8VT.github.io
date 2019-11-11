@@ -6,7 +6,7 @@ The results of this project are not yet known, as field-testing only began in Ju
 
 [QGIS work](https://github.com/Ian8VT/Ian8VT.github.io/blob/master/QGIS/QGIS%20Index.md)
 
-[Mapping water flow off of Kilimanjaro with SAGA](SAGA.md)
+[Mapping water flow off of Kilimanjaro with SAGA](https://github.com/Ian8VT/Ian8VT.github.io/blob/master/SAGA/SAGA.md)
 
 [Comparing ASTER and SRTM data for a water flow analysis around Uludag Mountain](https://github.com/Ian8VT/Ian8VT.github.io/blob/master/Aster%20and%20SRTM%20Comparison.md)
 
