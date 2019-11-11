@@ -17,11 +17,15 @@ I originally attempted to use the Field Calculator function in the model builder
 
 ## Model Example in Chicago
 
+In this example, I relied upon census tracts from the 2010 Census. Upon a suggestion by my lab instructor of where the center business district of Chicago is located, I selected three census tracts to export as a layer and input as my City Centers layer. 
+
 ![direction](https://github.com/Ian8VT/Ian8VT.github.io/blob/master/QGIS/Lab%201/Chicago_Cardinal.png)
 
 The map above is a categorized classification of the cardinal direction that census tracts are from the center business district. 
 
 ![distance](https://github.com/Ian8VT/Ian8VT.github.io/blob/master/QGIS/Lab%201/Chicago_Distance.png)
+
+The map above is a gradual classification of tract distance from the center business district.
 
 With this model, I made a [distance plot](https://github.com/Ian8VT/Ian8VT.github.io/blob/master/QGIS/Lab%201%20and%202/scatterplot2.html) and [direction plot](https://github.com/Ian8VT/Ian8VT.github.io/blob/master/QGIS/Lab%201%20and%202/polarplot2.html) of Burlington, VT rent prices. The distance plot displays how median monthly rent prices change at differnet distances from the city center and the direction plot displays monthly rental prices in terms of the direction that the region is from the city center. 
 
