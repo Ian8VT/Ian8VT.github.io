@@ -11,6 +11,10 @@ The City Center input can be either a point or multipolygon feature. The Input F
 
 Don't worry about what coordinate system to upload your layers as! The step titled Distance/ Direction SQL automatically transforms whichever input coordinate system(s) you have into a reasonable one for the function at hand. For the measurement of direction from the City Center to Input Feautures, the calculation is performed in EPSG: 4326. As for the calculation of degrees between these two layers, the function is transformed into EPSG: 3395, which is more robust for measuring degrees. 
 
+The final outcome has three new columns in the attribute table not found in either origianl input: distance calculation; degree of orientation measurement; interpretation of degrees into cardinal direction. More than likely, an Input Feautures layer of census tracts will also have demographic data from the census attached to it. With these three output columns, you will be able to examine a number of different spatial distributions of demographic concentrations as reported by the census. 
+
+I originally attempted to use the Field Calculator function in the model builder to perform the model's main functions, decided to rely upon SQL for the whole model after repeated issues with Field Calculator's ability to execute a transform function.
+
 
 ![direction](https://github.com/Ian8VT/Ian8VT.github.io/blob/master/QGIS/Lab%201/Chicago_Cardinal.png)
 
