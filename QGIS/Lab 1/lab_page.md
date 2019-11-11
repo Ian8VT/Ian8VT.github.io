@@ -1,9 +1,13 @@
 # First QGIS Model
-In this week's lab, I created a model to calculate distance and direction of a city's census tracts from a single point. I then used this model in the example of Chicago. Download the model [here](https://github.com/Ian8VT/Ian8VT.github.io/blob/master/QGIS/Lab%201%20and%202/distance_cardinaldirection.model3).
+In this week's lab, I created a model to calculate distance, degree of orientation, and direction of a city's census tracts from a single point. I then used this model in the example of Chicago. Download the model [here](https://github.com/Ian8VT/Ian8VT.github.io/blob/master/QGIS/Lab%201%20and%202/distance_cardinaldirection.model3).
 
 ## Workflow of Model
 
 ![flow](https://github.com/Ian8VT/Ian8VT.github.io/blob/master/QGIS/Lab%201/model_final.png)
+
+To perform this model, you will need two different inputs: City Center and Input Feature.
+
+The City Center input can be either a point or multipolygon feature. The Input Features must be have a multipolygon geometry, such as a census tracts layer. The layer that you input as the City Center is what you designate as that central point to calculate distance, degrees, and direction of the multipolygons from. 
 
 
 ![direction](https://github.com/Ian8VT/Ian8VT.github.io/blob/master/QGIS/Lab%201/Chicago_Cardinal.png)
