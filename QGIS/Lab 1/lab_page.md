@@ -15,8 +15,11 @@ The final outcome has three new columns in the attribute table not found in eith
 
 I originally attempted to use the Field Calculator function in the model builder to perform the model's main functions, but upon revisions I decided to rely upon SQL for the whole model after repeated issues with Field Calculator's ability to execute a transform function.
 
+## Model Example in Chicago
 
 ![direction](https://github.com/Ian8VT/Ian8VT.github.io/blob/master/QGIS/Lab%201/Chicago_Cardinal.png)
+
+The map above is a categorized classification of the cardinal direction that census tracts are from the center business district. 
 
 ![distance](https://github.com/Ian8VT/Ian8VT.github.io/blob/master/QGIS/Lab%201/Chicago_Distance.png)
 
