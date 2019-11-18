@@ -1,6 +1,6 @@
 ## Welcome to GitHub Pages
 
-[Academic paper responses](https://github.com/Ian8VT/Ian8VT.github.io/blob/master/Reviews/Response%20Index.md)
+[Quick responses to academic papers](https://github.com/Ian8VT/Ian8VT.github.io/blob/master/Reviews/Response%20Index.md)
 
 [QGIS work](https://github.com/Ian8VT/Ian8VT.github.io/blob/master/QGIS/QGIS%20Index.md)
 
