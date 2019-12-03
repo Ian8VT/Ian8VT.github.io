@@ -1,7 +1,6 @@
 ## Welcome to GitHub Pages
 
-[Quick responses to academic papers](https://github.com/Ian8VT/Ian8VT.github.io/blob/master/Reviews/Responses.html)
-
+[Quick responses to academic papers](https://github.com/Ian8VT/Ian8VT.github.io/blob/master/responses.html)
 [QGIS work](https://github.com/Ian8VT/Ian8VT.github.io/blob/master/QGIS/QGIS%20Index.md)
 
 [Mapping water flow off of Kilimanjaro with SAGA](https://github.com/Ian8VT/Ian8VT.github.io/blob/master/SAGA/SAGA.md)
