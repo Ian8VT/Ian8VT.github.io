@@ -8,10 +8,6 @@ With this model, I made a distance plot and direction plot of Burlington, VT ren
 
 ![polar](https://github.com/Ian8VT/Ian8VT.github.io/blob/master/QGIS/Lab%202/newplot.png)
 
-[polar](https://github.com/Ian8VT/Ian8VT.github.io/blob/master/QGIS/Lab%202/polarplot2.html)
-
-[scatterplot](https://github.com/Ian8VT/Ian8VT.github.io/blob/master/QGIS/Lab%202/scatter_use.html)
-
 ![scatter](https://github.com/Ian8VT/Ian8VT.github.io/blob/master/QGIS/Lab%202/scatter_use.png.png)
 
 [Return to QGIS Index](https://github.com/Ian8VT/Ian8VT.github.io/blob/master/QGIS/QGIS%20Index.md)
