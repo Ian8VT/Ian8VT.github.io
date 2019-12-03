@@ -261,3 +261,5 @@ SET drain_density = round(drain_density::NUMERIC,6)
 final deliverable */
 
 ```
+
+To download the SQL file, click [here](https://github.com/Ian8VT/Ian8VT.github.io/blob/master/sqlprocess.sql).
