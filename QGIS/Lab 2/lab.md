@@ -16,4 +16,6 @@ The following scatterplot displays census tract median monthly rental cost over 
 
 ![scatter](https://github.com/Ian8VT/Ian8VT.github.io/blob/master/QGIS/Lab%202/scatter_use.png.png)
 
+These two graphics demonstrate that there is not a strong correlation of rental cost based on direction or distance of the census tract from downtown. 
+
 [Return to QGIS Index](https://github.com/Ian8VT/Ian8VT.github.io/blob/master/QGIS/QGIS%20Index.md)
