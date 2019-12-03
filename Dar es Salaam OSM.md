@@ -9,9 +9,6 @@ In this lab, I measured the length of drains in designated wetlands. Specificall
 ### Data Sources
 For this lab, I relied upon three input layers. I used [OpenStreetMap](https://www.openstreetmap.org/#map=16/31.9715/35.8944&layers=D) to pull a polygon layer that I gleaned for wetland and building information. I accessed the [Resilience Academy](https://resilienceacademy.ac.tz/) to pull a subward polygon layer and a drain line layer. I uploaded these datasets onto a [PostGIS](https://postgis.net/) database and conducted my SQL analysis on this database via the [QGIS](https://qgis.org/en/site/) interphase. 
 
-### Displaying Results
-To display the wetland drain density data, I developed a map using [Leaflet](https://leafletjs.com/) software. This map breaks the subwards into four quantile ranks ordered by the density of drain length to building area. Here is the [HTML script](https://github.com/Ian8VT/Ian8VT.github.io/blob/master/dsmmap/dsmmap/index.html) for the interactive Leaflet map.
-
 ### Annotated SQL Analysis Work Flow
 
 ```
@@ -263,3 +260,6 @@ final deliverable */
 ```
 
 To download the SQL file, click [here](https://github.com/Ian8VT/Ian8VT.github.io/blob/master/sqlprocess.sql).
+
+### Displaying Results
+To display the wetland drain density data, I developed a map using [Leaflet](https://leafletjs.com/) software. This map breaks the subwards into four quantile ranks ordered by the density of drain length to building area. Here is the [HTML script](https://github.com/Ian8VT/Ian8VT.github.io/blob/master/dsmmap/dsmmap/index.html) for the interactive Leaflet map.
