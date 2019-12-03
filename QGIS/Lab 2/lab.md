@@ -8,11 +8,11 @@ The following two maps represent the direction of Burlington's census tracts fro
 
 ![direction](https://github.com/Ian8VT/Ian8VT.github.io/blob/master/QGIS/Lab%202/burlington_dist.png)
 
-The following polarplot represents the median monthly cost of rent in Burlington of each census tract displayed over the unit of that tract's degree of orientation from downtown. 
+The following polarplot represents the median monthly rental cost of Burlington's census tracts displayed over that tract's orientation from downtown. 
 
 ![polar](https://github.com/Ian8VT/Ian8VT.github.io/blob/master/QGIS/Lab%202/newplot.png)
 
-The following scatterplot
+The following scatterplot displays census tract median monthly rental cost over that tract's distance from downtown.
 
 ![scatter](https://github.com/Ian8VT/Ian8VT.github.io/blob/master/QGIS/Lab%202/scatter_use.png.png)
 
