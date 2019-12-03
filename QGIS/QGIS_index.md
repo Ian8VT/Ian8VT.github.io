@@ -1,4 +1,4 @@
-[Chicago](QGIS/Lab_1/chicago_lab.md)
+[Chicago](QGIS/Lab 1/chicago_lab.md)
 
 [Burlington](burlington_lab.md)
 
