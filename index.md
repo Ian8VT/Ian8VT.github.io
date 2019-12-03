@@ -2,7 +2,7 @@
 
 [Quick responses to academic papers](https://github.com/Ian8VT/Ian8VT.github.io/blob/master/responses.html)
 
-[QGIS work](Ian8VT.github.io/QGIS/QGIS Index.md)
+[QGIS work](QGIS Index.md)
 
 [Mapping water flow off of Kilimanjaro with SAGA](https://github.com/Ian8VT/Ian8VT.github.io/blob/master/SAGA/SAGA.md)
 
