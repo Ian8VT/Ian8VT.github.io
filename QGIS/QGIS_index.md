@@ -1,4 +1,4 @@
-[Chicago](QGIS/Lab_1/chicago_lab.md)
+[Chicago](https://github.com/Ian8VT/Ian8VT.github.io/blob/master/QGIS/Lab%201/chicago_lab.md)
 
 [Burlington](burlington_lab.md)
 
