@@ -87,6 +87,12 @@ GROUP BY fid
 /* This takes the previously created layer and dissolves all disjointed wetlands within the same 
 subward as a single polygon. */
 
+```
+
+![wetland_subward](https://github.com/Ian8VT/Ian8VT.github.io/blob/master/QGIS/Lab_6/wetland_subward.png)
+
+```
+
 ALTER TABLE wetland_subward ADD COLUMN area FLOAT
 /* Adds a new column in the table in preparation for the next step, the results of which will be 
 a decimal number (float data point) */
