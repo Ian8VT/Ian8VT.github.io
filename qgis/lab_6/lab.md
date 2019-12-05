@@ -307,4 +307,4 @@ To display the wetland drain density data, I developed a map using [Leaflet](htt
 
 [map_trial](dsmmap/index.html)
 
-[Return](qgis/qgis.md) to QGIS index page.
+[Return](/qgis/qgis.md) to QGIS index page.
