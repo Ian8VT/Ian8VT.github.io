@@ -143,6 +143,7 @@ that contain drains, this new table is of subwards that contain both drains and 
 though does not require the drains to be in wetlands. */
 
 ```
+
 ![subwards_drains_wet](https://github.com/Ian8VT/Ian8VT.github.io/blob/master/QGIS/Lab_6/subwards_drains_wet.png)
 
 ```
@@ -185,6 +186,12 @@ redone for a final display deliverable as this output contains all wetland build
 within all the subwards of the initial input, not just those subwards with mapped wetland 
 and drain data*/
 
+```
+
+![building_area_sub](https://github.com/Ian8VT/Ian8VT.github.io/blob/master/QGIS/Lab_6/building_area_sub.png)
+
+```
+
 CREATE TABLE drain_wet AS
 SELECT st_multi(st_intersection(a.way,b.wetland_subward)) AS drain_wet, a.fid AS drain_fid, 
 a.way AS drain_way, a.length AS drain_length, b.fid AS wet_fid, b.wetland_subward AS wet_way, 
@@ -202,6 +209,12 @@ FROM drain_wet
 GROUP BY wet_fid
 /* Creates a new table that dissolves all wetland drains within each subward as a single 
 geometry. The length of the dissolved drains within each subward are summed.  */
+
+```
+
+![drains_sub](https://github.com/Ian8VT/Ian8VT.github.io/blob/master/QGIS/Lab_6/drains_sub.png)
+
+```
 
 CREATE TABLE subwards_info AS
 SELECT a.fid, a.way, b.length AS drain_length_wetland
