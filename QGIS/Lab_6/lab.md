@@ -67,6 +67,8 @@ polygons that are present in wetlands.  */
 
 ![building_wetlands](https://github.com/Ian8VT/Ian8VT.github.io/blob/master/QGIS/Lab_6/building_wetlands.png)
 
+This is the map of the building_wetlands table created in the previous SQL step. As you can see, only the buildings that are present within wetlands are included in the output data. In this map, each individual building as its own unique ID.  
+
 ```
 
 CREATE VIEW intersection AS
@@ -89,7 +91,9 @@ subward as a single polygon. */
 
 ```
 
-![wetland_subward](https://github.com/Ian8VT/Ian8VT.github.io/blob/master/QGIS/Lab_6/wetland_subward.png)
+![wetland_subward](https://github.com/Ian8VT/Ian8VT.github.io/blob/master/QGIS/Lab_6/wetland_subward_1.png)
+
+This map portrays the wetland_subward table created in the previous SQL step. In this map, all of the wetland polygons that are within the same subward contain the same unique ID. As an example, I shaded the wetlands of Subward ID 91 to be a a shade of teal. As you can see, even though the components to this wetland are disjointed, they are the same polygon.
 
 ```
 
