@@ -11,6 +11,8 @@ As a final result, each subward has a single decimal number. This number represe
 ### Data Sources
 For this lab, I relied upon three input layers: wetland and building multipolygons; subward multipolygons; drain multilines. For all of these data layers, I used data from OpenStreetMap. For my wetland and building data, I downloaded the world polygon layer directly from [OpenStreetMap](https://www.openstreetmap.org/#map=16/31.9715/35.8944&layers=D) with my desired geographic parameters. I accessed my OSM subward and drain layers via [Resilience Academy](https://resilienceacademy.ac.tz/). I uploaded these datasets onto a [PostGIS](https://postgis.net/) database and conducted my SQL analysis on this database via the [QGIS](https://qgis.org/en/site/) interphase. Prior to uploading the datasets onto PostGIS, I used the converter tool [osm2pgsql](https://wiki.openstreetmap.org/wiki/Osm2pgsql) to convert the OpenStreetMap data into the proper format necessary for the PostGIS database.
 
+### Main Steps of Analysis
+
 ### Annotated SQL Analysis Work Flow
 #### With Maps of Selected Steps
 
