@@ -65,7 +65,7 @@ polygons that are present in wetlands.  */
 
 ```
 
-![building_wetlands](QGIS/Lab_6/building_wetlands.png)
+![building_wetlands](https://github.com/Ian8VT/Ian8VT.github.io/blob/master/QGIS/Lab_6/building_wetlands.png)
 
 ```
 
