@@ -9,7 +9,8 @@ In this lab, I measured the length of drains in designated wetlands. Specificall
 ### Data Sources
 For this lab, I relied upon three input layers. I used [OpenStreetMap](https://www.openstreetmap.org/#map=16/31.9715/35.8944&layers=D) to pull a polygon layer that I gleaned for wetland and building information. I accessed the [Resilience Academy](https://resilienceacademy.ac.tz/) to pull a subward polygon layer and a drain line layer. I uploaded these datasets onto a [PostGIS](https://postgis.net/) database and conducted my SQL analysis on this database via the [QGIS](https://qgis.org/en/site/) interphase. 
 
-### Annotated SQL Analysis Work Flow with Maps of Selected Steps
+### Annotated SQL Analysis Work Flow
+#### With Maps of Selected Steps
 
 ```
 
