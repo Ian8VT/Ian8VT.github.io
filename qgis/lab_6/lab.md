@@ -66,7 +66,7 @@ polygons that are present in wetlands.  */
 
 ```
 
-![building_wetlands](https://github.com/Ian8VT/Ian8VT.github.io/blob/master/QGIS/Lab_6/building_wetlands.png)
+![building_wetlands](https://github.com/Ian8VT/Ian8VT.github.io/blob/master/qgis/lab_6/building_wetlands.png)
 
 This is the map of the building_wetlands table created in the previous SQL step. As you can see, only the buildings that are present within wetlands are included in the output data. In this map, each individual building as its own unique ID.  
 
