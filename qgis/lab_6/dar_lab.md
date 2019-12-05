@@ -11,6 +11,8 @@ As a final result, each subward has a single decimal number. This number represe
 ### Data Sources
 For this lab, I relied upon three input layers: wetland and building multipolygons; subward multipolygons; drain multilines. For all of these data layers, I used data from OpenStreetMap. For my wetland and building data, I downloaded the world polygon layer directly from [OpenStreetMap](https://www.openstreetmap.org/#map=16/31.9715/35.8944&layers=D) with my desired geographic parameters. I accessed my OSM subward and drain layers via [Resilience Academy](https://resilienceacademy.ac.tz/). I uploaded these datasets onto a [PostGIS](https://postgis.net/) database and conducted my SQL analysis on this database via the [QGIS](https://qgis.org/en/site/) interphase. Prior to uploading the datasets onto PostGIS, I used the converter tool [osm2pgsql](https://wiki.openstreetmap.org/wiki/Osm2pgsql) to convert the OpenStreetMap data into the proper format necessary for the PostGIS database. I presented my final results as a map using [Leaflet](https://leafletjs.com/) software and prepared my data for this format with the QGIS conversion plugin of [QGIS2Web](https://www.qgistutorials.com/en/docs/web_mapping_with_qgis2web.html).
 
+All of my data sources and software that I used in this lab is entirely open-source. As such, anyone with internet access and a computer with enough processing power to operate QGIS is not only able to perform this lab, but also pursue other research questions related to the urban resiliency of Dar es Salaam.
+
 ### Main Steps of Analysis
 
 ### Annotated SQL Analysis Work Flow
