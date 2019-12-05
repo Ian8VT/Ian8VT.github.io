@@ -63,6 +63,12 @@ WHERE building_wetland = 1 AND building_presence = 1
 /* Compares the integers from the two recently added columns to creates a new table of only building
 polygons that are present in wetlands.  */
 
+'''
+
+
+
+'''
+
 CREATE VIEW intersection AS
 SELECT row_number() OVER () AS id, wetlands.way, subwards.fid, subwards.way AS sub_way,
 (st_intersection(wetlands.way,subwards.way))
