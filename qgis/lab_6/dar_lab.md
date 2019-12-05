@@ -5,7 +5,7 @@ Dar es Salaam, Tanzania, is a highly mapped city on OpenStreetMap as a result of
 
 ### Lab Summary
 In this lab, I measured the density of drains within designated wetlands. The purpose of this is to acquire a measurement which is representative of how well equipped these wetland settlements are to remain resilient in the face of flooding disturbances. I represented  wetland drain density by comparing the length of drains to the footprint area of buildings. In other words, I chose to demonstrate how dense drains in wetland settlement areas are by measuring how many meters of drain there is per square meter of building. As such, all of my measurements occur solely within terrain designated as wetland and does not consider drain density outside of this terrain designation. Further, I chose to bound all the wetlands by subward, a local political boundary unit in the city. 
-#### Interpreting Results
+#### Explaining Results Format
 As a final result, each subward has a single decimal number. This number represents how many meters of drain there is per square meter of building within the wetlands of that subward. For example, a result of 1 would mean that for every 1 square meter of building in that subward's wetland, there is 1 meter of drain. A result of .05 would mean that for every 1 square meter of building, there is 1/20 meter of drain. The final results of subward drain density in wetlands range from a measurement of .00066 as the lowest drain density to .9 as the highest drain density. As such, the subward with the lowest density of wetland drains contains .66 milimeters of drain for every square meter of building. The subward with the highest density of wetland drains contains 9/10 meter for every square meter of building. 
 
 ### Data Sources
@@ -304,8 +304,10 @@ final deliverable */
 
 Here is the [SQL file](https://github.com/Ian8VT/Ian8VT.github.io/blob/master/sqlprocess.sql) for this workflow. 
 
-### Displaying Results
+### Results
 To display the wetland drain density data, I developed a map using [Leaflet](https://leafletjs.com/) software. This map breaks the subwards into four quantile ranks ordered by the density of drain length to building area. Here is the [HTML script](https://github.com/Ian8VT/Ian8VT.github.io/blob/master/dsmmap/dsmmap/index.html) for the interactive Leaflet map.
+
+#### Results Discussion
 
 [map_trial](/dsmmap/index.html)
 
