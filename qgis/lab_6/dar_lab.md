@@ -311,6 +311,8 @@ Here is the [link](../../dsmmap/index.html) to the map.
 
 #### Results Discussion
 
+As mentioned in the summary of the lab to provide examples of what to expect for the data, the density of wetland drains in subwards ranges from .0006 meters as the low to .9 meters as the high. 
+
 Return to [QGIS index page](../qgis.md).
 
 Return to [main index page](/index.md).
