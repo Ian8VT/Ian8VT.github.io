@@ -150,6 +150,8 @@ though does not require the drains to be in wetlands. */
 
 ![subwards_drains_wet](https://github.com/Ian8VT/Ian8VT.github.io/blob/master/QGIS/Lab_6/subwards_drains_wet.png)
 
+This is a map of the subwards_drains_wet table created in the previous step. The step created a table in which the output only consists of subward polygons that intersect with drain data and contain wetlands. 
+
 ```
 
 :: ERROR Invalid Geometry, Geometry Intersects WITH Self
