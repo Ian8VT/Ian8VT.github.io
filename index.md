@@ -4,7 +4,7 @@
 
 [QGIS work](QGIS/QGIS_index.md)
 
-[QGIS](qgis/lab_6/lab.md)
+[QGIS](qgis/qgis.md)
 
 [Mapping water flow off of Kilimanjaro with SAGA](SAGA/SAGA.md)
 
