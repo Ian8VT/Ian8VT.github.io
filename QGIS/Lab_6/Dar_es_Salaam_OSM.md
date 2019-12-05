@@ -142,6 +142,11 @@ WHERE wetland = 1
 that contain drains, this new table is of subwards that contain both drains and wetlands, 
 though does not require the drains to be in wetlands. */
 
+```
+![subwards_drains_wet](https://github.com/Ian8VT/Ian8VT.github.io/blob/master/QGIS/Lab_6/subwards_drains_wet.png)
+
+```
+
 :: ERROR Invalid Geometry, Geometry Intersects WITH Self
 :: SELECT row_number() OVER () AS id,
 :: (st_intersection(building_wetlands.way, wetland_subward.wetland_subward)),
