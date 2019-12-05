@@ -150,7 +150,7 @@ though does not require the drains to be in wetlands. */
 
 ![subwards_drains_wet](https://github.com/Ian8VT/Ian8VT.github.io/blob/master/QGIS/Lab_6/subwards_drains_wet.png)
 
-This is a map of the subwards_drains_wet table created in the previous step. The step created a table in which the output only consists of subward polygons that intersect with drain data and contain wetlands. Subwards which do not meet this qualification are excluded from the output and will not be considered in further analysis.
+This is a map of the subwards_drains_wet table created in the previous step. The step created a table in which the output only consists of subward polygons that intersect with drain data and contain wetlands. Subwards that do not meet this qualification are excluded from the output and will not be considered in further analysis.
 
 ```
 
@@ -195,6 +195,8 @@ and drain data*/
 ```
 
 ![building_area_sub](https://github.com/Ian8VT/Ian8VT.github.io/blob/master/QGIS/Lab_6/building_area_sub.png)
+
+This is a map of the building_area_sub table created in the previous step. Although this visually appears similar to the building_wetlands table in which I provided a map of previously, the internal data of this table is very different. In this table, all of the buildings which are present within the same subward are now a single multipolygon. As such, the number of building IDs is the same as the number of subwards which contain wetlands. To visualize this, I shaded the building multipolygon of Subward 91 bright green. As you can see, all buildings that are within this subward are the same multipolygon geometry.
 
 ```
 
