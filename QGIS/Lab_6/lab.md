@@ -222,6 +222,8 @@ geometry. The length of the dissolved drains within each subward are summed.  */
 
 ![drains_sub](https://github.com/Ian8VT/Ian8VT.github.io/blob/master/QGIS/Lab_6/drains_sub.png)
 
+This map is the drains_sub table from the previous SQL step. Each of the drains within the output data are shaded as a bright red. Although there visually appears to be a large number of tiny, disjointed drains, each drain that belongs in the same subward is a single multiline geometry. As such, the number of unique IDs in the attribute table is equivalent to the IDs of subwards which contain wetland and drain data.
+
 ```
 
 CREATE TABLE subwards_info AS
