@@ -2,4 +2,4 @@
 
 [Burlington](/qgis/lab_2/burlington_lab.html)
 
-[Dar es Salaam](/qgis/lab_6/dar_lab.md) lab
+[Dar es Salaam](qgis/lab_6/dar_lab.md) lab
