@@ -2,8 +2,6 @@
 
 [Quick responses to academic papers](responses.md)
 
-[QGIS work](QGIS/QGIS_index.md)
-
 [QGIS](qgis/qgis.md)
 
 [Mapping water flow off of Kilimanjaro with SAGA](SAGA/SAGA.md)
