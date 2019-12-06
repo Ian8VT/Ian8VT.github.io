@@ -11,14 +11,13 @@ As a final result, each subward has a single decimal number. This number represe
 ### Data Sources
 For this lab, I relied upon three input layers: wetland and building multipolygons; subward multipolygons; drain multilines. For all of these data layers, I used data from OpenStreetMap. For my wetland and building data, I downloaded the world polygon layer directly from [OpenStreetMap](https://www.openstreetmap.org/#map=16/31.9715/35.8944&layers=D) with my desired geographic parameters. I accessed my OSM subward and drain layers via [Resilience Academy](https://resilienceacademy.ac.tz/). I uploaded these datasets onto a [PostGIS](https://postgis.net/) database and conducted my SQL analysis on this database via the [QGIS](https://qgis.org/en/site/) interphase. Prior to uploading the datasets onto PostGIS, I used the converter tool [osm2pgsql](https://wiki.openstreetmap.org/wiki/Osm2pgsql) to convert the OpenStreetMap data into the proper format necessary for the PostGIS database. I presented my final results as a map using [Leaflet](https://leafletjs.com/) software and prepared my data for this format with the QGIS conversion plugin of [QGIS2Web](https://www.qgistutorials.com/en/docs/web_mapping_with_qgis2web.html).
 
-All of my data sources and software that I used in this lab are entirely open-source. As such, anyone with internet access and a computer with enough processing power to operate QGIS is not only able to perform this lab, but also pursue other research questions related to the urban resiliency of Dar es Salaam.
-
-### Main Steps of Analysis
+All of my data sources and software that I used in this lab are entirely open-source. As such, anyone with internet access and a computer with enough processing power to operate QGIS is not only able to perform this lab, but also pursue other research questions related to the urban resiliency of Dar es Salaam. Further, displaying the final map on Leaflet increases the accessibility of my results to include those who only have a mobile device and not a computer.
 
 ### Annotated SQL Analysis Work Flow
 #### With Maps of Selected Steps
 
 ```
+SQL analysis performed by Ian Knapp
 
 CREATE TABLE dar_polygons AS
 SELECT osm_id AS id, building, "natural", st_transform(way,32737) AS way, way_area
@@ -309,14 +308,14 @@ final deliverable */
 Here is the [SQL file](https://github.com/Ian8VT/Ian8VT.github.io/blob/master/sqlprocess.sql) for this workflow. 
 
 ### Results
-To display the wetland drain density data, I developed a map using [Leaflet](https://leafletjs.com/) software. This map breaks the subwards into four quantile ranks ordered by the density of drain length to building area.
+To display the wetland drain density data, I developed a map using [Leaflet](https://leafletjs.com/) software. This map breaks the subwards into four quantile ranks ordered by the density of drain length to building area. Subwards are color-coded dependent on the density of their wetland drains. Only subwards which contain wetland drains are considered. You can select to overlay the wetland layer to see the locations within each subward which are considered wetland terrain.
 
 Here is the [link](../../dsmmap/index.html) to the map. 
 
 #### Results Discussion
 
-As mentioned in the summary of the lab to provide examples of what to expect for the data, the density of wetland drains in subwards ranges from .0006 meters as the low to .9 meters as the high. 
+As mentioned in the summary of the lab to provide examples of what to expect for the data, the density of wetland drains in subwards ranges from .0006 meters as the low to .9 meters as the high. As visible in the Leaflet map, there is a concentration of subwards with a low density of wetland drains in the center of the map. Further, the subwards with the highest density of wetland drains are typically in the perifial of the map. The unrepresented subwards within the center of the map also reveal information. When the wetlands feature is switched on, it is evident that these subwards do contain wetlands and building polygons, but simply do not have any drains in the vicinity of these wetland buildings.
 
 Return to [QGIS index page](../qgis.md).
 
-Return to [main index page](/index.md).
+Return to [Main index page](/index.md).
