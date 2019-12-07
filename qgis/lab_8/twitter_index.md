@@ -26,8 +26,13 @@ Aside from the analysis of tweet information, I pulled population data from the 
 
 #### PostGIS SQL Steps
 
+After pulling from rStudio, I had three datasets in my PostGIS database: populated counties; storm tweets; baseline tweets. I first added a geometry column to each of my three dataset tables with the desired projection. Since most of the twitter activity data was in the eastern half of the country, I chose to exlude western states from my counties layer.
 
+Since every county in the counties layer had a unique geoid, I intersected all of the tweets with the counties and added the tweets' respective geoid on the attribute tables of the two tweet dataset tables. For both the storm and baseline tweets, I then dissolved the tweets by county geoid and summed the count of tweets per county. I then added a column for the storm tweets and baseline tweets in the counties layer and filled it with the summed count of tweets for each county. In preparation for the next steps, all counties without storm or baseline tweets had a value of 0 in these columns as a null value could not be calculated in the following equations.
 
+At this point, all of the data I need is within the counties layer. I then added a new column to calculate the frequency of tweets normalized by population for the storm tweet data. I used the following equation to calculate this: ((# of tweets/ county population)* 10000). I added an additional column to calculate the normalized difference between storm data and the baseline. For this, I used the following equation: (count of storm tweets - count of baseline tweets)/((count of storm tweets + count of baseline tweets)* 1.0) where storms tweets + baseline tweets > 0. 
+
+#### GeoDa Spatial Statistics
 
 #### Annotated SQL Workflow in PostGIS
 
@@ -69,18 +74,6 @@ UPDATE november
 SET geoid = "novemberCounties".geoid
 FROM "novemberCounties"
 WHERE st_intersects("novemberCounties".geometry, november.geom)
-
-CREATE TABLE doriantweet_county AS
-SELECT geom, geoid 
-FROM dorian;
-ALTER TABLE doriantweet_county ADD COLUMN count INTEGER;
-UPDATE doriantweet_county
-SET count = 1;
-SELECT geoid, st_union(geom), sum(count)
-FROM doriantweet_county
-WHERE geoid is not null
-GROUP BY geoid
-/* creates new table of tweets aggregated by geoid - didnt work selecting one point doesnt select others in county. in database table looks correct but q is not*/
 
 ALTER TABLE dorian ADD COLUMN count INTEGER;
 UPDATE dorian SET count = 1;
