@@ -34,6 +34,8 @@ At this point, all of the data I need is within the counties layer. I then added
 
 #### GeoDa Spatial Statistics
 
+In these steps, I used the tools of the program to calculate the Getis-Ord G* spatial statistic of the storm tweet frequency normalized by county population and of the normalized difference between storm tweets and baseline tweets. This produced two of the same-styled maps for each calculation. One map is a hot-cold map with some counties shaded red, some blue, and others left neutral. The second map is the display of these counties shaded in the hot-cold map, but with shadings of green to demonstrate statistical significance. Further explanation of how to interpret these maps is explained in the results section.
+
 #### Annotated SQL Workflow in PostGIS
 
 ```
