@@ -11,12 +11,6 @@
 
 ### Results
 
-#### Results Discussion
-
-### Conclusion
-
-
-
 ![word_twitter_activity](/qgis/lab_8/dorian_words.png)
 
 ![twitter_word_association](/qgis/lab_8/word_network.png)
@@ -28,3 +22,10 @@
 ![hotcold_normalized_tweet_difference](/qgis/lab_8/counties_ndti.png)
 
 ![pp_values_normalized_tweet_difference](/qgis/lab_8/counties_ndti_ppvalues.png)
+
+
+#### Results Discussion
+
+### Conclusion
+
+
