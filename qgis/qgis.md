@@ -2,6 +2,6 @@
 
 [Burlington](lab_2/burlington_lab.md)
 
-[Dar es Salaam](lab_6/dar_lab.md) lab
+[Dar es Salaam](lab_6/aa_dar_lab.md) lab
 
 [Twitter](lab_8/aa_twitter_index.md)
