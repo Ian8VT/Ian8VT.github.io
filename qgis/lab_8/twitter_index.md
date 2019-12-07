@@ -43,6 +43,7 @@ In these steps, I used the tools of the program to calculate the Getis-Ord G* sp
 #### Annotated SQL Workflow in PostGIS
 
 ```
+Developed by Ian8VT
 
 SELECT addgeometrycolumn('public', 'dorian', 'geom', 102004,
 'POINT', 2);
