@@ -29,7 +29,7 @@ This is a map of the hot spots and cold spots of twitter activity related to the
 
 ![pp_values_tweets_per_10000](/qgis/lab_8/counties_normalized_with_population.png)
 
-This map contains the same data from the previous hot-cold map on the frequency of tweets related to the storm normalized by population. However, this map displays how significantly high or low the frequency of storm tweets were for the population of counties. Using the hot-cold map as your filter, you can see how significantly high or low the frequency of storm tweets were for counties.
+This map contains the same data from the previous hot-cold map on the frequency of tweets related to the storm normalized by population. However, this map displays how significantly high or low the frequency of storm tweets were for the population of counties. Using the hot-cold map as your filter, you can see how significantly high or low the frequency of storm tweets were for counties. The darker the shade of green, the more statistically significant those counties' storm tweets were for its county population. 
 
 ![hotcold_normalized_tweet_difference](/qgis/lab_8/counties_ndti.png)
 
