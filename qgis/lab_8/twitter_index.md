@@ -1,5 +1,5 @@
 # Twitter Activity during Hurricane Dorian
-## Which created more activity during the storm: The hurricane itself or Sharpiegate?
+## Which created more activity during the storm: The hurricane or Sharpiegate?
 
 ### Introduction
 
