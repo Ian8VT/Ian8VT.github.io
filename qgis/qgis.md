@@ -3,3 +3,5 @@
 [Burlington](lab_2/burlington_lab.md)
 
 [Dar es Salaam](lab_6/dar_lab.md) lab
+
+[Twitter](lab_8/twitter_index.md)
