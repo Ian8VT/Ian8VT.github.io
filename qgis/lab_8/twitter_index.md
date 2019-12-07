@@ -21,7 +21,7 @@ This graph displays the frequency of the 15 most commons words in tweets related
 
 ![twitter_word_association](/qgis/lab_8/word_network.png)
 
-This graphic displays commonly used words in tweets about the storm and clusters them together based on how frequently the words appear wtih each other in tweets.
+This graphic clusters word pairs together based on how often word pairs are associated with each other. In other words, this graphic displays how words are clustered together in conversation. Only word pairs that occur at least 25 times are included within this graphic. 
 
 ![hotspot_map_tweets_per_10000ppl](/qgis/lab_8/counties_hotcold_pp05.png)
 
