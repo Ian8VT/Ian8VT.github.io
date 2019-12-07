@@ -55,11 +55,6 @@ UPDATE november
 SET geom = st_transform(st_setsrid(st_makepoint(lng,lat),4326),102004);
 /*adds point geometry to each table */
 
-SELECT addgeometrycolumn('public', 'novemberCounties', 'geom', 102004, 'MULTIPOLYGON', 2);
-UPDATE "novemberCounties" 
-SET geometry = populate_geometry_columns(geom)
-/* can't work*/
-
 UPDATE "novemberCounties"
 SET geometry = st_transform(geometry,102004)
 
