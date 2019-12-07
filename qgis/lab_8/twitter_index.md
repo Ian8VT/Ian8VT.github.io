@@ -25,7 +25,7 @@ This graphic displays how words are clustered together in conversation. The clos
 
 ![hotspot_map_tweets_per_10000ppl](/qgis/lab_8/counties_hotcold_pp05.png)
 
-This is a map of the hot spots and cold spots of twitter activity related to the storm. This graphic is a result of normalizing the count of storm tweet activity for each county by population and then performing a Getis-Ord G* statistical analysis on the normalized rate. Counties shaded red contain a rate of twitter activity about the storm which is high for its population. Conversely, the rate of storm tweets is low for its population for the blue counties. 
+This is a map of the hot spots and cold spots of twitter activity related to the storm. This graphic is a result of normalizing the count of storm tweet activity for each county by population and then performing a Getis-Ord G* statistical analysis on the normalized rate. Counties shaded red contain a rate of twitter activity about the storm which is high for its population. Conversely, the frequency of storm tweets in blue counties is low for its populations.
 
 ![pp_values_tweets_per_10000](/qgis/lab_8/counties_normalized_with_population.png)
 
