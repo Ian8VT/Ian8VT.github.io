@@ -158,7 +158,7 @@ WHERE ndti is null
 
 ```
 
-### Results and Discussion
+### Results
 
 ![word_twitter_activity](/qgis/lab_8/dorian_words.png)
 
@@ -186,5 +186,7 @@ This map, developed in GeoDa,
 
 
 ### Conclusion
+
+It is evident from the context analyses of tweets that the Sharpiegate controversy made an impact in social media. This was an event that people talked and tweeted about, to such an extent that two of the directly related terms were the 3rd and 4th most tweeted unique words among all tweets about Hurricane Dorian. Further, the network analysis of twitter content demonstrates that terms related to this controversy were associated with terms that relate directly to the storm. However, the spatial statistic analyses and their related maps demonstrates that the spatial frequency of who talked about the storm reflected the real and actual path of the hurricane. The normalized difference map between storm tweets and the baseline shows that frequency of tweets from counties along the real path was statistically significant. In fact, the map of normalized population shows that the counties included within Sharpiegate were cold spots of Hurricane Dorian Twitter activity. As such, although the Sharpiegate controversy made significant ripples in Twitter activity, it did not result in a shift in the spatial distribution of tweets away from the actual storm path. 
 
 
