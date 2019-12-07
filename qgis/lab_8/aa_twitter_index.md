@@ -193,6 +193,6 @@ It is evident from the context analyses of tweets that the Sharpiegate controver
 
 Return to [QGIS and PostGIS Index Page](../qgis.md).
 
-Return to [Main Index Page](index.md).
+Return to [Main Index Page](../../index.md).
 
 
