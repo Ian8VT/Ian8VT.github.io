@@ -17,6 +17,8 @@ In rStudio, I defined the geographic boundaries of each tweet and developed two 
 
 The main steps in this lab included twitter content analysis in rStudio, SQL analysis in PostGIS to calculate frequency of storm of tweets by county population and the rate of storm tweets normalized by baseline data, and the conversion of this spatial data into maps using GeoDa.
 
+##### rStudio Steps
+
 #### Annotated SQL Workflow in PostGIS
 
 ```
