@@ -13,13 +13,15 @@ The scope of this lab is to determine how much of an effect Sharpiegate had on t
 
 #### Annotated SQL Workflow
 
-### Results
+### Results and Discussion
 
 ![word_twitter_activity](/qgis/lab_8/dorian_words.png)
 
 This graph displays the frequency of the 15 most commons words in tweets related to the storm.
 
 ![twitter_word_association](/qgis/lab_8/word_network.png)
+
+This graphic 
 
 ![hotspot_map_tweets_per_10000ppl](/qgis/lab_8/counties_hotcold_pp05.png)
 
@@ -29,8 +31,6 @@ This graph displays the frequency of the 15 most commons words in tweets related
 
 ![pp_values_normalized_tweet_difference](/qgis/lab_8/counties_ndti_ppvalues.png)
 
-
-#### Results Discussion
 
 ### Conclusion
 
