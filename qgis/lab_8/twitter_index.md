@@ -17,11 +17,11 @@ The scope of this lab is to determine how much of an effect Sharpiegate had on t
 
 ![word_twitter_activity](/qgis/lab_8/dorian_words.png)
 
-This graph displays the frequency of the 15 most commons words in tweets related to the storm.
+This graph displays the frequency of the 15 most commons words in tweets related to the storm. The two most frequently used unique terms are 'hurricane' and 'dorian', which does not come as a surprise since nearly every tweets which dicusses the storm must use these terms.  Noticeably, the controversy-related terms of 'Alabama' and 'sharpiegate' are the next two most commonly used unique terms in tweets about the storm.
 
 ![twitter_word_association](/qgis/lab_8/word_network.png)
 
-This graphic clusters word pairs together based on how often word pairs are associated with each other. In other words, this graphic displays how words are clustered together in conversation. Only word pairs that occur at least 25 times are included within this graphic. 
+This graphic displays how words are clustered together in conversation. The closer the proximity of words are within this graphic, the more frequently they were used within the same tweet. Only words that occur at least 30 times are included within this graphic.
 
 ![hotspot_map_tweets_per_10000ppl](/qgis/lab_8/counties_hotcold_pp05.png)
 
