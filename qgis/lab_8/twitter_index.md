@@ -4,4 +4,4 @@
 
 ![hotcold_normalized_tweet_difference](/qgis/lab_8/counties_ndti.png)
 
-![pp_values_normalized_tweet_difference](counties_normalized_with_population.png)
+![pp_values_normalized_tweet_difference](/qgis/lab_8/counties_ndti.png)
