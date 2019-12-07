@@ -17,7 +17,17 @@ In rStudio, I defined the geographic boundaries of each tweet and developed two 
 
 The main steps in this lab included twitter content analysis in rStudio, SQL analysis in PostGIS to calculate frequency of storm of tweets by county population and the rate of storm tweets normalized by baseline data, and the conversion of this spatial data into maps using GeoDa.
 
-##### rStudio Steps
+#### rStudio Steps
+I first determiend the geographic extent of tweets by converting the attached GPS coordinates into a latitude-longtitude format for the storm and baseline datasets. I only selected tweets with a GPS bounding box specific to either a city, neighborhood, or precise location. I then converted these bounding boxes into a centroid point which became the point of my latitude-longtitude conversion.
+
+With a specific geographic point attached to each tweet, I then began to analyze the content of the tweets for both storm and baseline datasets. I had a series of preliminary steps to identify words, count words, remove defined stop words, and identify words which appear at least 15 times together as word pairs. This then enabled me to perform the final steps of displaying the frequency of the 15 most used unique terms in a bar graphic and the development of a network association graphic to display which words most commonly are used with each other in tweets.
+
+Aside from the analysis of tweet information, I pulled population data from the Census API and mapped it with the GGPlot library in rStudio.
+
+#### PostGIS SQL Steps
+
+
+
 
 #### Annotated SQL Workflow in PostGIS
 
