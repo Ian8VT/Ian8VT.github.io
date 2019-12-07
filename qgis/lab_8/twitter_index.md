@@ -1,3 +1,22 @@
+# Twitter Activity during Hurricane Dorian
+## Which created more activity during the storm: The hurricane itself or Sharpiegate?
+
+### Introduction
+
+### Data Sources
+
+### Analysis Overview
+
+#### Annotated SQL Workflow
+
+### Results
+
+#### Results Discussion
+
+### Conclusion
+
+
+
 ![word_twitter_activity](/qgis/lab_8/dorian_words.png)
 
 ![twitter_word_association](/qgis/lab_8/word_network.png)
