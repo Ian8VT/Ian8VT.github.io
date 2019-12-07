@@ -25,9 +25,11 @@ This graphic displays how words are clustered together in conversation. The clos
 
 ![hotspot_map_tweets_per_10000ppl](/qgis/lab_8/counties_hotcold_pp05.png)
 
-This is a map of the hot spots and cold spots of twitter activity related to the storm. This graphic is a result of normalizing the count of storm tweet activity for each county by population and then performing a Getis-Ord G* statistical analysis on the normalized rate. Counties shaded red contain a rate of twitter activity about the storm which is high for its population. Conversely, the frequency of storm tweets in blue counties is low for its populations.
+This is a map of the hot spots and cold spots of twitter activity related to the storm. This graphic is a result of normalizing the count of storm tweet activity for each county by population and then performing a Getis-Ord G* statistical analysis on the normalized rate. Counties shaded red contain a rate of twitter activity about the storm which is high for its population. Conversely, the frequency of storm tweets in blue counties is low for its populations. This means that the rate of storm tweets was high for many of the counties along the coast and nearest to the storm's predictions and occurence. Interestingly, the counties of Geogia and Alabama which were referenced in the Sharpiegate controversy have a tweet rate about the storm that is low for their population. 
 
 ![pp_values_tweets_per_10000](/qgis/lab_8/counties_normalized_with_population.png)
+
+This map contains the same data from the previous hot-cold map on the frequency of tweets related to the storm normalized by population. However, this map displays how significantly high or low the frequency of storm tweets were for the population of counties. Using the hot-cold map as your filter, you can see how significantly high or low the frequency of storm tweets were for counties.
 
 ![hotcold_normalized_tweet_difference](/qgis/lab_8/counties_ndti.png)
 
