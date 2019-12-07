@@ -320,6 +320,6 @@ Here is the [link](../../dsmmap/index.html) to the map.
 
 As mentioned in the summary of the lab to provide examples of what to expect for the data, the density of wetland drains in subwards ranges from .0006 meters as the low to .9 meters as the high. As visible in the Leaflet map, there is a concentration of subwards with a low density of wetland drains in the center of the map. Further, the subwards with the highest density of wetland drains are typically in the perifial of the map. The unrepresented subwards within the center of the map also reveal information. Due to the analysis parameters, only subwards that contain drain information and intersect wetlands will be displayed in the final product. Yet, when the wetland feature of the Leaflet map is activated, it is evident that these areas do intersect wetlands. Further, the footprints of builidngs are visible in the OpenStreetMap base layer. As such, these locations do not have any wetland drains to alleviate flooding pressures on the buildings. 
 
-Return to [QGIS index page](../qgis.md).
+Return to [QGIS and PostGIS Index Page](../qgis.md).
 
-Return to [Main index page](/index.md).
+Return to [Main Index Page](/index.md).
