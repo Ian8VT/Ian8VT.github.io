@@ -4,4 +4,4 @@
 
 [Dar es Salaam](lab_6/dar_lab.md) lab
 
-[Twitter](lab_8/twitter_index.md)
+[Twitter](lab_8/aa_twitter_index.md)
