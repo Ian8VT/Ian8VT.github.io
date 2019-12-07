@@ -1,6 +1,10 @@
 # Twitter Activity during Hurricane Dorian
 ## Which created more Twitter activity during the storm: The hurricane or Sharpiegate?
 
+Return to [QGIS and PostGIS Index Page](../qgis.md).
+
+Return to [Main Index Page](/index.md).
+
 ### Introduction
 
 Hurricane Dorian was an intense Category 5 hurricane that caused significant damage and loss of life throughout much of its course. When the storm directly hit the Bahamas, its winds were so strong that the storm became tied for the highest recorded hurricane winds in the Atlantic Ocean to ever make landfall. After the grave destruction the storm caused on the Bahamian Abaco Islands, Dorian slowly weakened though remained a powerful hurricane as it closely followed the US coast northward. As a result of the storm's extreme destruction in the Bahamas and how closely it hugged the entirety of the US east coast, this storm generated a significant amount of attention, particularly along the east coast locations predicted to be nearest to the storm. However, the media attention for this storm was even greater than that generated from the physical risks of Dorian because of the controversy that surrounded Sharpiegate, which you can read about on [this Wikipedia page](https://en.wikipedia.org/wiki/Hurricane_Dorian%E2%80%93Alabama_controversy). 
@@ -188,5 +192,9 @@ This map, developed in GeoDa, displays the data of the previous hot-cold map, bu
 ### Conclusion
 
 It is evident from the context analyses of tweets that the Sharpiegate controversy made an impact in social media. This was an event that people talked and tweeted about, to such an extent that two of the directly related terms were the 3rd and 4th most tweeted unique words among all tweets about Hurricane Dorian. Further, the network analysis of twitter content demonstrates that terms related to this controversy were associated with terms that relate directly to the storm. However, the spatial statistic analyses and their related maps demonstrates that the spatial frequency of who talked about the storm reflected the real and actual path of the hurricane. The normalized difference map between storm tweets and the baseline shows that frequency of tweets from counties along the real path was statistically significant. In fact, the map of normalized population shows that the counties included within Sharpiegate were cold spots of Hurricane Dorian Twitter activity. As such, although the Sharpiegate controversy made significant ripples in Twitter activity, it did not result in a shift in the spatial distribution of tweets away from the actual storm path. 
+
+Return to [QGIS and PostGIS Index Page](../qgis.md).
+
+Return to [Main Index Page](/index.md).
 
 
