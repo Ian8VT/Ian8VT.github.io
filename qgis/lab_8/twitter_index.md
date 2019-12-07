@@ -17,6 +17,8 @@ The scope of this lab is to determine how much of an effect Sharpiegate had on t
 
 ![word_twitter_activity](/qgis/lab_8/dorian_words.png)
 
+This is a raw count of the most commonly used words throughout the defined temporal range of Hurricane Dorian. 
+
 ![twitter_word_association](/qgis/lab_8/word_network.png)
 
 ![hotspot_map_tweets_per_10000ppl](/qgis/lab_8/counties_hotcold_pp05.png)
