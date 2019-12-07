@@ -17,7 +17,7 @@ The scope of this lab is to determine how much of an effect Sharpiegate had on t
 
 ![word_twitter_activity](/qgis/lab_8/dorian_words.png)
 
-This graph displays the frequency of the 15 most commons words in tweets related to the storm. The two most frequently used unique terms are 'hurricane' and 'dorian', which does not come as a surprise since nearly every tweets which dicusses the storm must use these two general terms. Noticeably, the controversy-related terms of 'Alabama' and 'sharpiegate' are the next two most commonly used unique terms in tweets about the storm. Further, the unique terms of 'donald' and 'realdonaldtrump', in reference to the President and his twitter account, are also frequently used and are likely in association with discussion about the Sharpiegate controversy. 
+This graph displays the frequency of the 15 most commons words in tweets related to the storm. The two most frequently used unique terms are 'hurricane' and 'dorian', which does not come as a surprise since nearly every tweets which dicusses the storm must use these two general terms. Noticeably, the controversy-related terms of 'alabama' and 'sharpiegate' are the next two most commonly used unique terms in tweets about the storm. Further, the unique terms of 'donald' and 'realdonaldtrump', in reference to the President and his twitter account, are also frequently used and are likely in association with discussion about the Sharpiegate controversy. 
 
 ![twitter_word_association](/qgis/lab_8/word_network.png)
 
