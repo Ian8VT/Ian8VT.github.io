@@ -158,6 +158,8 @@ WHERE ndti is null
 
 ```
 
+Click [here](/qgis/lab_8/process.sql) to download the SQL file.
+
 ### Results
 
 ![word_twitter_activity](/qgis/lab_8/dorian_words.png)
