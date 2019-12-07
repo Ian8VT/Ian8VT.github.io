@@ -28,7 +28,7 @@ Aside from the analysis of tweet information, I pulled population data from the 
 
 After pulling from rStudio, I had three datasets in my PostGIS database: populated counties; storm tweets; baseline tweets. I first added a geometry column to each of my three dataset tables with the desired projection. Since most of the twitter activity data was in the eastern half of the country, I chose to exlude western states from my counties layer.
 
-Since every county in the counties layer had a unique geoid, I intersected all of the tweets with the counties and added the tweets' respective geoid on the attribute tables of the two tweet dataset tables. For both the storm and baseline tweets, I then dissolved the tweets by county geoid and summed the count of tweets per county. I included a map in the annotated SQL workflow to show the output of this step for the storm tweets. I then added a column for the storm tweets and baseline tweets in the counties layer and filled it with the summed count of tweets for each county. In preparation for the next steps, all counties without storm or baseline tweets had a value of 0 in these columns as a null value could not be calculated in the following equations.
+Since every county in the counties layer had a unique geoid, I intersected all of the tweets with the counties and added the tweets' respective geoid on the attribute tables of the two tweet dataset tables. For both the storm and baseline tweets, I then dissolved the tweets by county geoid and summed the count of tweets per county. I included a map in the annotated SQL workflow to show the output of this step for the storm tweets. I then added a column for the storm tweets and baseline tweets in the counties layer and filled it with the summed count of tweets for each county, which I also included a map of in the SQL workflow. In preparation for the next steps, all counties without storm or baseline tweets had a value of 0 in these columns as a null value could not be calculated in the following equations.
 
 At this point, all of the data I need is within the counties layer. I then added a new column to calculate the frequency of tweets normalized by population for the storm tweet data. I used the following equation to calculate this: ((# of tweets/ county population)* 10000). I added an additional column to calculate the normalized difference between storm data and the baseline. For this, I used the following equation: (count of storm tweets - count of baseline tweets)/((count of storm tweets + count of baseline tweets)* 1.0) where storms tweets + baseline tweets > 0. 
 
@@ -91,6 +91,14 @@ FROM doriantweets
 GROUP BY geoid
 /* dissolves all tweet points within same county geoid as a single geometry*/
 
+```
+
+![doriantweets](/qgis/lab_8/doriantweets.png)
+
+This is the map of the doriantweets_counties table created in the previous step. All points that are within the same county are a single multipoint geometry with a single summed count of how many tweets occured within that county. Once the equivalent of this output is created for the baseline tweets, these values can easily be transfered into the counties layer since this point data contains the geoid of the county it overlays.
+
+```
+
 :: ERROR, not the desired results. Realized the from map was not the proper location to compile total tweet database
 ::ALTER TABLE doriantweets ADD COLUMN tweets INTEGER;
 ::UPDATE doriantweets SET tweets = doriantweets_counties.sum
@@ -122,6 +130,14 @@ UPDATE counties SET tweets_november = november_tweets.tweets
 FROM november_tweets
 WHERE counties.geoid = november_tweets.geoid
 /* all the steps to sum the total november tweets for each county. performed it in a more condensed manner after learning the process with the dorian tweets above. now total dorian and november tweets are their own column within the same county table*/
+
+```
+
+![counties](/qgis/lab_8/counties.png)
+
+As you can see, this map only visually displays the counties. Yet, within the attribute table, all of the summed counts of storm tweets and baseline tweets are attached to each county in this map. In the next steps, the outputs of the calculation will also be attached in the table with its respective county. 
+
+```
 
 UPDATE counties SET tweets_dorian = 0;
 UPDATE counties SET tweets_dorian = doriantweets_counties.sum
