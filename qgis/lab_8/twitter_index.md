@@ -162,23 +162,27 @@ WHERE ndti is null
 
 ![word_twitter_activity](/qgis/lab_8/dorian_words.png)
 
-This graph displays the frequency of the 15 most commons words in tweets related to the storm. The two most frequently used unique terms are 'hurricane' and 'dorian', which does not come as a surprise since nearly every tweets which dicusses the storm must use these two general terms. Noticeably, the controversy-related terms of 'alabama' and 'sharpiegate' are the next two most commonly used unique terms in tweets about the storm. Further, the unique terms of 'donald' and 'realdonaldtrump', in reference to the President and his twitter account, are also frequently used and are likely in association with discussion about the Sharpiegate controversy. 
+This graph, developed in rStudio, displays the frequency of the 15 most commons words in tweets related to the storm. The two most frequently used unique terms are 'hurricane' and 'dorian', which does not come as a surprise since nearly every tweets which dicusses the storm must use these two general terms. Noticeably, the controversy-related terms of 'alabama' and 'sharpiegate' are the next two most commonly used unique terms in tweets about the storm. Further, the unique terms of 'donald' and 'realdonaldtrump', in reference to the President and his twitter account, are also frequently used and are likely in association with discussion about the Sharpiegate controversy. 
 
 ![twitter_word_association](/qgis/lab_8/word_network.png)
 
-This graphic displays how words are clustered together in conversation. The closer the proximity of words are within this graphic, the more frequently they were used within the same tweet. Only words that occur at least 30 times are included within this graphic.
+This graphic, developed in rStudio, displays how words are clustered together in conversation. The closer the proximity of words are within this graphic, the more frequently they were used within the same tweet. Only words that occur at least 30 times are included within this graphic.
 
 ![hotspot_map_tweets_per_10000ppl](/qgis/lab_8/counties_hotcold_pp05.png)
 
-This is a map of the hot spots and cold spots of twitter activity related to the storm. This graphic is a result of normalizing the count of storm tweet activity for each county by population and then performing a Getis-Ord G* statistical analysis on the normalized rate. Counties shaded red contain a rate of twitter activity about the storm which is high for its population. Conversely, the frequency of storm tweets in blue counties is low for its populations. This means that the rate of storm tweets was high for many of the counties along the coast and nearest to the storm's predictions and occurence. Interestingly, the counties of Geogia and Alabama which were referenced in the Sharpiegate controversy have a tweet rate about the storm that is low for their population. 
+This map, developed in GeoDa, is of the hot spots and cold spots of twitter activity related to the storm. This graphic is a result of normalizing the count of storm tweet activity for each county by population and then performing a Getis-Ord G* statistical analysis on the normalized rate. Counties shaded red contain a rate of twitter activity about the storm which is high for its population. Conversely, the frequency of storm tweets in blue counties is low for its populations. This means that the rate of storm tweets was high for many of the counties along the coast and nearest to the storm's predictions and occurence. Interestingly, the counties of Geogia and Alabama which were referenced in the Sharpiegate controversy have a tweet rate about the storm that is low for their population. 
 
 ![pp_values_tweets_per_10000](/qgis/lab_8/counties_normalized_with_population.png)
 
-This map contains the same data from the previous hot-cold map on the frequency of tweets related to the storm normalized by population. However, this map displays how significantly high or low the frequency of storm tweets were for the population of counties. Using the hot-cold map as your filter, you can see how significantly high or low the frequency of storm tweets were for counties. The darker the shade of green, the more statistically significant those counties' storm tweets were for its county population. 
+This map, developed in GeoDa, contains the same data from the previous hot-cold map on the frequency of tweets related to the storm normalized by population. However, this map displays how significantly high or low the frequency of storm tweets were for the population of counties. Using the hot-cold map as your filter, you can see how significantly high or low the frequency of storm tweets were for counties. The darker the shade of green, the more statistically significant those counties' storm tweets were for its county population. 
 
 ![hotcold_normalized_tweet_difference](/qgis/lab_8/counties_ndti.png)
 
+This map, developed in GeoDa,
+
 ![pp_values_normalized_tweet_difference](/qgis/lab_8/counties_ndti_ppvalues.png)
+
+This map, developed in GeoDa,
 
 
 ### Conclusion
