@@ -13,8 +13,9 @@ The data for this lab was collected in [rStudio] through a [Twitter API]. Profes
 
 In rStudio, I defined the geographic boundaries of each tweet and developed two graphics related to a lexicon content analysis of the tweets. I also used a [Census API] to pull a map of the United States with all counties filled with population data. I then connected directly to my [Postgres] database from rStudio and transfered the storm tweet data, baseline tweet data, and populated county data to my database. I conducted a series of SQL steps with my database using the [QGIS] interphase. Upon the completion of my analysis, I used [GeoDa] to develop four maps using Getis-Ord G* spatial statistics. 
 
-
 ### Analysis Overview
+
+The main steps in this lab included twitter content analysis in rStudio, SQL analysis in PostGIS to calculate frequency of storm of tweets by county population and the rate of storm tweets normalized by baseline data, and the conversion of this spatial data into maps.
 
 #### Annotated SQL Workflow
 
