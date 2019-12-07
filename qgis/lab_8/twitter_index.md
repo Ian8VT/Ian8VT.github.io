@@ -9,7 +9,9 @@ The scope of this lab is to determine how much of an effect Sharpiegate had on t
 
 ### Data Sources
 
-The data for this lab was collected in rStudio through a Twitter API. Professor Joseph Holler of Middlebury College searched for storm data on September 11, 2019 and searched for the baseline data on November 19, 2019. Only tweets which contained the words 'dorian', 'hurricane', or 'sharpiegate' were collected as storm data. There were no lexicon parameters for the baseline data. For each set of data, 200,000 tweets were mined and the geographic range was set as 1,000 miles around the coordinates of 32, -78. An excel file which contains the status id for storm and baseline tweets can be downloaded [here].
+The data for this lab was collected in [rStudio] through a [Twitter API]. Professor Joseph Holler of Middlebury College searched for storm data on September 11, 2019 and searched for the baseline data on November 19, 2019. Only tweets which contained the words 'dorian', 'hurricane', or 'sharpiegate' were collected as storm data. There were no lexicon parameters for the baseline data. For each set of data, tweets within one week prior to the search date were considered and the geographic range was set as 1,000 miles around the coordinates of 32, -78. For each set, 200,000 tweets that match these parameters were mined. An excel file which contains the status id for storm and baseline tweets can be downloaded [here].
+
+
 
 ### Analysis Overview
 
