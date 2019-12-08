@@ -7,7 +7,7 @@ In this week's lab, I created a model to calculate distance, degree of orientati
 
 ## Workflow of Model
 
-![flow](https://github.com/Ian8VT/Ian8VT.github.io/blob/master/QGIS/Lab%201/model_final.png)
+![flow](/qgis/lab_1/model_final.png)
 
 To perform this model, you will need two different input layers: City Center and Input Features.
 
@@ -23,11 +23,11 @@ I originally attempted to use the Field Calculator function in the model builder
 
 In this example, I relied upon census tracts from the 2010 Census. Upon a suggestion by my lab instructor of where the center business district of Chicago is located, I selected three census tracts to export as a layer and input as my City Centers layer. Visit this [page](https://github.com/Ian8VT/Ian8VT.github.io/blob/master/QGIS/Lab%202/lab.md) for a second example of this model and how I used a polar plot and scatter plot to demonstrate the data for Burlington, VT.
 
-![direction](https://github.com/Ian8VT/Ian8VT.github.io/blob/master/QGIS/Lab%201/Chicago_Cardinal.png)
+![direction](/qgis/lab_1/Chicago_Cardinal.png)
 
 The map above is a categorized classification of the cardinal direction that census tracts are from the center business district. 
 
-![distance](https://github.com/Ian8VT/Ian8VT.github.io/blob/master/QGIS/Lab%201/Chicago_Distance.png)
+![distance](qgis/lab_1/Chicago_Distance.png)
 
 The map above is a gradual classification of tract distance from the center business district.
 
