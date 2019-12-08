@@ -1,6 +1,6 @@
 # Mapping Water Flow of Mount Kilimanjaro
 
-Return to [SAGA Index Page](../saga.md).
+Return to [SAGA Index Page](../saga_index.md).
 
 Return to [Main Index Page](../../index.md).
 
@@ -41,7 +41,7 @@ In the final tool I used, Channel Network, I created an output that displays the
 
 ![channelnetwork](/saga/kilimanjaro/channelnetworkmap.png)![channelnetworklegend](/saga/kilimanjaro/channelnetworkmap_legend.png)
 
-Return to [SAGA Index Page](../saga.md).
+Return to [SAGA Index Page](../saga_index.md).
 
 Return to [Main Index Page](../../index.md).
 
