@@ -7,3 +7,5 @@
 [Malawi](lab_7/aa_malawi.md)
 
 [Twitter](lab_8/aa_twitter_index.md)
+
+Return to [Main Index Page](../../index.md).
