@@ -19,7 +19,7 @@ All of my data sources and software that I used in this lab are entirely open-so
 ### Annotated SQL Analysis Work Flow
 #### With Maps of Selected Steps
 
-```
+```sql
 SQL analysis performed by Ian Knapp
 
 CREATE TABLE dar_polygons AS
@@ -78,7 +78,7 @@ polygons that are present in wetlands.  */
 
 This is the map of the building_wetlands table created in the previous SQL step. As you can see, only the buildings that are present within wetlands are included in the output data. In this map, each individual building as its own unique ID.  
 
-```
+```sql
 
 CREATE VIEW intersection AS
 SELECT row_number() OVER () AS id, wetlands.way, subwards.fid, subwards.way AS sub_way,
@@ -104,7 +104,7 @@ subward as a single polygon. */
 
 This map portrays the wetland_subward table created in the previous SQL step. In this map, all of the wetland polygons that are within the same subward contain the same unique ID. As an example, I shaded the wetlands of Subward ID 91 to be a a shade of teal. As you can see, even though the components to this wetland are disjointed, they are the same polygon.
 
-```
+```sql
 
 ALTER TABLE wetland_subward ADD COLUMN area FLOAT
 /* Adds a new column in the table in preparation for the next step, the results of which will be 
@@ -161,7 +161,7 @@ though does not require the drains to be in wetlands. */
 
 This is a map of the subwards_drains_wet table created in the previous step. The step created a table in which the output only consists of subward polygons that intersect with drain data and contain wetlands. Subwards that do not meet this qualification are excluded from the output and will not be considered in further analysis.
 
-```
+```sql
 
 :: ERROR Invalid Geometry, Geometry Intersects WITH Self
 :: SELECT row_number() OVER () AS id,
@@ -207,7 +207,7 @@ and drain data*/
 
 This is a map of the building_area_sub table created in the previous step. Although this visually appears similar to the building_wetlands table in which I provided a map of previously, the internal data of this table is very different. In this table, all of the buildings which are present within the same subward are now a single multipolygon. As such, the number of building IDs is the same as the number of subwards which contain wetlands. To visualize this, I shaded the building multipolygon of Subward 91 bright green. As you can see, all buildings that are within this subward are the same multipolygon geometry.
 
-```
+```sql
 
 CREATE TABLE drain_wet AS
 SELECT st_multi(st_intersection(a.way,b.wetland_subward)) AS drain_wet, a.fid AS drain_fid, 
@@ -233,7 +233,7 @@ geometry. The length of the dissolved drains within each subward are summed.  */
 
 This map is the drains_sub table from the previous SQL step. Each of the drains within the output data are shaded as a bright red. Although there visually appears to be a large number of tiny, disjointed drains, each drain that belongs in the same subward is a single multiline geometry. As such, the number of unique IDs in the attribute table is equivalent to the IDs of subwards which contain wetland and drain data.
 
-```
+```sql
 
 CREATE TABLE subwards_info AS
 SELECT a.fid, a.way, b.length AS drain_length_wetland
