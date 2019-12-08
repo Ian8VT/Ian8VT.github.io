@@ -1,5 +1,10 @@
 # Mapping Water Flow of Mount Kilimanjaro
 
+Return to [SAGA Index Page](../saga.md).
+
+Return to [Main Index Page](../../index.md).
+
+
 In this lab, we used the software SAGA to derive a terrain map from a digital elevation model of the Mount Kilimanjaro region to determine water flow. For my data, I accessed the Aster Digital Elevation Model version 3 from the NASA site [EarthData](https://earthdata.nasa.gov/).
 
 The data I downloaded contained two separate zones as defined by Aster. Each zone map contains a color gradient which represents elevation. As you can see, when I attached the two zones together into a single map, there is a clear boundary between the two zones. This is because the highest point of reference within each zone is different, and as such the same color in each zone is associated with a different elevation value. 
@@ -35,3 +40,8 @@ With sinks filled, I calculated flow accumulation. The output demonstrates how m
 In the final tool I used, Channel Network, I created an output that displays the streams and rivers that flow from Mt Kilimanjaro with a value of how much flow they receive from surroundings cells. On the map, blue water networks represent the smallest catchment whereas red represent the largest rivers.
 
 ![channelnetwork](/saga/kilimanjaro/channelnetworkmap.png)![channelnetworklegend](/saga/kilimanjaro/channelnetworkmap_legend.png)
+
+Return to [SAGA Index Page](../saga.md).
+
+Return to [Main Index Page](../../index.md).
+
