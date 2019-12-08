@@ -1,4 +1,8 @@
-In this lab, I used this [model](https://github.com/Ian8VT/Ian8VT.github.io/blob/master/QGIS/Lab%201/model_final.png). For an outline of this model's workflow and functions, check out this previous [page](chicago_lab.md)
+Return to [QGIS and PostGIS Index Page](../qgis.md).
+
+Return to [Main Index Page](../../index.md).
+
+In this lab, I used this [model](https://github.com/Ian8VT/Ian8VT.github.io/blob/master/QGIS/Lab%201/model_final.png). For an outline of this model's workflow and functions, check out this previous [page](../aa_chicago_lab.md)
 
 With this model, I made a distance plot and direction plot of Burlington, VT rent prices. The distance plot displays how median monthly rent prices change at differnet distances from the city center and the direction plot displays monthly rental prices in terms of the direction that the region is from the city center.
 
@@ -18,4 +22,6 @@ The following scatterplot displays census tract median monthly rental cost over 
 
 These two graphics demonstrate that there is not a strong correlation of rental cost based on direction or distance of the census tract from downtown. 
 
-[Return to QGIS Index](https://github.com/Ian8VT/Ian8VT.github.io/blob/master/QGIS/QGIS%20Index.md)
+Return to [QGIS and PostGIS Index Page](../qgis.md).
+
+Return to [Main Index Page](../../index.md).
