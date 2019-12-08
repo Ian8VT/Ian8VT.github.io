@@ -4,4 +4,6 @@
 
 [Dar es Salaam](lab_6/aa_dar_lab.md) lab
 
+[Malawi](lab_7/aa_malawi.md)
+
 [Twitter](lab_8/aa_twitter_index.md)
