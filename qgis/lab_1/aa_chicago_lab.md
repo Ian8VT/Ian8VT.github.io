@@ -3,7 +3,7 @@ Return to [QGIS and PostGIS Index Page](../qgis.md).
 Return to [Main Index Page](../../index.md).
 
 # First QGIS Model
-In this week's lab, I created a model to calculate distance, degree of orientation, and direction of a city's census tracts from a single point. I then used this model in the example of Chicago. Download the model [here](https://github.com/Ian8VT/Ian8VT.github.io/blob/master/QGIS/Lab%201%20and%202/distance_cardinaldirection.model3).
+In this week's lab, I created a model to calculate distance, degree of orientation, and direction of a city's census tracts from a single point. I then used this model in the example of Chicago. Download the model [here](/qgis/lab_1/distance_cardinaldirection.model3).
 
 ## Workflow of Model
 
