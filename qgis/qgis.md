@@ -8,4 +8,4 @@
 
 [Twitter](lab_8/aa_twitter_index.md)
 
-Return to [Main Index Page](../../index.md).
+Return to [Main Index Page](../index.md).
