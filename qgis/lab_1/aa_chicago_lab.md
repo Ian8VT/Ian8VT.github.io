@@ -27,7 +27,7 @@ In this example, I relied upon census tracts from the 2010 Census. Upon a sugges
 
 The map above is a categorized classification of the cardinal direction that census tracts are from the center business district. 
 
-![distance](qgis/lab_1/Chicago_Distance.png)
+![distance](/qgis/lab_1/Chicago_Distance.png)
 
 The map above is a gradual classification of tract distance from the center business district.
 
