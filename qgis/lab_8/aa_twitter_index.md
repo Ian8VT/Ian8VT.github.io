@@ -97,7 +97,7 @@ GROUP BY geoid
 
 This is the map of the doriantweets_counties table created in the previous step. All points that are within the same county are a single multipoint geometry with a single summed count of how many tweets occured within that county. Once the equivalent of this output is created for the baseline tweets, these values can easily be transfered into the counties layer since this point data contains the geoid of the county it overlays.
 
-```
+```sql
 
 :: ERROR, not the desired results. Realized the from map was not the proper location to compile total tweet database
 ::ALTER TABLE doriantweets ADD COLUMN tweets INTEGER;
@@ -137,7 +137,7 @@ WHERE counties.geoid = november_tweets.geoid
 
 As you can see, this map only visually displays the counties. Yet, within the attribute table, all of the summed counts of storm tweets and baseline tweets are attached to each county in this map. In the next steps, the outputs of the calculation will also be attached in the table with its respective county. 
 
-```
+```sql
 
 UPDATE counties SET tweets_dorian = 0;
 UPDATE counties SET tweets_dorian = doriantweets_counties.sum
