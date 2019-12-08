@@ -1,3 +1,7 @@
+Return to [QGIS and PostGIS Index Page](../qgis.md).
+
+Return to [Main Index Page](../../index.md).
+
 # First QGIS Model
 In this week's lab, I created a model to calculate distance, degree of orientation, and direction of a city's census tracts from a single point. I then used this model in the example of Chicago. Download the model [here](https://github.com/Ian8VT/Ian8VT.github.io/blob/master/QGIS/Lab%201%20and%202/distance_cardinaldirection.model3).
 
@@ -28,7 +32,8 @@ The map above is a categorized classification of the cardinal direction that cen
 The map above is a gradual classification of tract distance from the center business district.
 
 
-[Return to QGIS Index](https://github.com/Ian8VT/Ian8VT.github.io/blob/master/QGIS/QGIS%20Index.md)
+Return to [QGIS and PostGIS Index Page](../qgis.md).
 
-[Return to Main Page](index.md)
+Return to [Main Index Page](../../index.md).
+
 
