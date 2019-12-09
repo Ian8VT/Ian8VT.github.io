@@ -21,9 +21,9 @@ All of my data sources and software that I used in this lab are entirely open-so
 
 2) The second stage of steps established a layer of wetlands in which the feature is defined by subward. I first intersected the wetland layer with the second starting input of the analysis, the subwards polygon feature. This drew the subward boundary lines onto the wetland features and applied the unique ID of subwards onto the wetlands that intersect each respective subward. I then dissolved all wetland features which contain the same subward ID value as a single geoemtry so that all wetland terrain within the same subward, even if disjointed and not connected, will be considered the same polygon feature. I provided an example map of this output in the Annotated SQL Workflow below. I forgot to sum the areas of each wetland features when I unioned them together, but simply recalculated wetland area in a subsequent step.
 
-3) 
+3) In this phase of steps I created a new subward layer of only subwards that contain drain line data and intersect wetlands. I intersected the drain input data with the subwards and pulled a new layer out of subwards which fully intersect drains. I then intersected this new subward layer with the wetland layer and further pulled the subwards that intersect wetlands into a new layer. This output, which I provide in the SQL Workflow, ony features subwards which contain drain data and intersect wetlands. 
 
-### Annotated SQL Analysis Work Flow
+### Annotated SQL Analysis Workflow
 #### With Maps of Selected Steps
 
 ```sql
