@@ -4,7 +4,7 @@ Return to [Main Index Page](../../index.md).
 
 ## Analyis of Rent in Burlington, VT
 
-In this lab, I used this [model](/qgis/lab_1/model_final.png). For a narration of the model's workflow and functions, check out this previous [page](../lab_1/aa_chicago_lab.md)
+In this lab, I used a [model](/qgis/lab_1/model_final.png) that calculates the distance and direction of census tracts from a chosen point. For a narration of the model's workflow and functions, check out this previous [page](../lab_1/aa_chicago_lab.md).
 
 With this model, I made a distance plot and direction plot of Burlington, VT rent prices. The distance plot displays how median monthly rent prices change at differnet distances from the city center and the direction plot displays monthly rental prices in terms of the direction that the region is from the city center. The purpose of this is to determine if there are any spatial trends, either with direction or distance from the city center, which affect rental prices in the city. 
 
