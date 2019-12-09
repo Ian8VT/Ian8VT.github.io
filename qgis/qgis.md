@@ -1,4 +1,4 @@
-This is my index of projects that I performed on either QGIS or PostGIS. 
+The following project links are labs that I performed with a combination of QGIS and PostGIS softwares. Each software is referenced as used within each lab write-up. 
 
 #### [Lab One](lab_1/aa_chicago_lab.md)
 The development of a model to measure distance and direction of census tracts from a single location with Chicago, Illinois as the example.
