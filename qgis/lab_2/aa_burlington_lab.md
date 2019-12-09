@@ -10,7 +10,9 @@ The following two maps represent the direction of Burlington's census tracts fro
 
 ### Data Sources
 
-I downloaded my 2010 census tract shapefile for Vermont from the [Vermont Open Geodata Portal](https://geodata.vermont.gov/datasets/df13910a7c9943849d6986b703e5eafd_4). This dataset is a TIGER/Line shapefile developed by the US Census. The data as accessed from the Vermont website already includes demographic data attached onto the census tracts, but does not have median monthly rent data. 
+I downloaded my 2010 census tract shapefile for Vermont from the [Vermont Open Geodata Portal](https://geodata.vermont.gov/datasets/df13910a7c9943849d6986b703e5eafd_4). This dataset is a TIGER/Line shapefile developed by the US Census. The data as accessed from the Vermont website already includes demographic data attached onto the census tracts, but does not have median monthly rent data. Currently cannot locate the source of my rent information, but it is contained within a file which only considers the median monthly rent of census tracts within the Burlington urban area. I relied upon [Google Maps](https://www.google.com/maps) to determine my city center location. 
+
+To download my data sources: 
 
 ![direction](/qgis/lab_2/burlington_cardinal.png)
 
