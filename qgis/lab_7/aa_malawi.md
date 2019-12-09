@@ -4,9 +4,13 @@ In 2014, Malcomb et al. published an extensive paper which outlined their method
 
 ### Malcomb et al.'s Methodology
 
+![assessment](/qgis/lab_7/malcomb.assessment.png)
 
+![malcomb_map](/qgis/lab_7/malcomb_vulnerability.png)
 
 
 ![model](/qgis/lab_7/model_2.5min.png)
 
 [download](/qgis/lab_7/model_2.5min.model3)
+
+![course_map](/qgis/lab_7/malawi_course.png)
