@@ -38,7 +38,7 @@ The following scatterplot displays census tract median monthly rental cost over 
 
 This map displays the median monthly rental cost of each Burlington census tract.
 
-![rent](/qgis/lab_2/census_.png)
+![rent](/qgis/lab_2/census__.png)
 
 These two graphics demonstrate that there is not a strong correlation of rental cost based on direction or distance of the census tract from downtown. 
 
