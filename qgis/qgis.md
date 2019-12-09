@@ -1,18 +1,18 @@
 This is my index of projects that I performed on either QGIS or PostGIS. 
 
-#### [Chicago](lab_1/aa_chicago_lab.md)
-The development of a model to measure distance and direction of census tracts from a point, with Chicago, IL as the example. 
+#### [Lab One](lab_1/aa_chicago_lab.md)
+The development of a model to measure distance and direction of census tracts from a single location with Chicago, Illinois as the example.
 
-#### [Burlington](lab_2/aa_burlington_lab.md)
-The use of a distance and direction model to examine spatial distribution of monthly rental prices in Burlington, Vt.
+#### [Lab Two](lab_2/aa_burlington_lab.md)
+Examining if rent prices in Burlington, Vermont follow a spatial pattern based around the city's center business district.
 
-#### [Dar es Salaam](lab_6/aa_dar_lab.md) lab
-OpenStreetMap data to measure the density of drains in the most flood prone regions of Dar es Salaam, Tanzania.
+#### [Lab Six](lab_6/aa_dar_lab.md)
+Using OpenStreetMap data of Dar es Salaam, Tanzania, to measure the urban resiliency of the most flood prone regions of the city. 
 
-#### [Malawi Lab](lab_7/aa_malawi.md)
-Attempting to replicate the academic paper of Malcomb et. al in measuring environmental resiliency.
+#### [Lab Seven](lab_7/aa_malawi.md)
+A question of replicability: An attempt to replicate the Malcomb et al. study on Malawi's environmental resilience.  
 
-#### [Twitter](lab_8/aa_twitter_index.md)
-Measuring the effect of 
+#### [Lab Eight](lab_8/aa_twitter_index.md)
+Comparing the spatial effect of Hurricane Dorian's projected path and Sharpiegate controversy within Twitter activity.
 
 Return to [Main Index Page](../index.md).
