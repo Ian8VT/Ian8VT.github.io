@@ -8,8 +8,6 @@ In this lab, I used this [model](/qgis/lab_1/model_final.png). For a narration o
 
 With this model, I made a distance plot and direction plot of Burlington, VT rent prices. The distance plot displays how median monthly rent prices change at differnet distances from the city center and the direction plot displays monthly rental prices in terms of the direction that the region is from the city center. The purpose of this is to determine if there are any spatial trends, either with direction or distance from the city center, which affect rental prices in the city. 
 
-The following two maps represent the direction of Burlington's census tracts from the central business district and the distance of those tracts from that point, respectively. 
-
 ### Data Sources
 
 I downloaded my 2010 census tract shapefile for Vermont from the [Vermont Open Geodata Portal](https://geodata.vermont.gov/datasets/df13910a7c9943849d6986b703e5eafd_4). This dataset is a TIGER/Line shapefile developed by the US Census. The data as accessed from the Vermont website already includes demographic data attached onto the census tracts, but does not have median monthly rent data. Currently cannot locate the source of my rent information, but it is contained within a file which only considers the median monthly rent of census tracts within the Burlington urban area. I relied upon [Google Maps](https://www.google.com/maps) to determine my city center location. 
