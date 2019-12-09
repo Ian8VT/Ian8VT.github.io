@@ -36,11 +36,12 @@ Since every county in the counties layer had a unique geoid, I intersected all o
 
 At this point, all of the data I need is within the counties layer. I then added a new column to calculate the frequency of tweets normalized by population for the storm tweet data. I used the following equation to calculate this: ((# of tweets/ county population)* 10000). I added an additional column to calculate the normalized difference between storm data and the baseline. For this, I used the following equation: (count of storm tweets - count of baseline tweets)/((count of storm tweets + count of baseline tweets)* 1.0) where storms tweets + baseline tweets > 0. 
 
-#### GeoDa Spatial Statistics
+#### GeoDa Spatial Statistics Steps
 
 In these steps, I used the tools of the program to calculate the Getis-Ord G* spatial statistic of the storm tweet frequency normalized by county population and of the normalized difference between storm tweets and baseline tweets. This produced two of the same-styled maps for each calculation. One map is a hot-cold map with some counties shaded red, some blue, and others left neutral. The second map is the display of these counties shaded in the hot-cold map, but with shadings of green to demonstrate statistical significance. Further explanation of how to interpret these maps is explained in the results section.
 
 #### Annotated SQL Workflow in PostGIS
+##### With Maps of Selected Steps
 
 ```sql
 Developed by Ian8VT
