@@ -16,8 +16,7 @@ To download my data sources: [Census Tracts](/qgis/lab_2/VT_2010_Census_Tract_Bo
 
 ### Steps Before Model
 
-
-
+In order to use my model, I prepared my data to only consider the census tracts that consist of the Burlington urban area, attached the tract rent data to that layer, and created a new layer which represents the city center. First, I joined the rental data to the census tracts. Each dataset had a join column corresponding to the census tract that I used to facilitate the join. Then, in the census tract table I selected all of the tracts that contain the new rent data and extracted a new layer. This created a layer of just the census tracts of the Burlington urban area with attached rent information, which I used as one of the two model inputs. As for the second input, the downtown layer, I chose to consider Church St as the central business district of the city. I then typed "Church St Burlington, VT" into Google Maps and then copied the coordinates into an Excel file that I saved as a csv. In QGIS, I selected Layer -> Add Layer -> Add Delimited Text Layer and then selected my csv file and defined the x and y attributes and projection type, which in the end won't matter since the model transforms the inputs into a set projection type.  
 ![direction](/qgis/lab_2/burlington_cardinal.png)
 
 ![direction](/qgis/lab_2/burlington_dist.png)
