@@ -14,6 +14,10 @@ I downloaded my 2010 census tract shapefile for Vermont from the [Vermont Open G
 
 To download my data sources: [Census Tracts](/qgis/lab_2/VT_2010_Census_Tract_Boundaries_and_Statistics.zip); [Rent Data](/qgis/lab_2/Rent_Data)
 
+### Steps Before Model
+
+
+
 ![direction](/qgis/lab_2/burlington_cardinal.png)
 
 ![direction](/qgis/lab_2/burlington_dist.png)
