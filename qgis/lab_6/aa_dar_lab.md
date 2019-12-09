@@ -21,7 +21,11 @@ All of my data sources and software that I used in this lab are entirely open-so
 
 2) The second stage of steps established a layer of wetlands in which the feature is defined by subward. I first intersected the wetland layer with the second starting input of the analysis, the subwards polygon feature. This drew the subward boundary lines onto the wetland features and applied the unique ID of subwards onto the wetlands that intersect each respective subward. I then dissolved all wetland features which contain the same subward ID value as a single geoemtry so that all wetland terrain within the same subward, even if disjointed and not connected, will be considered the same polygon feature. I provided an example map of this output in the Annotated SQL Workflow below. I forgot to sum the areas of each wetland features when I unioned them together, but simply recalculated wetland area in a subsequent step.
 
-3) In this phase of steps I created a new subward layer of only subwards that contain drain line data and intersect wetlands. I intersected the drain input data with the subwards and pulled a new layer out of subwards which fully intersect drains. I then intersected this new subward layer with the wetland layer and further pulled the subwards that intersect wetlands into a new layer. This output, which I provide in the SQL Workflow, ony features subwards which contain drain data and intersect wetlands. 
+3) In this phase of steps I created a new subward layer of only subwards that contain drain line data and intersect wetlands. I intersected the drain input data with the subwards and pulled a new layer out of subwards which fully intersect drains. I then intersected this new subward layer with the wetland layer and further pulled the subwards that intersect wetlands into a new layer. This output, which I provided a map of in the SQL Workflow, ony features subwards which contain drain data and intersect wetlands. 
+
+4) For this step I dissolved all building polygons that are within the same subward into a single geometry. I first intersected the subward layer onto the layer of buildings in wetlands. This applied the subward boundaries onto the building layer and provided each building polygon with the ID of the subward it is within. Similar to the processes of step 2, I then dissolved all buildings which contain the same subward ID into a single geometry. This map is provided in the SQL Workflow.
+
+5)
 
 ### Annotated SQL Analysis Workflow
 #### With Maps of Selected Steps
@@ -275,7 +279,9 @@ FROM building_wet_sub
 WHERE subward IS NOT NULL
 GROUP BY sub_id
 /* Makes a table of buildngs dissolved by subward as a single polygon and only considers 
-buildings within subwards that contain final drain density data for wetlands */
+buildings within subwards that contain final drain density data for wetlands. This is the redo
+of an analysis step in order to streamline the data for a final deliverable. However,
+I ultimately chose not to include the building feature in the Leaflet map*/
 
 CREATE TABLE final_data AS
 SELECT id AS subward_id, drain_length_wetland AS wetland_drain_length, 
