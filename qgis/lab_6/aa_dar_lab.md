@@ -4,7 +4,7 @@ Return to [QGIS and PostGIS Index Page](../qgis.md).
 
 Return to [Main Index Page](../../index.md).
 
-- [Data Sources](###Data%20Sources)
+-[Data Sources](###Data%20Sources)
 
 ### Introduction
 Dar es Salaam, Tanzania, is a highly mapped city on OpenStreetMap as a result of a number of [urban resiliency](https://www.worldbank.org/en/news/feature/2018/02/14/next-generation-of-youth-in-tanzania-to-be-equipped-with-critical-skills-in-urban-resilience) projects. This provides a unique opportunity to conduct a number of different geospatial analyses related to the city. [Ramani Huria](http://ramanihuria.org/), a community-based mapping project in the city, accesses this vast array of geospatial data to draw attention to the presence of damaging seasonal floods in the city. As Ramani Huria notes, these flooding events are often compounded by a lack of necessary infrastructure and city planning. Further, there are a large number of structures and settlements in the city that are built on terrain designated as wetland - locations expected to be highly suscpetible to flood disturbances.
