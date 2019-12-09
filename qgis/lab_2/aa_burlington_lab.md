@@ -8,6 +8,10 @@ With this model, I made a distance plot and direction plot of Burlington, VT ren
 
 The following two maps represent the direction of Burlington's census tracts from the central business district and the distance of those tracts from that point, respectively. 
 
+### Data Sources
+
+I downloaded my 2010 census tract shapefile for Vermont from the [Vermont Open Geodata Portal](https://geodata.vermont.gov/datasets/df13910a7c9943849d6986b703e5eafd_4). This dataset is a TIGER/Line shapefile developed by the US Census. The data as accessed from the Vermont website already includes demographic data attached onto the census tracts, but does not have median monthly rent data. 
+
 ![direction](/qgis/lab_2/burlington_cardinal.png)
 
 ![direction](/qgis/lab_2/burlington_dist.png)
