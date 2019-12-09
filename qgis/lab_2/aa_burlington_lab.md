@@ -36,7 +36,7 @@ The following scatterplot displays census tract median monthly rental cost over 
 
 ![scatter](/qgis/lab_2/scatter_use.png.png)
 
-This map displays the median monthly rental cost of each Burlington census tract.
+This map displays the median monthly rental cost of each Burlington census tract. Note the three white census tracts in the map. The largest and most southern of them is a tract that does not contain rental data. The tract nearest to the largest is an airport and as such does not contain rental data. The third and most northern census that's white on the map is because its rental values fall within the white shade of the legend.
 
 ![rent](/qgis/lab_2/census__.png)
 
