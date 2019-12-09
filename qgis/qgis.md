@@ -1,4 +1,4 @@
-This is my index of projects performed directly on QGIS or using the PostGIS database via the QGIS interphase. 
+This is my index of projects that I performed on either QGIS or PostGIS. 
 
 #### [Chicago](lab_1/aa_chicago_lab.md)
 The development of a model to measure distance and direction of census tracts from a point, with Chicago, IL as the example. 
