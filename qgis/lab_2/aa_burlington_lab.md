@@ -14,7 +14,7 @@ I downloaded my 2010 census tract shapefile for Vermont from the [Vermont Open G
 
 To download my data sources: [Census Tracts](/qgis/lab_2/VT_2010_Census_Tract_Boundaries_and_Statistics.zip); [Rent Data](/qgis/lab_2/Rent_Data)
 
-For this lab, I used [QGIS](https://www.qgis.org/en/site/) to run the model and prepare the data prior to model. 
+For this lab, I used [QGIS](https://www.qgis.org/en/site/) to run the model and prepare the data prior to model. After the model, I used the Data Plotly plugin in QGIS to develop a scatterplot and polarplot. 
 
 ### Steps Before Model
 
