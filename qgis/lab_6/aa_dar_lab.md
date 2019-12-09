@@ -16,6 +16,13 @@ For this lab, I relied upon three input layers: wetland and building multipolygo
 
 All of my data sources and software that I used in this lab are entirely open-source. As such, anyone with internet access and a computer with enough processing power to operate QGIS is not only able to perform this lab, but also pursue other research questions related to the urban resiliency of Dar es Salaam. Further, displaying the final map on Leaflet increases the accessibility of my results to include those who only have a mobile device and not a computer.
 
+### Steps of Analysis
+1) The first set of steps consisted of creating a layer of building polygons and a layer of wetlands. I selected 'wetlands' from the 'natural' column in the original OSM polyogn feature as well as all features that were not 'null' in the 'building' attribute column. I transformed their projection, I calculated the area of the features in the unit of the new projection, and then split them into their own layers. When I made buldings its own layer, I only selected buildings which intersected with the new wetlands layer. I displayed this map in the Annotated SQL Workflow under the series of SQL steps which created the map.
+
+2) The second stage of steps established a layer of wetlands in which the feature is defined by subward. I first intersected the wetland layer with the second starting input of the analysis, the subwards polygon feature. This drew the subward boundary lines onto the wetland features and applied the unique ID of subwards onto the wetlands that intersect each respective subward. I then dissolved all wetland features which contain the same subward ID value as a single geoemtry so that all wetland terrain within the same subward, even if disjointed and not connected, will be considered the same polygon feature. I provided an example map of this output in the Annotated SQL Workflow below. I forgot to sum the areas of each wetland features when I unioned them together, but simply recalculated wetland area in a subsequent step.
+
+3) 
+
 ### Annotated SQL Analysis Work Flow
 #### With Maps of Selected Steps
 
@@ -98,14 +105,6 @@ GROUP BY fid
 /* This takes the previously created layer and dissolves all disjointed wetlands within the same 
 subward as a single polygon. */
 
-```
-
-![wetland_subward](/qgis/lab_6/wetland_subward_1.png)
-
-This map portrays the wetland_subward table created in the previous SQL step. In this map, all of the wetland polygons that are within the same subward contain the same unique ID. As an example, I shaded the wetlands of Subward ID 91 to be a a shade of teal. As you can see, even though the components to this wetland are disjointed, they are the same polygon.
-
-```sql
-
 ALTER TABLE wetland_subward ADD COLUMN area FLOAT
 /* Adds a new column in the table in preparation for the next step, the results of which will be 
 a decimal number (float data point) */
@@ -113,6 +112,14 @@ a decimal number (float data point) */
 UPDATE wetland_subward
 SET area = st_area(wetland_subward)
 /* Calculates the area of all the wetlands within each subward */
+
+```
+
+![wetland_subward](/qgis/lab_6/wetland_subward_1.png)
+
+This map portrays the wetland_subward table created in the previous SQL step. In this map, all of the wetland polygons that are within the same subward contain the same unique ID. As an example, I shaded the wetlands of Subward ID 91 to be a a shade of teal. As you can see, even though the components to this wetland are disjointed, they are the same polygon.
+
+```sql
 
 ALTER TABLE drains ADD COLUMN length FLOAT
 /* Adds a new column in the table in preparation for the next step, the results of which will be 
