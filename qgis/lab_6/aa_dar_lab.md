@@ -33,7 +33,7 @@ All of my data sources and software that I used in this lab are entirely open-so
 #### With Maps of Selected Steps
 
 ```sql
-SQL analysis performed by Ian Knapp
+SQL analysis developed by Ian8VT
 
 CREATE TABLE dar_polygons AS
 SELECT osm_id AS id, building, "natural", st_transform(way,32737) AS way, way_area
