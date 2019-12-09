@@ -42,7 +42,7 @@ This map displays the median monthly rental cost of each Burlington census tract
 
 ### Conclusion
 
-All of these graphics demonstrate that there is not a strong correlation of direction or distance from the city center to rental cost in Burlington, VT. Though, it is easy to see if a pattern emerges in other cities throughout the country. Since census shapefiles and data is openly available for the public, this model can be used on any city. Further, there are a number of open-source plugins in QGIS that can be used to display graphics of the results from analyses in a variety of manners. 
+All of these graphics demonstrate that there is not a strong correlation of direction or distance from the city center to rental cost in Burlington, VT. Though, with this model it is easy to see if a pattern emerges in other cities throughout the country. Since census shapefiles and data is openly available for the public, this model can be used on any city. Further, there are a number of open-source plugins in QGIS that can be used to display graphics of the results from analyses in a variety of manners. 
 
 Return to [QGIS and PostGIS Index Page](../qgis.md).
 
