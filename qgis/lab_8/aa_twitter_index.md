@@ -179,13 +179,9 @@ This map, developed in GeoDa, is of the hot spots and cold spots of twitter acti
 
 This map, developed in GeoDa, contains the same data from the previous hot-cold map on the frequency of tweets related to the storm normalized by population. However, this map displays how significantly high or low the frequency of storm tweets were for the population of counties. Using the hot-cold map as your filter, you can see how significantly high or low the frequency of storm tweets were for counties. The darker the shade of green, the more statistically significant those counties' storm tweets were for its population. 
 
-![hotcold_normalized_tweet_difference](/qgis/lab_8/counties_ndti.png)
+![normalized tweet difference](/qgis/lab_8/ndti_.png)
 
-This map, developed in GeoDa, is a hot-cold map of the normalized difference of Twitter activity between storm tweets and the baseline. Blue shaded areas are counties in which the frequency of storm tweets was greater than baseline. Red shaded areas are counties in which the frequency of baseline tweets was greater than tweets related to Hurricane Dorian.
-
-![pp_values_normalized_tweet_difference](/qgis/lab_8/counties_ndti_ppvalues.png)
-
-This map, developed in GeoDa, displays the data of the previous hot-cold map, but displays how statistically significance of the shift from baseline data. Using the hot-cold map as your lens, you can see that areas along the cost tweeted about Hurricane Dorian significantly more than baseline. 
+This map, developed in QGIS, is a cholorpleth map of the normalized difference of Twitter activity between storm tweets and the baseline. Red shaded areas are counties in which the frequency of storm tweets was greater than baseline. Blue shaded areas are counties in which the frequency of baseline tweets was greater than tweets related to Hurricane Dorian. The darker the shade, the greater the difference.
 
 
 ### Conclusion
