@@ -16,7 +16,9 @@ The 'adaptive capacity' input consists of twelve categories of qualitative surve
 
 #### Physical Exposure
 
-### Steps to Reproduce
+### Methodolody to Reproduce
+
+
 
 ![malcomb_map](/qgis/lab_7/malcomb_vulnerability.png)
 
