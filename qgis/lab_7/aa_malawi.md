@@ -24,17 +24,16 @@ In order to access the DHS data, my professor Joseph Holler applied for special 
 
 #### Livelihood Sensitivity 
 
-Desptie the best efforts of our professor, this data simply could not be located. This is highly questionable and by definition ensures that the methodology of Malcomb et al. is not completely reproducible. As this component consisted of 20% of the authors' final vulnerability assessment, our best attempts to reproduce will only be able to account for 80% of the variables considered. 
+Despite the best efforts of our professor, this data simply could not be located. This is highly questionable and by definition ensures that the methodology of Malcomb et al. is not completely reproducible. As this component consisted of 20% of the authors' final vulnerability assessment, our best attempts to reproduce will only be able to account for 80% of the variables considered. 
 
 #### Physical Exposure
 
+### Results
 
-
-![malcomb_map](/qgis/lab_7/malcomb_vulnerability.png)B
-
+Below is the image of the [model](/qgis/lab_7/model_2.5min.model3) developed to perform the vulnerability assessment. 
 
 ![model](/qgis/lab_7/model_2.5min.png)
 
-[download](/qgis/lab_7/model_2.5min.model3)
+![malcomb_map](/qgis/lab_7/malcomb_vulnerability.png)
 
 ![course_map](/qgis/lab_7/malawi_course.png)
