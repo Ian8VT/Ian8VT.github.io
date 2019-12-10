@@ -1,10 +1,15 @@
-### Davies et. al, 2019
+### Literature Responses
+
+[Return to Main Index](../index.md)
+
+
+## Davies et. al, 2019
 
 Open source geospatial technologies provide an important avenue that is accessible for peoples around the world to actively engage and interact with their changing landscape in an age of increased climatic variability. The article [_An Open-Source Mobile Geospatial Platform for Promoting Climate-Smart Livelihood-Landscape Systems in Fiji and Tonga_](https://www.int-arch-photogramm-remote-sens-spatial-inf-sci.net/XLII-4-W14/31/2019/) (Davies et. al, 2019) outlines a project that, as you might expect with such a title, develops a highly accessible mobile platform of geospatial information in order to better provide largely self-subsistence farmers within regions of Fiji and Tonga with tools helpful in the interaction with a climatically vulnerable landscape. Rather than develop an entirely new technological platform to achieve this goal, this project funded by the Australian government screened numerous open-source geospatial platforms with specific criteria in order to determine which present options best fit their needs. This resulted in the determination of QField, an Android accessible mobile version of QGIS, as the base platform for users to digitize geospatial information which can then be extracted as maps in the full version of QGIS. Additionally, the project team relied upon PostGIS for reference spatial datasets and Google Earth Engine for dynamic land cover and climate layers. After users collect geospatial data through the QField plugin of QGIS, the new information is synchronized into the PostGIS reference datasets.
 
 The results of this project are not yet known, as field-testing only began in June and July in 2019, though the authors emphasize that value will be found in a system of platforms which is capable of continual exploration, refinement, and development of spatial information that is directly linked to the users’ need for this information. I must agree that the value in this set-up is self-evident, and such a project can only be properly developed through the use of open-source geospatial platforms. As such, the people who are impacted by changing conditions of a landscape due to increased climatic variability can first-hand upload and share information which will then assist neighboring users.
 
-### Allen et. al, 2016
+## Allen et. al, 2016
 
 Geospatial information from social media sites, such as Twitter, have the potential to be an important source of data to perform a variety of geographic analyses. In the article *Applying GIS and Machine Learning Methods to Twitter Data for Multiscale Surveillance of Influenza* (Allen et al, 2016), Twitter data from the 2012-2013 winter season is used to build a model that is able to gather and filter tweets pertaining to influenza. Then, with this model, the paper examines if Twitter is a reliable source of disease outbreak monitoring. 
 
