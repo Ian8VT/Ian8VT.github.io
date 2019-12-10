@@ -190,7 +190,9 @@ It is evident from the context analyses of tweets that the Sharpiegate controver
 
 ### Cited Literature 
 
-Elwood, Sarah, et al. "Researching Volunteered Geogr,aphic Information: Spatial Data, Geographic Data, Geographic Research, and New Social Practice." *Annals of the Association of American Geographers*, vol. 102, no. 3, pp. 571-590. doi: 10.1080/00045608.2011.595657
+Elwood, S., Goodchild, M. F., & Sui, D. Z. (2011). Researching volunteered geographic information: Spatial data, geographic data, geographic research, and new social practice. Annals of the Associaton of American Geographers, 102, 571-590. doi:10.1080/00045608.2011.595657
+
+
 
 
 Return to [QGIS and PostGIS Index Page](../qgis.md).
