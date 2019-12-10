@@ -1,5 +1,5 @@
 # Measuring Uncerntainty
-### A Comparison of ASTER and SRTM Digital Elevation Models
+## A Comparison of ASTER and SRTM Digital Elevation Models
 
 Return to [SAGA Index Page](../saga_index.md).
 
