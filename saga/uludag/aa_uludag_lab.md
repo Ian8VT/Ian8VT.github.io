@@ -11,11 +11,11 @@ For this hydrology analysis, I conducted one analysis with ASTER data as the ini
 
 A closer look at the northern cluster of information.
 
-![image_zoom_north](https://github.com/Ian8VT/Ian8VT.github.io/blob/master/final_zoom_north.png)
+![image_zoom_north](/saga/uludag/final_zoom_north.png)
 
 A closer look at the southern cluster. 
 
-![image_zoom_south](https://github.com/Ian8VT/Ian8VT.github.io/blob/master/final_zoom_south.png)
+![image_zoom_south](/saga/uludag/final_zoom_south.png)
 
 Return to [SAGA Index Page](../saga_index.md).
 
