@@ -41,7 +41,7 @@ Through this process, we realized that some DHS categories did not consist of a 
 
 #### Livelihood Sensitivity 
 
-Despite the best efforts of our professor, this data simply could not be located. This is highly questionable and by definition ensures that the methodology of Malcomb et al. is not completely reproducible. As this component consisted of 20% of the authors' final vulnerability assessment, our best attempts to reproduce will only be able to account for 80% of the variables considered. The shapefiles for livelihood zones is easy to download from FewsNET, however the attribute table is completely empty. My professor brought it to my attention that the values used by Malcomb et al. in association with the livelihood zones are likely held by FewsNET, but MVAC, for which there is no internet site or online database.
+Despite the best efforts of our professor, this data simply could not be located. This is highly questionable and by definition ensures that the methodology of Malcomb et al. is not completely reproducible. As this component consisted of 20% of the authors' final vulnerability assessment, our best attempts to reproduce will only be able to account for 80% of the variables considered. The shapefiles for livelihood zones is easy to download from FewsNET, however the attribute table is completely empty. My professor brought it to my attention that the values used by Malcomb et al. in association with the livelihood zones are likely held by FewsNET, but MVAC, for which there is no internet site or online database. However, as you can see in the model, the geographic extent of the empty shapefile of livelihood zones was used as the base layer to clip all other layer extents.
 
 #### Physical Exposure
 
