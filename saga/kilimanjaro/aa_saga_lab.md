@@ -13,7 +13,7 @@ The data I downloaded contained two separate zones as defined by Aster. Each zon
 
 
 
-To ammend this discrepancy, I performed the mosaic tool to standardize the two zonal maps as a single map. Now, the values of each gradient of color is consistent throughout the map. For this function, I also set the geographic parameters to a more contained area focused on the mountain, that way further procedures only focus on our area of concern and don't spend excess amounts of time computing data beyond Mountain Kilimanjaro. With this map, I reprojected the coordinate system to Transverse Mercator (UTM) which is a more accurate projection for linear measurements. I named this elevation data set MosaicAster. 
+To amend this discrepancy, I performed the mosaic tool to standardize the two zonal maps as a single map. Now, the values of each gradient of color is consistent throughout the map. For this function, I also set the geographic parameters to a more contained area focused on the mountain, that way further procedures only focus on our area of concern and don't spend excess amounts of time computing data beyond Mountain Kilimanjaro. With this map, I reprojected the coordinate system to Transverse Mercator (UTM) which is a more accurate projection for linear measurements. I named this elevation data set MosaicAster. 
 
 ![MosaicAster](/saga/kilimanjaro/mosaicastermap.png)![MosaicAsterLegend](/saga/kilimanjaro/mosaicastermap_legend.png)
 
