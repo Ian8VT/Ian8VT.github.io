@@ -1,4 +1,5 @@
-# Comparing Uncertainty in between ASTER and SRTM Digital Elevation Models
+# Measuring Uncerntainty
+### A Comparison of ASTER and SRTM Digital Elevation Models
 
 Return to [SAGA Index Page](../saga_index.md).
 
