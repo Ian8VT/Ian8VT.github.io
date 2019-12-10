@@ -2,11 +2,11 @@ Return to [QGIS and PostGIS Index Page](../qgis.md).
 
 Return to [Main Index Page](../../index.md).
 
-## Analyis of Rent in Burlington, VT
+## Analysis of Rent in Burlington, VT
 
 In this lab, I used a [model](/qgis/lab_1/model_final.png) that I previously developed which calculates the distance and direction of census tracts from a chosen point. For a narration of the model's workflow and functions, check out this previous [page](../lab_1/aa_chicago_lab.md).
 
-With this model, I made a distance plot and direction plot of Burlington, VT rent prices. The distance plot displays how median monthly rent prices change at differnet distances from the city center and the direction plot displays monthly rental prices in terms of the direction that the region is from the city center. The purpose of this is to determine if there are any spatial trends, either with direction or distance from the city center, which affect rental prices in the city. 
+With this model, I made a distance plot and direction plot of Burlington, VT rent prices. The distance plot displays how median monthly rent prices change at different distances from the city center and the direction plot displays monthly rental prices in terms of the direction that the region is from the city center. The purpose of this is to determine if there are any spatial trends, either with direction or distance from the city center, which affect rental prices in the city. 
 
 ### Data Sources
 
@@ -14,7 +14,7 @@ I downloaded my 2010 census tract shapefile for Vermont from the [Vermont Open G
 
 To download my data sources: [Census Tracts](/qgis/lab_2/VT_2010_Census_Tract_Boundaries_and_Statistics.zip); [Rent Data](/qgis/lab_2/Rent_Data)
 
-For this lab, I used [QGIS](https://www.qgis.org/en/site/) to run the model and prepare the data prior to model. After the model, I used the Data Plotly plugin in QGIS to develop a scatterplot and polarplot. 
+For this lab, I used [QGIS](https://www.qgis.org/en/site/) to run the model and prepare the data prior to model. After the model, I used the Data Plotly plugin in QGIS to develop a scatterplot and polar plot. 
 
 ### Steps Before Model
 
@@ -36,7 +36,7 @@ The following scatterplot displays census tract median monthly rental cost over 
 
 ![scatter](/qgis/lab_2/scatter_use.png.png)
 
-This map displays the median monthly rental cost of each Burlington census tract. Note the three white census tracts in the map. The largest and most southern of them is a tract that does not contain rental data. The tract nearest to the largest is an airport and as such does not contain rental data. The third and most northern census that's white on the map is because its rental values fall within the white shade of the legend.
+This map displays the median monthly rental cost of each Burlington census tract. Note the three white census tracts in the map. The largest and most southern of them is a tract that does not contain rental data, possibly the result of a data gap. The tract nearest to the largest gap is an airport and as such does not contain houses and rental data. The third and most northern census that's white on the map is because its rental values fall within the white shade of the legend.
 
 ![rent](/qgis/lab_2/census__.png)
 
