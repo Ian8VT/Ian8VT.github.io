@@ -17,7 +17,7 @@ I acquired both my ASTER and SRTM digital elevation data from the NASA operated 
 
 For my ASTER data, the spatial extent of my analysis consisted of the following granules: ASTGTMV003_N39E029; ASTGTMV003_N40E029.
 
-For my SRTM data, I used the following granules: N39E029; N40E029.
+For my SRTM data, I used the following granules: N39E029_SRTMGL3; N40E029_SRTMGL3.
 
 You can search each of these granule codes in the data search page of EarthData to download them. 
 
