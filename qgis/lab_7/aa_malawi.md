@@ -24,6 +24,8 @@ The authors state that they accessed this data input from the Famine Early Warni
 
 #### Physical Exposure
 
+This data input consisted of layers representing quantified risk of physical exposure to droughts and flooding, developed by the United Nations Environment Programme (UNEP). 
+
 ### Methodolody to Reproduce
 
 To reproduce the vulnerability assessment, I used a model developed in [QGIS] that relied upon [GRASS] processing capabilities. My professor Joseph Holler of Middlebury College largely developed the model. My task was to examine the model in order to understand each of the steps and the parameters set for them, and to be able to manipulate the four outputs in order to create the final vulnerability assessment map. Additionally, I added an input to allow users of the model to set the cell resolution size of the four ouputs. The image of the model is provided below and you can download the model [here](/qgis/lab_7/model_2.5min.model3).
