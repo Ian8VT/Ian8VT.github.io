@@ -44,7 +44,7 @@ Despite the best efforts of our professor, this data simply could not be located
 
 #### Physical Exposure
 
-Whereas the adaptive capacity data required preparation prior the QGIS model, the drought and flood risk layers of the physical exposure component of the vulnerability assessment required work after the completion of the model.  
+Whereas the adaptive capacity data required preparation prior the QGIS model, the drought and flood risk layers of the physical exposure component of the vulnerability assessment required work after the completion of the model. At the completion of the model, the drought and flood outputs still needed to be converted into the quintile value format. For droughts, I ran the layer into a r.quantile tool to create a matrix which breaks down the range of drought risk values into 5 quantiles. Then, I used the r.recode tool to transform the layer into quantile form, using the matrix developed from r.quantile as the parameters. As for the flood risk layer, the range of values present was 0 to 4, so I simply used raster calculated and added a value of 1. 
 
 
 ### Results
