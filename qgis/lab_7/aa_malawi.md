@@ -51,8 +51,10 @@ Whereas the adaptive capacity data required preparation prior the QGIS model, th
 ### Results
 
 ![malcomb_map](/qgis/lab_7/malcomb_vulnerability.png)
+Above is the vulnerability map produced by Malcomb et al..
 
 ![result_map](/qgis/lab_7/malawi_course.png)
+Above is the map I produced with my attempts to reproduce the methodology previously outlined. 
 
 Through the comparison of the Malcomb et al. map and the one I attempted to reproduce, there are a number of visible differences between the two. A general similarity is that the central region of the country tends to be low on the vulnerability scale. 
 
