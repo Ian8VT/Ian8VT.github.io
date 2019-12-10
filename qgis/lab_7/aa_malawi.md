@@ -53,6 +53,7 @@ Whereas the adaptive capacity data required preparation prior the QGIS model, th
 
 ![result_map](/qgis/lab_7/malawi_course.png)
 
+Through the comparison of the Malcomb et al. map and the one I attempted to reproduce, there are a number of visible differences between the two. A general similarity is that the central region of the country tends to be low on the vulnerability scale. 
 
 
 
