@@ -13,7 +13,7 @@ For this hydrology analysis, I conducted one analysis with ASTER data as the ini
 
 ### Data Sources and Platforms
 
-I acquired both my ASTER and SRTM digital elevation data from the NASA operated site [EarthData](https://earthdata.nasa.gov/). Tile types? For my batch script, I used [SAGA](http://www.saga-gis.org/) and accessed the online tool documentation to determine how to structure the syntax of my batch processing steps. I developed my batch scripts on Notepad2 and executed them with Windows Command Prompt. 
+I acquired both my ASTER and SRTM digital elevation data from the NASA operated site [EarthData](https://earthdata.nasa.gov/). For my batch script, I used [SAGA](http://www.saga-gis.org/) and accessed the online tool documentation to determine how to structure the syntax of my batch processing steps. I developed my batch scripts on Notepad2 and executed them with Windows Command Prompt. 
 
 For my ASTER data, the spatial extent of my analysis consisted of the following granules: ASTGTMV003_N39E029; ASTGTMV003_N40E029.
 
