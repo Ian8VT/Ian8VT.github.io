@@ -192,7 +192,7 @@ It is evident from the context analyses of tweets that the Sharpiegate controver
 
 Elwood, S., Goodchild, M. F., & Sui, D. Z. (2011). Researching volunteered geographic information: Spatial data, geographic data, geographic research, and new social practice. Annals of the Associaton of American Geographers, 102, 571-590. doi:10.1080/00045608.2011.595657
 
-
+___
 
 
 Return to [QGIS and PostGIS Index Page](../qgis.md).
