@@ -51,6 +51,8 @@ PAUSE
 
 ![aster_batch](/saga/uludag/aster_dem_complete.txt)
 
+![srtm_batch](/saga/uludag/mosaic_srtm_complete.txt)
+
 
 ![final_image](/saga/uludag/final_2.png)
 
