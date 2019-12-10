@@ -56,9 +56,7 @@ Above is the vulnerability map produced by Malcomb et al..
 ![result_map](/qgis/lab_7/malawi_course.png)
 Above is the map I produced with my attempts to reproduce the methodology previously outlined. 
 
-Overall, a comparison between the two maps demonstrates that they each follow similar overall data trends. In each map, there is a large area of high vulnerability in the southern extreme of the country and near the capital of Lilongwe as well as an extended area of low vulnerability in the center of the country. However, there are a few locations where my reproduced map is distinctly different from the original research map. 
-
-Through the comparison of the Malcomb et al. map and the one I attempted to reproduce, there are a number of visible differences between the two. A general similarity is that the central region of the country tends to be low on the vulnerability scale. 
+Overall, a comparison between the two maps demonstrates that they each follow similar overall data trends. In each map, there is a large area of high vulnerability in the southern extreme of the country and near the capital of Lilongwe as well as an extended area of low vulnerability in the center of the country. However, there are a few locations where my reproduced map is distinctly different from the original research map. Noteably, my map has pockets of high vulnerability in the north of country whereas Malcomb et al. has these locations marked as low vulnerability.
 
 
 ### Sources Cited
