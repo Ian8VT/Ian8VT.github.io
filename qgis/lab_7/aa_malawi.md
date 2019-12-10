@@ -12,13 +12,15 @@ In 2014, Malcomb et al. published an extensive paper which outlined their method
 
 ![assessment](/qgis/lab_7/malcomb_assessment.png)
 
-The graphic above, accessed from Malcomb et al. (2014) outlines how the authors weighted input data sets to create their vulnerability assesment. As you can see, the assessment incorporates data from three different sources. The authors performed their analysis at the administrative scale of Traditional Authorities, of which there is 250 in Malawi. The data of the inputs were assessed along a quintile scale of 1 to 5 to represent resilience, with a value of 5 meaning the most resilient and 1 meaning the least resilient. These quntile  values were then multiplied by the weighted value of their corresponding category.
+The graphic above, accessed from Malcomb et al. (2014) outlines how the authors weighted input data sets to create their vulnerability assesment. As you can see, the assessment incorporates data from three different sources. The authors performed their analysis at the administrative scale of Traditional Authorities, of which 203 were involved in the analysis. The data of the inputs were assessed along a quintile scale of 1 to 5 to represent resilience, with a value of 5 meaning the most resilient and 1 meaning the least resilient. These quntile  values were then multiplied by the weighted value of their corresponding category.
 
 #### Adaptive Capacity
 
 The 'adaptive capacity' input consists of twelve categories of survey data about the socioeconomic assets and access of individual households. These categories are components of the extensive Demographic and Health Surveys (DHS) conducted by the U.S. Agency of International Development (USAID) between 2004 and 2010. According to Malcomb et al., this input enhances the vulnerability assessment as it considers socio-ecological issues of Malawi at the scale of household dynamics. When all 12 of the categories are combined, the authors chose to weight their adaptive capacity score as 40% of the overall vulnerability assessment. As you can see next to each category in the above figure, the authors applied a weight to each survey category which combined to equal the total adapaptive capacity score.The data from the DHS is provided in cluster points at the scale of districts, of which Malawi has 28. However, the authors note that this large scale of data display is inappropiate to represent household scale vulnerability, so they disaggregated the data to the scale of TA. At this scale, the authors applied the quintile breakdown of the quantitative data obtained from the surveys. These quntile values were then multiplied by the weight of their corresponding survey category, collectively totaling to 40% of each TAs overall vulnerability assessment.
 
 #### Livelihood Sensitivity
+
+The authors state that they accessed this data input from the Famine Early Warning Systems Network (FEWSNET). This data is an assessment of livelihood sensitivity as determined through interviews conducted by the Malawi Vulnerability Assessment Committee (MVAC) in conjuction with FEWSNET and USAID. These livelihood sensitivity values were measured at the scale of livelihood zones, which are geographic regions in which residents within them share common farming techniques and environmental coping strategies. These zones were defined in 2003 as a result of surveys conducted by MVAC.
 
 #### Physical Exposure
 
@@ -36,12 +38,11 @@ Through this process, we realized that some DHS categories did not consist of a 
 
 #### Livelihood Sensitivity 
 
-Despite the best efforts of our professor, this data simply could not be located. This is highly questionable and by definition ensures that the methodology of Malcomb et al. is not completely reproducible. As this component consisted of 20% of the authors' final vulnerability assessment, our best attempts to reproduce will only be able to account for 80% of the variables considered. The shapefiles for livelihood zones is easy to download from FewsNET, however the attribute table is completely empty. My professor brought it to my attention that the values used by Malcomb et al. in association with the livelihood zones are likely not from FewsNET, but rather a group known as Malawi Vulnerability Assessment Committee, of which there is no internet site or online database.
+Despite the best efforts of our professor, this data simply could not be located. This is highly questionable and by definition ensures that the methodology of Malcomb et al. is not completely reproducible. As this component consisted of 20% of the authors' final vulnerability assessment, our best attempts to reproduce will only be able to account for 80% of the variables considered. The shapefiles for livelihood zones is easy to download from FewsNET, however the attribute table is completely empty. My professor brought it to my attention that the values used by Malcomb et al. in association with the livelihood zones are likely held by FewsNET, but MVAC, of which there is no internet site or online database.
 
 #### Physical Exposure
 
 Whereas the adaptive capacity data required preparation prior the QGIS model, the drought and flood risk layers of the physical exposure component of the vulnerability assessment required work after the completion of the model. 
-
 
 
 ### Results
@@ -49,6 +50,8 @@ Whereas the adaptive capacity data required preparation prior the QGIS model, th
 ![malcomb_map](/qgis/lab_7/malcomb_vulnerability.png)
 
 ![course_map](/qgis/lab_7/malawi_course.png)
+
+
 
 
 Return to [QGIS and PostGIS Index Page](../qgis.md).
