@@ -24,6 +24,8 @@ You can search each of these granule codes in the data search page of EarthData 
 
 ### Methodology
 
+Below is the batch script I used. This example is specifically for the ASTER data I used, but the only difference between this and the SRTM batch script is which files I linked as the inputs. 
+
 ```
 
 :: Developed by Ian8VT
@@ -69,9 +71,9 @@ PAUSE
 
 ### Results and Discussion
 
-![aster_batch](/saga/uludag/aster_dem_complete.txt)
+To download the text file of my ASTER batch sript, click ![here](/saga/uludag/aster_dem_complete.txt).
 
-![srtm_batch](/saga/uludag/mosaic_srtm_complete.txt)
+To download the text file of my SRTM script, click ![here](/saga/uludag/mosaic_srtm_complete.txt).
 
 
 ![final_image](/saga/uludag/final_2.png)
