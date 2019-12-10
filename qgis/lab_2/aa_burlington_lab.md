@@ -22,7 +22,7 @@ In order to use my model, I prepared my data to only consider the census tracts 
 
 ### Results
 
-This map below represents the directs of Burlington's census tracts from the city center. 
+This map below represents the direction of Burlington's census tracts from the city center. 
 ![direction](/qgis/lab_2/burlington_cardinal.png)
 
 The map below displays the distance of census tracts from the city center. 
