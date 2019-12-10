@@ -44,7 +44,7 @@ Despite the best efforts of our professor, this data simply could not be located
 
 #### Physical Exposure
 
-Whereas the adaptive capacity data required preparation prior the QGIS model, the drought and flood risk layers of the physical exposure component of the vulnerability assessment required work after the completion of the model. 
+Whereas the adaptive capacity data required preparation prior the QGIS model, the drought and flood risk layers of the physical exposure component of the vulnerability assessment required work after the completion of the model.  
 
 
 ### Results
