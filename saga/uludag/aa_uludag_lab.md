@@ -76,7 +76,7 @@ To download the text file of my SRTM script, click ![here](/saga/uludag/mosaic_s
 
 ### Results and Discussion
 
-In the following maps, the baselayer hillshade and channel network maps provided are from ASTER data. Within each of the maps, there is a smaller map which annotates areas of error on the baseline ASTER map. These annotation maps are a result of subtracting the channel network outputs of SRTM from ASTER. In these annotatation maps, red lines demonstrate locations in which ASTER data resulted in the presence of a stream feature when SRTM did not. Blue lines in the annotation maps are locations where SRTM input data resulted in the calculation of a stream in the channel network while ASTER data did not. 
+In the following maps, the baselayer hillshade and channel network maps provided are from ASTER data. Within each of the maps, there is a smaller map which annotates areas of error on the baselayer ASTER map. These annotation maps are a result of subtracting the channel network outputs of SRTM from ASTER. In these annotatation maps, red lines demonstrate locations in which ASTER data resulted in the presence of a stream feature when SRTM did not. Blue lines in the annotation maps are locations where SRTM input data resulted in the calculation of a stream in the channel network while ASTER data did not. 
 
 
 ![final_image](/saga/uludag/final_2.png)
