@@ -21,7 +21,7 @@ I originally attempted to use the Field Calculator function in the model builder
 
 ## Model Example in Chicago
 
-In this example, I relied upon census tracts from the 2010 Census. Upon a suggestion by my lab instructor of where the center business district of Chicago is located, I selected three census tracts to export as a layer and input as my City Centers layer. Visit this [page](../qgis/lab_2/aa_burlington_lab.md) for a second example of this model and how I used a polar plot and scatter plot to demonstrate the data for Burlington, VT.
+In this example, I relied upon census tracts from the 2010 Census. Upon a suggestion by my lab instructor of where the center business district of Chicago is located, I selected three census tracts to export as a layer and input as my City Centers layer. Visit this [page](../lab_2/aa_burlington_lab.md) for a second example of this model and how I used a polar plot and scatter plot to demonstrate the data for Burlington, VT.
 
 ![direction](/qgis/lab_1/Chicago_Cardinal.png)
 
