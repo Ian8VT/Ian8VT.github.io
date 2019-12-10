@@ -1,6 +1,6 @@
 ### Literature Responses
 
-[Return to Main Index](../index.md)
+[Return to Main Index](index.md)
 
 
 ## Davies et. al, 2019
