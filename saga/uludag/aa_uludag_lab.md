@@ -69,11 +69,12 @@ PAUSE
 
 ```
 
-### Results and Discussion
-
 To download the text file of my ASTER batch sript, click ![here](/saga/uludag/aster_dem_complete.txt).
 
 To download the text file of my SRTM script, click ![here](/saga/uludag/mosaic_srtm_complete.txt).
+
+
+### Results and Discussion
 
 
 ![final_image](/saga/uludag/final_2.png)
