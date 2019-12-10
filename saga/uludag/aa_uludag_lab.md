@@ -57,7 +57,7 @@ PAUSE
 
 ```
 
-### Results
+### Results and Discussion
 
 ![aster_batch](/saga/uludag/aster_dem_complete.txt)
 
