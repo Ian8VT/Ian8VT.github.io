@@ -51,7 +51,9 @@ Whereas the adaptive capacity data required preparation prior the QGIS model, th
 
 ![malcomb_map](/qgis/lab_7/malcomb_vulnerability.png)
 
-![course_map](/qgis/lab_7/malawi_course.png)
+![result_map](/qgis/lab_7/malawi_course.png)
+
+
 
 
 
