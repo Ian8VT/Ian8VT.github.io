@@ -56,7 +56,11 @@ Whereas the adaptive capacity data required preparation prior the QGIS model, th
 Through the comparison of the Malcomb et al. map and the one I attempted to reproduce, there are a number of visible differences between the two. A general similarity is that the central region of the country tends to be low on the vulnerability scale. 
 
 
+### Sources Cited
 
+Hinkel, J. (2011). "Indicators of vulnerability and adaptive capacity": Towards a clarification of the science-policy interface. Global Environmental Change, 21, 198-208. doi:10.1016/j.gloenvcha.2010.08.002.
+
+Malcomb, D. W., Weaver, E. A., & Krakowka, A. R. (2014). Vulnerability modeling for sub-Saharan Africa: An operationalized approach in Malawi. Applied Geography, 48, 17–30. https://doi.org/10.1016/j.apgeog.2014.01.004
 
 
 Return to [QGIS and PostGIS Index Page](../qgis.md).
