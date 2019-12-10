@@ -323,7 +323,7 @@ final deliverable */
 
 ```
 
-Here is the [SQL file](https://github.com/Ian8VT/Ian8VT.github.io/blob/master/sqlprocess.sql) for this workflow. 
+Here is the [SQL file](../../sqlprocess.sql) for this workflow. 
 
 ### Results
 To display the wetland drain density data, I developed a map using [Leaflet](https://leafletjs.com/) software. This map breaks the subwards into four quantile ranks ordered by the density of drain length to building area. Subwards are color-coded dependent on the density of their wetland drains. Only subwards which contain wetland drains are considered. You can select to overlay the wetland layer to see the locations within each subward which are considered wetland terrain.
