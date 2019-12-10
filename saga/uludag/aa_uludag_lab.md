@@ -6,6 +6,8 @@ Return to [Main Index Page](../../index.md).
 
 For this hydrology analysis, I conducted one analysis with ASTER data as the initial elevation data and a second analysis with SRTM as the initial input. With each, I performed the analysis with Saga tools in the Windows Command Prompt. Each map displayed contains commentary written on the map to explain what is visualized. Further, the layers that each satelittle mission gathered information from is considered in an attempt to explain patterns in elevation error that is manifested in the hydrology analysis process. 
 
+![aster_batch](/saga/uludag/aster_dem_complete.txt)
+
 
 ![final_image](/saga/uludag/final_2.png)
 
