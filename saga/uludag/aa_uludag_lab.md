@@ -89,6 +89,8 @@ A closer look at the southern cluster.
 
 ![image_zoom_south](/saga/uludag/final_zoom_south.png)
 
+As discussed in some of the in-map text boxes, a possible reason for the error of dissappearing stream channels could be a result of steep river channel valleys. In these locations, the radar beams used to measure the topography of the Earth's surface are not able to penetrate to the bottom of the river valley. Rather, they only return elevation data from the banks of the river. Since there is then a gap in the continium of data, the missing part which is in reality the bottom of the river bank is calculated through the interpolation of the nearest measured values. This can result in the data being filled in at a higher elevation than it truly is in reality. If the interpolated value between the river banks is a higher elevation than the accurately measured elevation of the river upstream, then as far as the data in concerned, the river stops at the moment the channel increases in elevation and a new river forms. 
+
 Return to [SAGA Index Page](../saga_index.md).
 
 Return to [Main Index Page](../../index.md).
