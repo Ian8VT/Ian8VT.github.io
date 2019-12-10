@@ -12,7 +12,7 @@ With this model, I made a distance plot and direction plot of Burlington, VT ren
 
 I downloaded my 2010 census tract shapefile for Vermont from the [Vermont Open Geodata Portal](https://geodata.vermont.gov/datasets/df13910a7c9943849d6986b703e5eafd_4). This dataset is a TIGER/Line shapefile developed by the US Census. The data as accessed from the Vermont website already includes demographic data attached onto the census tracts, but does not have median monthly rent data. I downloaded my rent data from the US Census [American FactFinder](https://factfinder.census.gov/faces/nav/jsf/pages/index.xhtml) database page. I searched for the median gross rent of census tracts, but selected to only consider tracts defined as urban within the greater Burlington area as defined by the US Census. Additionally, I relied upon [Google Maps](https://www.google.com/maps) to determine my city center location. 
 
-To download my data sources: [Census Tracts](/qgis/lab_2/VT_2010_Census_Tract_Boundaries_and_Statistics.zip); [Rent Data](/qgis/lab_2/Rent_Data)
+To download my data sources: [Census Tracts](/qgis/lab_2/VT_2010_Census_Tract_Boundaries_and_Statistics.zip); [Rent Data](../qgis/lab_2/Rent_Data)
 
 For this lab, I used [QGIS](https://www.qgis.org/en/site/) to run the model and prepare the data prior to model. After the model, I used the Data Plotly plugin in QGIS to develop a scatterplot and polar plot. 
 
