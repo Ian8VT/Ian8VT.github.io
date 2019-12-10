@@ -28,8 +28,6 @@ To reproduce the vulnerability assessment, I used a model developed in [QGIS] th
 
 ![model](/qgis/lab_7/model_2.5min.png)
 
-
-
 #### Adaptive Capacity
 
 In order to access the DHS data, my professor Joseph Holler applied for special permission from USAID to use the data for a classroom teaching exercise. However, he had to agree to legal conditions, one of which was that only he would actually see the data in its raw form. As such, I never saw the DHS data. In response, the entirety of my class brainstormed to develop the SQL script necessary to take the DHS data, not seen by us, and apply the same weighting used by Malcomb et al.. Our professor then applied our SQL script to perform the analysis with the data and sent the adaptive capacity output for us to use as a main input in the QGIS model. You can download the SQL file [here](/qgis/lab_7/vulnerabilitySQL.sql) that we collaboratively worked on as a class.
@@ -41,6 +39,8 @@ Through this process, we realized that some DHS categories did not consist of a 
 Despite the best efforts of our professor, this data simply could not be located. This is highly questionable and by definition ensures that the methodology of Malcomb et al. is not completely reproducible. As this component consisted of 20% of the authors' final vulnerability assessment, our best attempts to reproduce will only be able to account for 80% of the variables considered. 
 
 #### Physical Exposure
+
+Whereas the adaptive capacity data required preparation prior the QGIS model, the drought and flood risk layers of the physical exposure component of the vulnerability assessment required work after the completion of the model. 
 
 
 
