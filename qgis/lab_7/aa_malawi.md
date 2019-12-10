@@ -62,6 +62,8 @@ Hinkel, J. (2011). "Indicators of vulnerability and adaptive capacity": Towards 
 
 Malcomb, D. W., Weaver, E. A., & Krakowka, A. R. (2014). Vulnerability modeling for sub-Saharan Africa: An operationalized approach in Malawi. Applied Geography, 48, 17–30. https://doi.org/10.1016/j.apgeog.2014.01.004
 
+___
+
 
 Return to [QGIS and PostGIS Index Page](../qgis.md).
 
