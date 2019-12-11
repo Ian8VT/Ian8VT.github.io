@@ -9,6 +9,6 @@ Learning how to perform hydrological analyses on Mount Kilimanjaro, Tanzania.
 
 
 #### [Lab Two](uludag/aa_uludag_lab.md)
-Examining error between ASTER and SRTM digital elevation models on Uludag Mountain, Turkey.
+Examining error between ASTER and SRTM digital elevation models around Uludag Mountain, Turkey.
 
 Return to [Main Index Page](../index.md).
