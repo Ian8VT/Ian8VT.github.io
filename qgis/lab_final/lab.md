@@ -29,3 +29,12 @@ select row_number() OVER () AS id,
 st_pointfromtext(
 st_astext('0101000020E17F00001F4CF8AA271920419D22256AD5A26141'),32737) as geom
 ```
+
+Since network topology measurements are from a source node to target nodes within the same feature, I wanted convert my school point into a node in the node layer I would make in later steps. To do this, I first had to shift the geometry of my school entry point to coincide with the nearest road geometry.
+```sql
+UPDATE school_entry AS pt 
+SET geom =
+(SELECT ST_ClosestPoint(ln.geom, pt.geom)
+FROM dar_es_salaam_roadss AS ln
+ORDER BY pt.geom <-> ln.geom)
+  ```
