@@ -57,7 +57,7 @@ select id, st_buffer(geom,1000) as geom
 from school_entry
 ```
 
-I then intersected the road and wetland data with this buffer to exclude all data not within my area of study.
+I then intersected the road and wetland data with this buffer to exclude all data not within my area of study. A visualization of road and wetland output is provided below the SQL script.
 ```sql
 CREATE TABLE roads_school AS
 SELECT st_multi(st_intersection(a.geom,b.geom)) as geom, b.id as id
@@ -71,6 +71,9 @@ from wetlands as a
 inner join school_buff as b
 on st_intersects(a.way,b.geom)
 ```
+
+![selected](select_roads_wet.png)
+
 This next step created my noded network topology layer. This inserted an id for each start and end point of the road lines onto the road layer and also created a multipoint layer of all source and target points of the roads. Below the command of this step is an image of these two layers.
 ```sql
 alter table roads_school add column source integer;
