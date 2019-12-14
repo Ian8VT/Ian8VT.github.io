@@ -76,12 +76,13 @@ FROM network AS ln
 where st_dwithin(ln.geom,vr.geom,1.0)
 ORDER BY vr.geom <->ln.geom))
 
+create table roads_node
 select a.id, a.source, a.target, ((st_dump(st_split(a.geom,b.geom))).geom) as geom
 from roads_school a
 inner join school_entry b
 on st_intersects(a.geom,b.geom))
 
-CREATE TABLE lines_split AS
+ CREATE TABLE roads_node AS
 SELECT a.id, (ST_Dump(ST_split(st_segmentize(a.geom,1),ST_Union(b.geom)))).geom::geometry(LINESTRING,32737) AS geom 
 FROM roads_school a, school_entry b
 GROUP BY a.id,a.geom
