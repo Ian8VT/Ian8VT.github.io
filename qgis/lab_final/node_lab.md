@@ -1,3 +1,6 @@
+### Introduction
+
+This lab page documents the second component of a single lab, the first half can be found [here](../lab_final/lab.md). 
 
 ### Node Connectivity Steps
 
