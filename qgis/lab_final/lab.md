@@ -4,7 +4,7 @@ Dar es Salaam, Tanzania, is a heavily mapped city on OpenStreetMap. This is in p
 
 The general objective that I sought to answer was to measure walking time to school. I wanted to examine one school location as my example and then perform the necessary pgrouting functions to acquire an output of the the accumulated cost of walking time for each network node in the vicinity of the school. Then, as a final product, I wanted to calculate the average walking time cost for all nodes within wetlands and compare to the average cost of nodes outside of wetlands. Wetland settlements are locations which have increased physical vulnerability to flooding events. My question's concept is to see if there is a difference in the amount of infrastructure in wetland terrain compared to terrain that is not wetland, demonstrated through comparatively measuring the connectivity of the road and footpath network to see how well equipped it is to allow children to walk to school. 
 
-However, I encountered a series of problems which prevented me from reaching this output, which I outline below. After I exhausted my attempts to achieve my desired output, I shifted the scope of my project to measure the connectivity of the road network without the consideration of walking time to school. Instead, I calculated the average of how many meters of road there is for every intersectection, comparing the road network within wetlands to terrain that is not a wetland. Click [here](../lab_final/node_lab.md) to view this component of my work is on a serparate page.
+However, I encountered a series of problems which prevented me from reaching this output, which I outline below. After I exhausted my attempts to achieve my desired output, I shifted the scope of my project to measure the connectivity of the road network without the consideration of walking time to school. Instead, I calculated the average of how many meters of road there is for every intersectection, comparing the road network within wetlands to terrain that is not a wetland. Click [here](../lab_final/node_lab.md) to view this component of my work on a serparate page.
 
 
 ### Data Sources and Platforms
@@ -13,7 +13,11 @@ I used three layers of OpenStreetMap data in Dar es Salaam for this lab: wetland
 
 I chose to use the school polygon feature rather than the school point feature of Resilience Academy's data. Through a comparison of the two features in QGIS, I noticed that the layers do not always line up. When I viewed each layer in comparison to OpenStreetMap, I noticed that some school point locations overlay locations not designates as a school in the OSM baselayer. While, on the otherhand, the school polygon layer was more agreeable with the baselayer.
 
-### Walking Time Procedure
+### Methodology
+
+In this section, I divided my steps into two distinct components. This first component are the steps with commentary for my attempts to achieve the original lab goal. Once I realized that this process was not performing correctly, I decided to test the pgrouting functions on a smaller sample of data in Dar es, Salaam. This smaller sample is the worklow and commentary of the second component of the methodology section. 
+
+##### Original Workflow
 
 I first uploaded my layers from QGIS into the PostGIS database while transforming into EPSG:32737, or UTM 37S. Then, I examined my layers in a map view and determined which school to select as the basis of my analysis. I chose a school which had a significant amount of road data in the area and contained a moderate amount of wetlands near the location. Further, since the attribute table of the schools was not complete enough to list school names and type of school, I opened a OSM baselayer to ensure that the school I selected was a primary school.
 
@@ -135,7 +139,7 @@ SELECT * FROM pgr_dijkstra(
 /* does not work - empty table*/
 ```
 
-### Test with 2 multilines
+##### Sample Test Workflow
 To better determine if I am making a mistake which results in error or if there is something amiss with the data, I repeated the steps of pgrouting up to the establishment of a driving_distance table while only focusing on two road lines which share a single intersection. Further, I heavily followed this [site](https://anitagraser.com/2017/09/11/drive-time-isochrones-from-a-single-shapefile-using-qgis-postgis-and-pgrouting/), only deviating to input the local names of layers.
 
 ```sql
