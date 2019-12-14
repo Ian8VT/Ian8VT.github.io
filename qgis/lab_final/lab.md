@@ -8,7 +8,7 @@ I used three layers of OpenStreetMap data in Dar es Salaam for this lab: wetland
 
 I chose to use the school polygon feature rather than the school point feature of Resilience Academy's data. Through a comparison of the two features in QGIS, I noticed that the layers do not always line up. When I viewed each layer in comparison to OpenStreetMap, I noticed that some school point locations overlay locations not designates as a school in the OSM baselayer. While, on the otherhand, the school polygon layer was more agreeable with the baselayer.
 
-### Methods
+### Steps
 
 I first uploaded my layers from QGIS into the PostGIS database while transforming into EPSG:32737, or UTM 37S. Then, I examined my layers in a map view and determined which school to select as the basis of my analysis. I chose a school which had a significant amount of road data in the area and contained a moderate amount of wetlands near the location. Further, since the attribute table of the schools was not complete enough to list school names and type of school, I opened a OSM baselayer to ensure that the school I selected was a primary school.
 
@@ -60,4 +60,8 @@ from wetlands as a
 inner join school_buff as b
 on st_intersects(a.way,b.geom)
 ```
-
+I then converted the road layer into a topology layer.
+```sql
+alter table roads_school add column source integer;
+alter table roads_school add column target integer;
+select pgr_createtopology('roads_school', 0.001, 'geom', 'id')
