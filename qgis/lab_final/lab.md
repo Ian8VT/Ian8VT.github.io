@@ -239,7 +239,7 @@ where wetland = 0
 alter table roads_dry_sum add column intersection float;
 update roads_dry_sum set intersection = sum/792
 ```
-![roads_dry_wet](../lab_final/brown_dry_blue_wet.png
+![roads_dry_wet](../lab_final/brown_dry_blue_wet.png)
 
 In wetlands, an intersection for every 52.3 meters of road.
 A total of 30,775 meters of wetland road and 588 intersections.
