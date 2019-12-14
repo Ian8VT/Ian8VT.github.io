@@ -1,0 +1,2 @@
+For this lab, I attempted to create a network topology make around a school in Dar es Salaam, Tanzania. My purpose was to obtain the total walking time from each node in the topology, and then find the average walking time for all nodes within wetlands and compare to all nodes outside of wetlands. However, during the process, I ran into a series of problems which proved severe enough to prevent me from completing this project goal. I will outline the difficulties that I encountered below.
+
