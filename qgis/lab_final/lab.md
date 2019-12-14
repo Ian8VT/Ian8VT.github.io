@@ -48,7 +48,7 @@ FROM dar_es_salaam_roadss AS ln
 ORDER BY pt.geom <-> ln.geom)
   ```
   
-  ![school_entrance](/lab_final/school_entry.png)
+  ![school_entrance](../lab_final/school_entry.png)
  
  Now that I had what I considered as the entrance of the school from the road, I created a 1km buffer around this point.
  ```sql
