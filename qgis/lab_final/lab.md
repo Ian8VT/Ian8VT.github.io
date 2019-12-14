@@ -87,3 +87,12 @@ SELECT a.id, (ST_Dump(ST_split(st_segmentize(a.geom,1),ST_Union(b.geom)))).geom:
 FROM roads_school a, school_entry b
 GROUP BY a.id,a.geom
 ```
+
+```sql
+alter table roads_school add column length float;
+update roads_school
+set length = st_length(geom);
+alter table roads_school add column cost float;
+update roads_school
+set cost = length/83
+```
