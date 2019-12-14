@@ -75,7 +75,7 @@ alter table roads_school add column source integer;
 alter table roads_school add column target integer;
 select pgr_createtopology('roads_school', 0.001, 'geom', 'id')
 ```
-![topology](/lab_final/school_roads_and_vertices.png)
+![topology](../lab_final/school_roads_and_vertices.png)
 
 At this stage, I realized it is difficult to split the lines at the location of the school entry point in order to create a new node. As such, I chose to consider the nearest node already in the data as my center point in calculating travel times. the following are all SQL commands I attempted to use.
 ```sql
