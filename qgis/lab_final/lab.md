@@ -82,7 +82,9 @@ select pgr_createtopology('roads_school', 0.001, 'geom', 'id')
 ```
 ![topology](../lab_final/school_roads_and_vertices.png)
 
-At this stage, I realized it is difficult to split the lines at the location of the school entry point in order to create a new node. As such, I chose to consider the nearest node already in the data as my center point in calculating travel times. the following are all SQL commands I attempted to use.
+
+At this step, I attempted to split the road that the school point intersects to create a new node on the topology. However, I learned that this is actually difficult to achieve. The following SQL codes are attempts that I made to perform this, but could not determine the proper command. As such, I simply used the nearest node to the school entry point which already existed on the network topology. 
+At this stage, I realized it is difficult to split the lines at the location of the school entry point in order to create a new node. Since the school is located near an intersection, this chosen node was not far from the determined school entry.
 ```sql
 UPDATE roads_school AS vr 
 SET geom =
