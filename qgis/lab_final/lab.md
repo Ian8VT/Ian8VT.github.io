@@ -57,7 +57,7 @@ select id, st_buffer(geom,1000) as geom
 from school_entry
 ```
 
-I then intersected the road and wetland data with this buffer to exclude all data not within my area of study. A visualization of road and wetland output is provided below the SQL script.
+I then intersected the road and wetland data with this buffer to exclude all data not within my area of study. A visualization of the selected roads and wetlands is provided below the SQL script.
 ```sql
 CREATE TABLE roads_school AS
 SELECT st_multi(st_intersection(a.geom,b.geom)) as geom, b.id as id
