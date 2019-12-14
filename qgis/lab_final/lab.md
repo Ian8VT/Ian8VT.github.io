@@ -205,3 +205,5 @@ FROM pgr_drivingdistance('SELECT gid::integer AS id,
 JOIN aa_network_nodes pt 
 ON di.id1 = pt.id;
 ```
+
+### Potential Error
