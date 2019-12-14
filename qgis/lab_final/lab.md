@@ -206,4 +206,8 @@ JOIN aa_network_nodes pt
 ON di.id1 = pt.id;
 ```
 
-### Potential Error
+### Results and Discussion
+
+![error_1](../lab_final/error_1.png)
+
+![error_2](../lab_final/error_2.png)
