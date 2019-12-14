@@ -103,6 +103,38 @@ update roads_school
 set cost = length/83
 ```
 
+```sql
+CREATE OR REPLACE VIEW "​view_name" AS 
+SELECT di.id, 
+       di.source, 
+       di.target, 
+       di.cost, 
+       pt.id, 
+       pt.geom 
+FROM pgr_drivingdistance('SELECT
+     id, 
+     source
+     target                                  
+     cost
+       FROM network', ​504, 
+    100000, false, false)
+    di(id, source, target, cost)
+JOIN nodes pt ON di.source = pt.id;
+/*why did this not work - doesnt recognize 504 as a value*/
+
+create table aa as
+SELECT * FROM pgr_dijkstra(
+    'SELECT id,
+         source,
+         target,
+		 cost
+		 FROM roads_school',
+    540, 760,
+    directed := false)
+
+/* does not work - empty table*/
+```
+
 ### Test with 2 multilines
 To better determine if I am making a mistake which results in error or if there is something amiss with the data, I repeated the steps of pgrouting up to the establishment of a driving_distance table while only focusing on two road lines which share a single intersection. Further, I heavily followed this [site](https://anitagraser.com/2017/09/11/drive-time-isochrones-from-a-single-shapefile-using-qgis-postgis-and-pgrouting/), only deviating to input the local names of layers.
 
