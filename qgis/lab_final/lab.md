@@ -46,3 +46,18 @@ select id, st_buffer(geom,1000) as geom
 from school_entry
 ```
 
+I then intersected the road and wetland data with this buffer to exclude all data not within my area of study.
+```sql
+CREATE TABLE roads_school AS
+SELECT st_multi(st_intersection(a.geom,b.geom)) as geom, b.id as id
+FROM school_buff AS a
+INNER JOIN dar_es_salaam_roadss AS b
+ON (st_intersects(a.geom, b.geom)
+AND NOT st_touches (a.geom, b.geom));
+create table wetland_school as
+select a.id, st_intersection(a.way,b.geom) as geom
+from wetlands as a
+inner join school_buff as b
+on st_intersects(a.way,b.geom)
+```
+
