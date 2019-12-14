@@ -1,6 +1,6 @@
 ### Introduction
 
-This lab page documents the second component of a single lab, the first half can be found [here](../lab_final/lab.md). 
+This lab page documents the second component of a single lab, for which the first half can be found [here](../lab_final/lab.md). An overview of the lab and resources used can be found on the first page of the lab. In this workflow, I analyze to see if there are noticeable infrastructure differences between settlements constructed in wetlands and settlements outside of wetlands in Dar es Salaam, Tanzania. 
 
 ### Node Connectivity Steps
 
