@@ -22,7 +22,7 @@ from dar_schools
 where id ='way/370703018'
 ```
 
-The output was not in a well-known text format, so I converted the information into the proper format and turned it into a point on the map. This step was where I encountered my first difficulties. I wanted to convert all the vertices into a mappable point and then select by attribute my desired point, but was unable to determine the correct syntax of functions to do so. I attempted commands with a variety of different functions, such as st_collect, st_astext, st_pointfromtext, st_asewkt, st_geomfromewkt, st_makepoint. However, in the end, I chose to manually input the text of each vertice into the following format until I received my intended point. Since the polygon of the school only had six vertices, this was not a problem.
+The output was not in a well-known text format, so I converted the information into the proper format and turned it into a point on the map. This step was where I encountered my first difficulties. I wanted to convert all the vertices into a mappable point and then select by attribute my desired point, but was unable to determine the correct syntax of functions to do so. I attempted commands with a variety of different functions, such as st_collect, st_astext, st_pointfromtext, st_asewkt, st_geomfromewkt, st_makepoint. However, in the end, I chose to manually input the text of each vertice into the following format until I received my intended point. Since the polygon of the school only had nine vertices, this was not a problem. Here is what the attribute table of the polygon veritces looked like.
 ```sql
 create table school_entry as
 select row_number() OVER () AS id,
