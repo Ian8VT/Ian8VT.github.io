@@ -102,3 +102,5 @@ alter table roads_school add column cost float;
 update roads_school
 set cost = length/83
 ```
+
+### Node Connectivity Steps
