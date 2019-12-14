@@ -65,3 +65,24 @@ I then converted the road layer into a topology layer.
 alter table roads_school add column source integer;
 alter table roads_school add column target integer;
 select pgr_createtopology('roads_school', 0.001, 'geom', 'id')
+```
+
+At this stage, I realized it is difficult to split the lines at the location of the school entry point in order to create a new node. As such, I chose to consider the nearest node already in the data as my center point in calculating travel times. the following are all SQL commands I attempted to use.
+```sql
+UPDATE roads_school AS vr 
+SET geom =
+(SELECT ST_ClosestPoint(ln.geom, vr.geom)
+FROM network AS ln
+where st_dwithin(ln.geom,vr.geom,1.0)
+ORDER BY vr.geom <->ln.geom))
+
+select a.id, a.source, a.target, ((st_dump(st_split(a.geom,b.geom))).geom) as geom
+from roads_school a
+inner join school_entry b
+on st_intersects(a.geom,b.geom))
+
+CREATE TABLE lines_split AS
+SELECT a.id, (ST_Dump(ST_split(st_segmentize(a.geom,1),ST_Union(b.geom)))).geom::geometry(LINESTRING,32737) AS geom 
+FROM roads_school a, school_entry b
+GROUP BY a.id,a.geom
+```
