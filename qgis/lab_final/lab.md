@@ -146,7 +146,7 @@ SELECT * FROM pgr_dijkstra(
 ```
 
 ##### Sample Test Workflow
-To better determine if I am making a mistake which results in error or if there is something amiss with the data, I repeated the steps of pgrouting up to the establishment of a driving_distance table while only focusing on two road lines which share a single intersection. Further, I heavily followed this [site](https://anitagraser.com/2017/09/11/drive-time-isochrones-from-a-single-shapefile-using-qgis-postgis-and-pgrouting/), only deviating to input the local names of layers.
+In order to obtain more understanding as to why the previous workflow did not produce answers, I had to repeat the steps but with careful analysis and caution. To limit the potential of data error, I repeated the steps necessary to perform driving_distance with only two roads selected. To limit the chance that personal mistakes created the previous error, I relied heavily on this [guide]((https://anitagraser.com/2017/09/11/drive-time-isochrones-from-a-single-shapefile-using-qgis-postgis-and-pgrouting/) to ensure that I made the correct steps and syntax.
 
 ```sql
 selected two road to test the algorithms
