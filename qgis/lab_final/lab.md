@@ -13,11 +13,11 @@ I used three layers of OpenStreetMap data in Dar es Salaam for this lab: wetland
 
 I chose to use the school polygon feature rather than the school point feature of Resilience Academy's data. Through a comparison of the two features in QGIS, I noticed that the layers do not always line up. When I viewed each layer in comparison to OpenStreetMap, I noticed that some school point locations overlay locations not designates as a school in the OSM baselayer. While, on the otherhand, the school polygon layer was more agreeable with the baselayer.
 
-### Steps
+### Walking Time Procedure
 
 I first uploaded my layers from QGIS into the PostGIS database while transforming into EPSG:32737, or UTM 37S. Then, I examined my layers in a map view and determined which school to select as the basis of my analysis. I chose a school which had a significant amount of road data in the area and contained a moderate amount of wetlands near the location. Further, since the attribute table of the schools was not complete enough to list school names and type of school, I opened a OSM baselayer to ensure that the school I selected was a primary school.
 
-My first phase of steps involved limiting the scope of road and wetland data considered. I decided to establish a 1km buffer around the selected school and exclude all data not within this buffer zone. In order to define the center of the buffer zone, I decided to establish a point at the location of what most likely appeared as the school's entrance. I made this determination through the examination of imagery on GoogleMaps.
+My first phase of steps involved limiting the scope of road and wetland data considered. I decided to establish a 1km buffer around the selected school and exclude all data not within this buffer zone. In order to define the center of the buffer zone, I decided to establish a pointat the location of what most likely appeared as the school's entrance. I made this determination through the examination of imagery on GoogleMaps.
 
 I first turned all the vertices of the school polygon into points
 ```sql
@@ -93,6 +93,7 @@ FROM roads_school a, school_entry b
 GROUP BY a.id,a.geom
 ```
 
+Up until this step, I added two new columns onto my road table that are necessary to perform any network calculations: source; target. Now, I need to add a cost column which is the third input necessary for network analyses. I defined cost as the time(minutes) it takes to walk the length of the road segment. 
 ```sql
 alter table roads_school add column length float;
 update roads_school
