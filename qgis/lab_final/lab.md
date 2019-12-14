@@ -106,6 +106,64 @@ set cost = length/83
 ### Test with 2 multilines
 To better determine if I am making a mistake which results in error or if there is something amiss with the data, I repeated the steps of pgrouting up to the establishment of a driving_distance table while only focusing on two road lines which share a single intersection. Further, I heavily followed this [site](https://anitagraser.com/2017/09/11/drive-time-isochrones-from-a-single-shapefile-using-qgis-postgis-and-pgrouting/), only deviating to input the local names of layers.
 
+```sql
+selected two road to test the algorithms
+
+alter table aa_roads drop source;
+alter table aa_roads drop target;
+alter table aa_roads drop length;
+alter table aa_roads drop cost
+/* a fresh attribute table*/
+
+ALTER TABLE aa_roads ADD COLUMN "source" integer;
+ALTER TABLE aa_roads ADD COLUMN "target" integer;
+SELECT pgr_createTopology('aa_roads', 0.001, 'geom', 'id');
+ CREATE TABLE aa_node AS
+   SELECT row_number() OVER (ORDER BY foo.p)::integer AS id,
+          foo.p AS the_geom
+   FROM (     
+      SELECT DISTINCT aa_roads.source AS p FROM aa_roads
+      UNION
+      SELECT DISTINCT aa_roads.target AS p FROM aa_roads
+   ) foo
+   GROUP BY foo.p;
+   CREATE TABLE aa_network AS
+   SELECT a.*, b.id as start_id, c.id as end_id
+   FROM aa_roads AS a
+      JOIN aa_node AS b ON a.source = b.the_geom
+      JOIN aa_node AS c ON a.target = c.the_geom;
+      
+      
+CREATE OR REPLACE VIEW aa_network_nodes AS 
+SELECT foo.id,
+ st_centroid(st_collect(foo.pt)) AS geom 
+FROM ( 
+  SELECT aa_network.source AS id,
+         st_geometryn (st_multi(aa_network.geom),1) AS pt 
+  FROM aa_network
+  UNION 
+  SELECT aa_network.target AS id, 
+         st_boundary(st_multi(aa_network.geom)) AS pt 
+  FROM aa_network) foo 
+GROUP BY foo.id;
+
+ALTER TABLE aa_network ADD COLUMN length double precision;
+UPDATE aa_network set length = st_length(geom);
+ALTER TABLE aa_network ADD COLUMN walktime double precision;
+UPDATE aa_network set walktime = length/83
+
+CREATE OR REPLACE VIEW "aa_3" AS 
+SELECT di.seq, Di.id1, Di.id2, Di.cost,                           
+       Pt.id, Pt.geom 
+FROM pgr_drivingdistance('SELECT gid::integer AS id,                                       
+     Source::integer AS source, Target::integer AS target, 
+     Traveltime::double precision AS cost FROM aa_network'::text, 
+     3::bigint, 100000::double precision, false, false) 
+   di(seq, id1, id2, cost) 
+JOIN aa_network_nodes pt 
+ON di.id1 = pt.id;
+```
+
 ### Node Connectivity Steps
 
 ```sql
