@@ -38,3 +38,11 @@ SET geom =
 FROM dar_es_salaam_roadss AS ln
 ORDER BY pt.geom <-> ln.geom)
   ```
+  
+  With the school entry point alined with its nearest road, I made this the point to measure 1km buffer.
+```sql
+create table school_buff as
+select id, st_buffer(geom,1000) as geom
+from school_entry
+```
+
