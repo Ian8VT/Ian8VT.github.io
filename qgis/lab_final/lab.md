@@ -39,7 +39,7 @@ st_pointfromtext(
 st_astext('0101000020E17F00001F4CF8AA271920419D22256AD5A26141'),32737) as geom
 ```
 
-In the next step, I began to consider the requirements of a network topology map and subsequent analyses. In order to perform measurements a noded network, there are three attributes the network table needs - a source point for each line; an end point for each line; a cost perameter such as the length of each line. Network analyses calculate the accumulated cost from a chosen source point (or points) to an end point (or points) of the network within the bounds of a specified maximum of accumulated cost. As such, since network topology analyses originate from a source point, I wanted to ensure that I treated the determined entrance to the school as the source point for all network analyses. To achieve this, I first shifted the geometry of my school entry point to coincide with the nearest road geometry.
+In the next step, I began to consider the requirements of a network topology map and subsequent analyses. In order to perform measurements a noded network, there are three attributes the network table needs - a source point for each line; an end point for each line; a cost perameter such as the line length or time it takes to walk each line. Network analyses calculate the accumulated cost from a chosen source point (or points) to an end point (or points) of the network within the bounds of a specified maximum of accumulated cost. As such, since network topology analyses originate from a source point, I wanted to ensure that I treated the determined entrance to the school as the source point for all network analyses. To achieve this, I first shifted the geometry of my determined school entry point to coincide with the nearest road geometry. I selected the vertice of the polygon which best represented the school entry through a combination of examining the satellite view of the school on GoogleMaps to identify locations where cars could enter the schoolground from the street and through observing an OSM baselayer in order to not consider any side of the school perimeter which was parallel to a drain. 
 ```sql
 UPDATE school_entry AS pt 
 SET geom =
@@ -69,12 +69,13 @@ from wetlands as a
 inner join school_buff as b
 on st_intersects(a.way,b.geom)
 ```
-I then converted the road layer into a topology layer.
+This next step created my noded network topology layer. This inserted an id for each start and end point of the road lines onto the road layer and also created a multipoint layer of all source and target points of the roads. Below the command of this step is an image of these two layers.
 ```sql
 alter table roads_school add column source integer;
 alter table roads_school add column target integer;
 select pgr_createtopology('roads_school', 0.001, 'geom', 'id')
 ```
+![topology](/lab_final/school_roads_and_vertices.png)
 
 At this stage, I realized it is difficult to split the lines at the location of the school entry point in order to create a new node. As such, I chose to consider the nearest node already in the data as my center point in calculating travel times. the following are all SQL commands I attempted to use.
 ```sql
