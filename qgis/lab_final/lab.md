@@ -249,7 +249,7 @@ The following two maps are examples of significant topology error in the road sy
 
 However, topological errors such as these would have created a skewed and slightly inaccurate output - they would not prevented the function from running or create an output of an empty table. If we assume that the ultimate reason for these function failures is topological error, then I have one potential explanation. These figures above represent locations of topological error in the dataset large enough for us to see in its corresponding map. However, there is no guaranteed that all nodes which visually appear to intersect with lines actually do so in the data. Perhaps there are miniscule topology errors like the one in the graphics for many of the nodes - to the degree that network analysis functions cannot perform.
 
-Even though this process forced me to learn a bit about the inner mechanics of driving_distance and the creation of topology maps as I attempted to problem solve, I still wanted to create a mappable output. As such, I used the same node, road, and wetland data from this lab in the procedures of this [project](../lab_final/node_lab.md)
+Even though this process forced me to learn a bit about the inner mechanics of driving_distance and the creation of topology maps as I attempted to problem solve, I still wanted to create a mappable output. As such, I used the same node, road, and wetland data from this lab in the procedures of this subsequent [project](../lab_final/node_lab.md)
 
 
 ### Cited Literature 
