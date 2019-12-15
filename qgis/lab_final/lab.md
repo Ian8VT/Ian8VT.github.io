@@ -1,4 +1,4 @@
-##Network Topology and Walking Time to School
+## Network Topology and Walking Time to School
 
 Return to [QGIS and PostGIS Index Page](../qgis.md).
 
