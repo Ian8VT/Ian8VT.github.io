@@ -114,6 +114,8 @@ alter table roads_dry_sum add column intersection float;
 update roads_dry_sum set intersection = sum/792
 ```
 
+Click [here](../lab_final/node.sql) to download the SQL file.
+
 ### Results and Discussion
 
 In the wetlands, there is a total of 30,775 meters of mapped roads and paths and 588 intersections. This means that there is an average 52.3 meters of roads and paths for every intersection.
