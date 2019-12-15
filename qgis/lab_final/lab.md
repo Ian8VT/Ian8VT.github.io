@@ -229,8 +229,10 @@ This step should have provided me with a driving_distance output, but instead I 
 
 Although I did not obtain the results for the original project objective, I did develop valuable insights. A result from the localized test run of the pgRouting steps necessary to culminate in a driving_distance function is that I have a greater suspicion of the data types themself than I do of my syntax throughout the lab as a likely culprit for the lack of an output. This leads me to believe that the road data requires a significant amount of topological cleaning in order to be fit for network analyses. Karduni (2016) notes that many road system datasets have numeruous topology errors which inhibit them from producing an accurate output. 
 
-The following two maps are examples of significant topology error in the road system dataset of Dar es Salaam. Note how the end points of the lines, highlighted yellow, do not ajoin and form a node with the nearby road.
+The following two maps are examples of significant topology error in the road system dataset of Dar es Salaam. Note how the end points of the lines, highlighted yellow, do not ajoin and form a node with the nearby road. In reality, these are intersections. However, as far as the dataset is concerned, these unconnected nodes represent a dead end road or pathway.
 
 ![error_1](../lab_final/error_1.png)
 
 ![error_2](../lab_final/error_2.png)
+
+However, topological errors such as these would have created a skewed and slightly innaccurate output - they would not prevented the function from running or create an output of an empty table. If we assume that the ultimate reaon for these function failures is topological error, then I have one potential explanation. These figures above represent locations of topological error in the dataset large enough for us to see in its corresponding map. However, there is no guarenteed that all nodes which visually appear to intersect with lines actually do so in the data. Perhaps there are miniscule topology errors like the one in the graphics for many of the nodes - to the degree that network analysis functions cannot perform.
