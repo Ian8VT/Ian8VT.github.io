@@ -21,7 +21,7 @@ I chose to use the school polygon feature rather than the school point feature o
 
 ### Methodology
 
-In this section, I divided my steps into two distinct components. This first component are the steps with commentary for my attempts to achieve the original lab goal. Once I realized that this process was not performing correctly, I decided to test the pgrouting functions on a smaller sample of data in Dar es, Salaam. This smaller sample is the worklow and commentary of the second component of the methodology section. 
+In this section, I divided my steps into two distinct components. This first component are the steps with commentary for my attempts to achieve the original lab goal through the pgRouting steps necessary to perform a driving_distance function. Once I realized that this process was not performing correctly, I decided to test the pgrouting functions on a smaller sample of data in Dar es, Salaam. This smaller sample is the worklow and commentary of the second component of the methodology section. 
 
 
 ##### Original Workflow
