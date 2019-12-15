@@ -148,6 +148,10 @@ SELECT * FROM pgr_dijkstra(
     directed := false)
 ```
 
+
+
+
+
 ##### Sample Test Workflow
 In order to obtain more understanding as to why the previous workflow did not produce answers, I had to repeat the steps but with careful analysis and caution. To limit the potential of data error, I repeated the steps necessary to perform driving_distance with only two roads selected. To limit the chance that personal mistakes created the previous error, I relied heavily on this [guide](https://anitagraser.com/2017/09/11/drive-time-isochrones-from-a-single-shapefile-using-qgis-postgis-and-pgrouting/) to ensure that I made the correct steps and syntax.
 
@@ -199,6 +203,8 @@ GROUP BY foo.id;
 ```
 Below is a visualization of the above code. Again, for this miniature test run, I completely followed the steps provided from the previous mentioned tutorial on how to perform a driving_distance analysis. I merely renamed the outputs and subsequently reworded the dependent inputs. Yet, this code meant to produce a layer of network nodes formed the graphic below. It seems questionable that nodes do not line up with intersections and not even necessarily with the roads.
 
+![node](../lab_final/aa_network_nodes.png)
+
 ```sql
 
 ALTER TABLE aa_network ADD COLUMN length double precision;
@@ -219,8 +225,6 @@ ON di.id1 = pt.id;
 ```
 
 This step should have provided me with a driving_distance output, but instead I received an empty table.
-
-![node](../lab_final/aa_network_nodes.png)
 
 ### Results and Discussion
 
