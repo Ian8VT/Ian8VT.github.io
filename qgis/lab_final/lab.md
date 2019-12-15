@@ -248,6 +248,8 @@ However, topological errors such as these would have created a skewed and slight
 Even though this process forced me to learn a bit about the inner mechanics of driving_distance and the creation of topology maps as I attempted to problem solve, I still wanted to create a mappable output. As such, I used the same node, road, and wetland data from this lab in the procedures of this [project](../lab_final/node_lab.md)
 
 
+### Cited Literature 
+
 Karduni, A., Kermanshah, A., & Derrible, S. (2016) A protocol to convert spatial polyline data to network formats and applications to world urban road networks. Scientific Data, 3. https://doi.org/10.1038/sdata.2016.46.
 
 ---
