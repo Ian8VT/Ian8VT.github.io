@@ -1,3 +1,10 @@
+## Measuring Frequency of Pathfinding Options
+
+Return to [QGIS and PostGIS Index Page](../qgis.md).
+
+Return to [Main Index Page](../../index.md).
+
+
 ### Introduction
 
 This lab page documents the continuation from a previous lab which can be viewed [here](../lab_final/lab.md). An overview of the lab and documentation of resources used can be found on the first page of the lab. In this workflow, I analyze to see if there are noticeable infrastructure differences between settlements constructed in wetlands and settlements outside of wetlands in Dar es Salaam, Tanzania. To represent this concept, I calculated the average distance of road there is for every intersection. I chose this calculation as it is representative of the interconnectedness of the road system. A lower value of average road length means that there is a higher proportion of intersections to road length, allowing for more pathfinding options when attempting to transit from one location to another. This infrastructure quality is particularly relevant in the flood prone wetlands as it enables alternative forms of movement if certain road segments experience flooding.
@@ -114,3 +121,9 @@ In the wetlands, there is a total of 30,775 meters of mapped roads and paths and
 For the non-wetland terrain, there is a total of 47,236 meters of roads and paths with 792 intersection nodes. This means that on average there is an intersection every 59.6 meters of road or path. 
 
 These calculations demonstrate that there is an average distance of only 7 meters between the wetland and non-wetand terrain in terms of how many intersections there are per distance of road. Further, the wetlands actually have more intersection nodes per distance of road. However, this data does contain topological errors. For example, the data is unable to discern between a true intersection and a bridge. In reality, these two occurences are not the same and an individual on a bridge is unable to turn onto the new road that they cross. However, as far as the data is concerned, an individual traveling on the bridge is able to turn onto the road that they cross above. Small topological errors such as this skew the data upward, suggesting that there are more navigation options than there is in reality.
+
+---
+
+Return to [QGIS and PostGIS Index Page](../qgis.md).
+
+Return to [Main Index Page](../../index.md).
