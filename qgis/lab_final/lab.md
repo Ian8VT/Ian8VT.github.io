@@ -16,7 +16,7 @@ I chose to use the school polygon feature rather than the school point feature o
 ### Methodology
 
 In this section, I divided my steps into two distinct components. This first component are the steps with commentary for my attempts to achieve the original lab goal. Once I realized that this process was not performing correctly, I decided to test the pgrouting functions on a smaller sample of data in Dar es, Salaam. This smaller sample is the worklow and commentary of the second component of the methodology section. 
-\
+
 
 ##### Original Workflow
 
@@ -149,7 +149,6 @@ SELECT * FROM pgr_dijkstra(
     directed := false)
 ```
 \
-\
 
 ##### Sample Test Workflow
 In order to obtain more understanding as to why the previous workflow did not produce answers, I had to repeat the steps but with careful analysis and caution. To limit the potential of data error, I repeated the steps necessary to perform driving_distance with only two roads selected. To limit the chance that personal mistakes created the previous error, I relied heavily on this [guide](https://anitagraser.com/2017/09/11/drive-time-isochrones-from-a-single-shapefile-using-qgis-postgis-and-pgrouting/) to ensure that I made the correct steps and syntax.
@@ -224,6 +223,7 @@ ON di.id1 = pt.id;
 ```
 
 This step should have provided me with a driving_distance output, but instead I received an empty table.
+\
 
 ### Results and Discussion
 
