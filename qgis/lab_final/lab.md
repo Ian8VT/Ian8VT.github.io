@@ -1,5 +1,7 @@
 ## Network Topology and Walking Time to School
 
+Go to [Part Two of this Lab](../lab_final/lab_node.md)
+
 Return to [QGIS and PostGIS Index Page](../qgis.md).
 
 Return to [Main Index Page](../../index.md).
@@ -15,7 +17,7 @@ However, I encountered a series of problems which prevented me from reaching thi
 
 ### Resources 
 
-I used three layers of OpenStreetMap data in Dar es Salaam for this lab: wetlands; roads; schools. I accessed all three of these layers from Resilience Academy through a WFS connection in QGIS. From the QGIS interphase, I uploaded the layers to my PostGIS database and performed the functions of this lab. Within the database, I used the pgrouting extension in addition to standard functions. One of the three layers, wetlands, I already had within my database from a previous [lab](../lab_5/). I originally created this layer by directly downloading OpenStreetMap polygon data and selecting terrain designated as wetlands. 
+I used three layers of OpenStreetMap data in Dar es Salaam for this lab: wetlands; roads; schools. I accessed all three of these layers from Resilience Academy through a WFS connection in QGIS. From the QGIS interphase, I uploaded the layers to my PostGIS database and performed the functions of this lab. Within the database, I used the pgrouting extension in addition to standard functions. One of the three layers, wetlands, I already had within my database from a previous [lab](../lab_6/aa_dar_lab.md). I originally created this layer by directly downloading OpenStreetMap polygon data and selecting terrain designated as wetlands. 
 
 I chose to use the school polygon feature rather than the school point feature of Resilience Academy's data. Through a comparison of the two features in QGIS, I noticed that the layers do not always line up. When I viewed each layer in comparison to OpenStreetMap, I noticed that some school point locations overlay locations not designates as a school in the OSM baselayer. While, on the otherhand, the school polygon layer was more agreeable with the baselayer.
 
@@ -253,6 +255,8 @@ Even though this process forced me to learn a bit about the inner mechanics of d
 Karduni, A., Kermanshah, A., & Derrible, S. (2016) A protocol to convert spatial polyline data to network formats and applications to world urban road networks. Scientific Data, 3. https://doi.org/10.1038/sdata.2016.46.
 
 ---
+
+Go to [Part Two of this Lab](../lab_final/lab_node.md)
 
 Return to [QGIS and PostGIS Index Page](../qgis.md).
 
