@@ -115,7 +115,7 @@ alter table roads_school add column cost float;
 update roads_school
 set cost = length/83
 ```
-The following table would have provided me with the information I required to answer my original project goal. The intent of the driving_distance function was to calculate the cost (walking time) from the source node near the school (whose source id is 504) to all target nodes within the set limit of 60 minutes. Further, the function would attach these cost outputs onto each respective node within the node layer. This would enable me to intersect nodes by the wetland feature and then union nodes together in order to find the average walking time for nodes within wetlands and nodes outside of wetlands. Additionally, I would be able to create a concave map of the data from this output to visualize walking time.
+The following table would have provided me with the information I required to answer my original project goal. The intent of the driving_distance function was to calculate the cost (walking time) from the source node near the school (whose source id is 504) to all target nodes within the set limit of 60 minutes. Further, the function would attach these cost outputs onto each respective node within the node layer. This would enable me to intersect nodes by the wetland feature and then union nodes together in order to find the average walking time for nodes within wetlands and nodes outside of wetlands. Additionally, I would be able to create a concave map of the data from this output to visualize walking time. However, this code did not produce an output. I tried numerous computations of this driving_distance function structure, but none provided an output.
 
 ```sql
 CREATE OR REPLACE VIEW "driving_nodes" AS 
@@ -148,7 +148,7 @@ SELECT * FROM pgr_dijkstra(
     504, 760,
     directed := false)
 ```
-\
+
 
 ##### Sample Test Workflow
 In order to obtain more understanding as to why the previous workflow did not produce answers, I had to repeat the steps but with careful analysis and caution. To limit the potential of data error, I repeated the steps necessary to perform driving_distance with only two roads selected. To limit the chance that personal mistakes created the previous error, I relied heavily on this [guide](https://anitagraser.com/2017/09/11/drive-time-isochrones-from-a-single-shapefile-using-qgis-postgis-and-pgrouting/) to ensure that I made the correct steps and syntax.
@@ -223,9 +223,13 @@ ON di.id1 = pt.id;
 ```
 
 This step should have provided me with a driving_distance output, but instead I received an empty table.
-\
+
 
 ### Results and Discussion
+
+Although I did not obtain the results for the original project objective, I did develop valuable insights. A result from the localized test run of the pgRouting steps necessary to culminate in a driving_distance function is that I have a greater suspicion of the data types themself than I do of my syntax throughout the lab as a likely culprit for the lack of an output. This leads me to believe that the road data requires a significant amount of topological cleaning in order to be fit for network analyses. Karduni (2016) notes that many road system datasets have numeruous topology errors which inhibit them from producing an accurate output. 
+
+The following two maps are examples of significant topology error in the road system dataset of Dar es Salaam. Note how the end points of the lines, highlighted yellow, do not ajoin and form a node with the nearby road.
 
 ![error_1](../lab_final/error_1.png)
 
