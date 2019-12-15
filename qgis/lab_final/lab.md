@@ -74,7 +74,7 @@ on st_intersects(a.way,b.geom)
 
 ![selected](select_roads_wet.png)
 
-This next step created my noded network topology layer. This inserted an id for each start and end point of the road lines onto the road layer and also created a multipoint layer of all source and target points of the roads. Below the command of this step is an image of these two layers.
+This next step created my noded network topology layer. This inserted an id for each start and end point of the road lines within the attribute table of the road layer and also created a multipoint layer of all source and target points of the roads. Below the command of this step is an image of these two layers.
 ```sql
 alter table roads_school add column source integer;
 alter table roads_school add column target integer;
@@ -105,7 +105,7 @@ FROM roads_school a, school_entry b
 GROUP BY a.id,a.geom
 ```
 
-Up until this step, I added two new columns onto my road table that are necessary to perform any network calculations: source; target. Now, I need to add a cost column which is the third input necessary for network analyses. I defined cost as the time(minutes) it takes to walk the length of the road segment. 
+As previously explained, network analysis functions require three attribute columns which represent the source, target, and cost of each line segment. In this step, I created the cost column which I defined as the time it takes to walk each line segment. I first measured the length of each line segment, and then used that information to determine the walking time. I relied upon precedent outlined throughout the [pgRouting Workshops](https://workshop.pgrouting.org/) to define 83 meters of length as one minute of walking.
 ```sql
 alter table roads_school add column length float;
 update roads_school
