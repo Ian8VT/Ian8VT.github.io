@@ -1,3 +1,9 @@
+##Network Topology and Walking Time to School
+
+Return to [QGIS and PostGIS Index Page](../qgis.md).
+
+Return to [Main Index Page](../../index.md).
+
 ### Introduction
 
 Dar es Salaam, Tanzania, is a heavily mapped city on OpenStreetMap. This is in part due to numerous initiatives to use geographic information to digitize the city in order to measure indices of urban resiliency and environmental vulnerability. Resilience Academy is a platform which hosts multiple layers of OSM data, clipped to the urban boundaries of the city, and dedicated to the mission of teaching people how to use this spatial information to address problems of urban resiliency. Since there is easy access to extensive data and it is often used for teaching purposes, I decided to use the Dar es Salaam data to learn some basic network analysis functions in PostGIS using the pgrouter extension. 
@@ -237,4 +243,8 @@ The following two maps are examples of significant topology error in the road sy
 
 However, topological errors such as these would have created a skewed and slightly innaccurate output - they would not prevented the function from running or create an output of an empty table. If we assume that the ultimate reaon for these function failures is topological error, then I have one potential explanation. These figures above represent locations of topological error in the dataset large enough for us to see in its corresponding map. However, there is no guarenteed that all nodes which visually appear to intersect with lines actually do so in the data. Perhaps there are miniscule topology errors like the one in the graphics for many of the nodes - to the degree that network analysis functions cannot perform.
 
-Even though this process forced me to learn a bit about the inner mechanics of driving_distance and the creation of topology maps as I attempted to problem solve, I still wanted to create a mappable output. As such, I used the same node, road, and wetland data from this lab in the procedures of this [project](../lab_final/lab_nodes.md)
+Even though this process forced me to learn a bit about the inner mechanics of driving_distance and the creation of topology maps as I attempted to problem solve, I still wanted to create a mappable output. As such, I used the same node, road, and wetland data from this lab in the procedures of this [project](../lab_final/node_lab.md)
+
+Return to [QGIS and PostGIS Index Page](../qgis.md).
+
+Return to [Main Index Page](../../index.md).
