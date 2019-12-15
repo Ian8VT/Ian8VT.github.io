@@ -1,6 +1,6 @@
 ## Network Topology and Walking Time to School
 
-Go to [Part Two of this Lab](../lab_final/lab_node.md)
+Go to [Part Two of this Lab](../lab_final/node_lab.md)
 
 Return to [QGIS and PostGIS Index Page](../qgis.md).
 
@@ -256,7 +256,7 @@ Karduni, A., Kermanshah, A., & Derrible, S. (2016) A protocol to convert spatial
 
 ---
 
-Go to [Part Two of this Lab](../lab_final/lab_node.md)
+Go to [Part Two of this Lab](../lab_final/node_lab.md)
 
 Return to [QGIS and PostGIS Index Page](../qgis.md).
 
