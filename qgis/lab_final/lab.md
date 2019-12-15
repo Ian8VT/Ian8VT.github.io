@@ -209,7 +209,7 @@ ON di.id1 = pt.id;
 ```
 ![vertices](../lab_final/aa_network_and_vertices.png)
 
-![node](../lab_final/aa_network_node.png)
+![node](../lab_final/aa_network_nodes.png)
 
 ### Results and Discussion
 
