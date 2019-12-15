@@ -177,7 +177,12 @@ SELECT pgr_createTopology('aa_roads', 0.001, 'geom', 'id');
    FROM aa_roads AS a
       JOIN aa_node AS b ON a.source = b.the_geom
       JOIN aa_node AS c ON a.target = c.the_geom;
-      
+```
+Here is a visualization of the network map with the newly added source and target columns in its attribute table and of the node layer, produced from the above chunk of SQL codes.
+
+![vertices](../lab_final/aa_network_and_vertices.png)
+
+```sql
       
 CREATE OR REPLACE VIEW aa_network_nodes AS 
 SELECT foo.id,
@@ -191,6 +196,10 @@ FROM (
          st_boundary(st_multi(aa_network.geom)) AS pt 
   FROM aa_network) foo 
 GROUP BY foo.id;
+```
+Below is a visualization of the above code. Again, for this miniature test run, I completely followed the steps provided from the previous mentioned tutorial on how to perform a driving_distance analysis. I merely renamed the outputs and subsequently reworded the dependent inputs. Yet, this code meant to produce a layer of network nodes formed the graphic below. It seems questionable that nodes do not line up with intersections and not even necessarily with the roads.
+
+```sql
 
 ALTER TABLE aa_network ADD COLUMN length double precision;
 UPDATE aa_network set length = st_length(geom);
@@ -208,7 +217,8 @@ FROM pgr_drivingdistance('SELECT gid::integer AS id,
 JOIN aa_network_nodes pt 
 ON di.id1 = pt.id;
 ```
-![vertices](../lab_final/aa_network_and_vertices.png)
+
+This step should have provided me with a driving_distance output, but instead I received an empty table.
 
 ![node](../lab_final/aa_network_nodes.png)
 
