@@ -2,7 +2,8 @@
 
 This lab page documents the continuation from a previous lab which can be viewed [here](../lab_final/lab.md). An overview of the lab and documentation of resources used can be found on the first page of the lab. In this workflow, I analyze to see if there are noticeable infrastructure differences between settlements constructed in wetlands and settlements outside of wetlands in Dar es Salaam, Tanzania. To represent this concept, I calculated the average distance of road there is for every intersection. I chose this calculation as it is representative of the interconnectedness of the road system. A lower value of average road length means that there is a higher proportion of intersections to road length, allowing for more pathfinding options when attempting to transit from one location to another. This infrastructure quality is particularly relevant in the flood prone wetlands as it enables alternative forms of movement if certain road segments experience flooding.
 
-### Node Connectivity Steps
+### Methodology
+
 
 ```sql
 alter table nodes add column wetland integer;
@@ -61,6 +62,14 @@ inner join roads_school as b
 on (st_intersects(a.geom,b.geom))
 and not st_touches(a.geom,b.geom)
 
+```
+
+Here is a graphic of the roads colorcoded to their corresponding terrain. Brown polylines are roads which are not on wetlands and the blue polylines are roads that are within designated wetland.
+
+![roads_dry_wet](../lab_final/brown_dry_blue_wet.png)
+
+```sql
+
 alter table roads_dry add column length float;
 update roads_dry set length = st_length(geom);
 alter table roads_dry add column dry integer;
@@ -77,9 +86,9 @@ where wetland = 0
 alter table roads_dry_sum add column intersection float;
 update roads_dry_sum set intersection = sum/792
 ```
-![roads_dry_wet](../lab_final/brown_dry_blue_wet.png)
 
-In wetlands, an intersection for every 52.3 meters of road.
-A total of 30,775 meters of wetland road and 588 intersections.
-in dry, an intersection for every 59.6 meters of road.
-A total of 47,236 meters of dry road and 792 intersections.
+### Results
+
+In the wetlands, there is a total of 30,775 meters of mapped roads and paths and 588 intersections. This means that there is an average 52.3 meters of roads and paths for every intersection.
+
+For the non-wetland terrain, there is a total of 47,236 meters of roads and paths with 792 intersection nodes. This means that on average there is an intersection every 59.6 meters of road or path. 
