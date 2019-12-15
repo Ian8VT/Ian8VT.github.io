@@ -15,4 +15,7 @@ A question of replicability: An attempt to replicate the Malcomb et al. study on
 #### [Lab Eight](lab_8/aa_twitter_index.md)
 Comparing the spatial effect of Hurricane Dorian's projected path and Sharpiegate controversy within Twitter activity.
 
+#### [Lab Nine](lab_final/lab.md)
+How long does it take to walk to school? A network analysis topology of Dar es Salaam, TZ, and a measurement of intersection frequency.
+
 Return to [Main Index Page](../index.md).
