@@ -74,7 +74,7 @@ on st_intersects(a.way,b.geom)
 
 ![selected](select_roads_wet.png)
 
-This next step created my noded network topology layer. This inserted an id for each start and end point of the road lines within the attribute table of the road layer and also created a multipoint layer of all source and target points of the roads. Below the command of this step is an image of these two layers.
+This next step created my noded network topology layer. This inserted an id for each start and end point of the road lines within the attribute table of the road layer and also created a multipoint layer of all source and target points of the roads. Below the command of this step is an image of these two layers. Once I encountered difficulties with the driving_distance function, I exported the node layer from this step and reuploaded as a new layer just to ensure that there was not a scratch layer which may have resulted in irregularities. However, this did not solve the issue.
 ```sql
 alter table roads_school add column source integer;
 alter table roads_school add column target integer;
@@ -114,9 +114,10 @@ alter table roads_school add column cost float;
 update roads_school
 set cost = length/83
 ```
+The following table would have provided me with the information I required to answer my original project goal. The intent of the driving_distance function was to calculate the cost (walking time) from the source node near the school (whose source id is 504) to all target nodes within the set limit of 60 minutes. Further, the function would attach these cost outputs onto each respective node within the node layer. This would enable me to intersect nodes by the wetland feature and then union nodes together in order to find the average walking time for nodes within wetlands and nodes outside of wetlands. Additionally, I would be able to create a concave map of the data from this output to visualize walking time.
 
 ```sql
-CREATE OR REPLACE VIEW "​view_name" AS 
+CREATE OR REPLACE VIEW "driving_nodes" AS 
 SELECT di.id, 
        di.source, 
        di.target, 
@@ -128,12 +129,14 @@ FROM pgr_drivingdistance('SELECT
      source
      target                                  
      cost
-       FROM network', ​504, 
-    100000, false, false)
+       FROM network', 504, 
+    60, false, false)
     di(id, source, target, cost)
 JOIN nodes pt ON di.source = pt.id;
-/*why did this not work - doesnt recognize 504 as a value*/
+```
 
+Although this is not a function relevant to my original project intent, I chose to try to perform a simpler pgRouting function in order to see if it would correctly function. This function determines the path of least cost between the defined source point and target point. However, this simpler pathfinding function did not work, either, and resulted in an empty table.
+```sql
 create table aa as
 SELECT * FROM pgr_dijkstra(
     'SELECT id,
@@ -141,10 +144,8 @@ SELECT * FROM pgr_dijkstra(
          target,
 		 cost
 		 FROM roads_school',
-    540, 760,
+    504, 760,
     directed := false)
-
-/* does not work - empty table*/
 ```
 
 ##### Sample Test Workflow
