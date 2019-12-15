@@ -1,5 +1,7 @@
 ## Measuring Frequency of Pathfinding Options
 
+Return to [Network Analysis Lab](../lab_final/lab.md)
+
 Return to [QGIS and PostGIS Index Page](../qgis.md).
 
 Return to [Main Index Page](../../index.md).
@@ -125,6 +127,8 @@ For the non-wetland terrain, there is a total of 47,236 meters of roads and path
 These calculations demonstrate that there is an average distance of only 7 meters between the wetland and non-wetand terrain in terms of how many intersections there are per distance of road. Further, the wetlands actually have more intersection nodes per distance of road. However, this data does contain topological errors. For example, the data is unable to discern between a true intersection and a bridge. In reality, these two occurences are not the same and an individual on a bridge is unable to turn onto the new road that they cross. However, as far as the data is concerned, an individual traveling on the bridge is able to turn onto the road that they cross above. Small topological errors such as this skew the data upward, suggesting that there are more navigation options than there is in reality.
 
 ---
+
+Return to [Network Analysis Lab](../lab_final/lab.md)
 
 Return to [QGIS and PostGIS Index Page](../qgis.md).
 
