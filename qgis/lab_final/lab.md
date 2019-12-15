@@ -166,8 +166,10 @@ alter table aa_roads drop source;
 alter table aa_roads drop target;
 alter table aa_roads drop length;
 alter table aa_roads drop cost
-/* a fresh attribute table*/
+```
+I first dropped the column attached to this layer from the previous analysis attempts to that I approached the test workflow from a clean perspective.
 
+```sql
 ALTER TABLE aa_roads ADD COLUMN "source" integer;
 ALTER TABLE aa_roads ADD COLUMN "target" integer;
 SELECT pgr_createTopology('aa_roads', 0.001, 'geom', 'id');
