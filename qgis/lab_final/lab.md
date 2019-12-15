@@ -207,6 +207,9 @@ FROM pgr_drivingdistance('SELECT gid::integer AS id,
 JOIN aa_network_nodes pt 
 ON di.id1 = pt.id;
 ```
+![vertices](../lab_final/aa_network_and_vertices.png)
+
+![node](../lab_final/aa_network_node.png)
 
 ### Results and Discussion
 
