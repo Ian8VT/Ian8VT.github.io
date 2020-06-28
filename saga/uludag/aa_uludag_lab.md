@@ -69,9 +69,9 @@ PAUSE
 
 ```
 
-For a link to the file of my ASTER batch sript, click [here](/saga/uludag/aster_dem_complete.txt).
+For a link to the downloadable text file of my ASTER batch sript, click [here](/saga/uludag/aster_dem_complete.txt).
 
-For a link to the text file of my SRTM script, click [here](/saga/uludag/mosaic_srtm_complete.txt).
+For a link to the downloadable text file of my SRTM script, click [here](/saga/uludag/mosaic_srtm_complete.txt).
 
 
 ### Results and Discussion
