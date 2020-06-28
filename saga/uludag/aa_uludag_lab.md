@@ -69,7 +69,7 @@ PAUSE
 
 ```
 
-To download the text file of my ASTER batch sript, click ![here](./saga/uludag/aster_dem_complete.txt).
+To download the text file of my ASTER batch sript, click ![here](<a href="/saga/uludag/aster_dem_complete.txt">Download!</a>).
 
 To download the text file of my SRTM script, click ![here](/saga/uludag/mosaic_srtm_complete.txt).
 
