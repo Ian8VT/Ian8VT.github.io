@@ -1,5 +1,5 @@
-## SAGA Labs
-### Collection of analyses performed with SAGA software.
+### SAGA Labs
+Collection of analyses performed with SAGA software.
 
 
 
