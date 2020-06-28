@@ -54,8 +54,7 @@ After the completion of the model and the transformation of the two physical lay
 
 ### Results
 
-![malcomb_map](/qgis/lab_7/malcomb_vulnerability.png)
-Above is the vulnerability map produced by Malcomb et al..
+A completed vulnerability map of Malcomb et al. can be found on their [published paper](https://doi.org/10.1016/j.apgeog.2014.01.004).
 
 ![result_map](/qgis/lab_7/malawi_course.png)
 Above is the map I produced with my attempts to reproduce the methodology previously outlined. A high vulnerability is represented with the darker shades of orange, whereas low vulnerability is represented with the light shades. Blue locations are major bodies of water. Locations shaded gray do not contain data - either due to data gaps or because they are national parks and do not contain settlements.
