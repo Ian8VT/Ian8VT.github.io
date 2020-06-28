@@ -23,4 +23,4 @@ After the construction of the model based on the 2012-2013 tweet data, the model
 
 Doi: 10.1371/journal.pone.0157734
 
-
+[Return to Main Index](index.md)
