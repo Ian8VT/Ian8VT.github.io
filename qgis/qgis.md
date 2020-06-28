@@ -1,4 +1,5 @@
 ### QGIS and PostGIS Labs
+
 The following project links are labs that I performed with a combination of QGIS and PostGIS softwares. The extent that each software is used is outlined within each lab.
 
 #### [Lab One](lab_1/aa_chicago_lab.md)
