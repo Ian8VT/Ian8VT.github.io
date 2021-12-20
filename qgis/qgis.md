@@ -17,7 +17,7 @@ In this lab, I used OpenStreetMap (OSM) data of Dar es Salaam, Tanzania, to meas
 A question of replicability. For this lab, I attempted to replicate the Malcomb et al. study on Malawi's environmental resilience. As a group, my class colleagues and I collaboratively brainstormed to develop a probable SQL analysis flow to replicate the paper's results. Through the process of this lab, I encountered two different issues related to the unclear methodology of Malcomb et al. and use of inaccessible data sources which only enabled me to create a partial replication.
 
 #### [Lab Five](lab_8/aa_twitter_index.md)
-Comparing the spatial effect of Hurricane Dorian's projected path and Sharpiegate controversy within Twitter activity.
+In this week's lab, I used geospatial Twitter data, collected from a Twitter API in rStudio, to compare the spatial effect of Hurricane Dorian's projected path and the Sharpiegate controversy on Twitter activity. I analyzed this data using rStudio functions, a SQL script I developed on PostGIS, and the Getis-Ord G* spatial statistic to find the normalized difference between different groups of tweets.
 
 #### [Lab Six](lab_final/lab.md)
 How long does it take to walk to school? A network analysis topology of Dar es Salaam, TZ, and a measurement of intersection frequency.
