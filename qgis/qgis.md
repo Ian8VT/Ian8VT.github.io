@@ -8,10 +8,10 @@ Return to [Main Index Page](../index.md).
 The development of a model to measure distance and direction of census tracts from a single location with Chicago, Illinois as the example.
 
 #### [Lab Two](lab_2/aa_burlington_lab.md)
-Examining if rent prices in Burlington, Vermont follow a spatial pattern based around the city's center business district.
+Examining if rent prices in Burlington, Vermont and surrounding towns follow a spatial pattern based around the city's center business district (CBD).
 
 #### [Lab Three](lab_6/aa_dar_lab.md)
-Using OpenStreetMap data of Dar es Salaam, Tanzania, to measure the urban resiliency of the most flood prone regions of the city. 
+In this lab, I used OpenStreetMap (OSM) data of Dar es Salaam, Tanzania, to measure the urban resiliency of the most flood prone regions of the city. To do so, I developed an annotated and replicable SQL analysis workflow to take the original OSM input data sets outlined in the lab and create the analyzed output data, which I then used to create an interactive map hosted by Leaflet.
 
 #### [Lab Four](lab_7/aa_malawi.md)
 A question of replicability: An attempt to replicate the Malcomb et al. study on Malawi's environmental resilience.  
