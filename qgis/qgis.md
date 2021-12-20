@@ -8,7 +8,7 @@ Return to [Main Index Page](../index.md).
 Here, I developed a replicable model to measure the distance and direction of census tracts from a single location. In this lab, I use Chicago as my example.
 
 #### [Lab Two](lab_2/aa_burlington_lab.md)
-Employing the spatial model outlined in Lab One, I examine if rent prices in Burlington, Vermont and surrounding towns follow a spatial pattern based around Burlington's center business district (CBD).
+Employing the spatial model outlined in Lab One, I examine if rent prices in the greater Burlington, Vermont urban area follow a spatial pattern based around Burlington's center business district (CBD).
 
 #### [Lab Three](lab_6/aa_dar_lab.md)
 In this lab, I used OpenStreetMap (OSM) data of Dar es Salaam, Tanzania, to measure the urban resiliency of the most flood prone regions of the city. To do so, I developed an annotated and replicable SQL analysis workflow to take the original OSM input data sets outlined in the lab and create the analyzed output data, which I then used to create an interactive map hosted by Leaflet.
